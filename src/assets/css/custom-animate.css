@@ -289,19 +289,32 @@
   0% {
     -webkit-transform: rotate(0deg) scale(0.7);
     transform: rotate(0deg) scale(0.7);
-	opacity:0;
+    opacity: 0;
   }
-
   50% {
     -webkit-transform: rotate(180deg) scale(1);
     transform: rotate(180deg) scale(1);
-	opacity:1;
+    opacity: 1;
   }
-
   100% {
     -webkit-transform: rotate(360deg) scale(0.7);
     transform: rotate(360deg) scale(0.7);
-	opacity:0;
+    opacity: 0;
+  }
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: rotate(0deg) scale(0.7);
+    opacity: 0;
+  }
+  50% {
+    transform: rotate(180deg) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(360deg) scale(0.7);
+    opacity: 0;
   }
 }
 
@@ -547,52 +560,37 @@
 =============================================
 ***/
 @-webkit-keyframes animation2 {
-  0% {
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-  }
-  100% {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  }
+  0% { -webkit-transform: rotateY(0deg); transform: rotateY(0deg); }
+  100% { -webkit-transform: rotateY(360deg); transform: rotateY(360deg); }
 }
 
 @-moz-keyframes animation2 {
-  0% {
-    -moz-transform: rotateY(0deg);
-         transform: rotateY(0deg);
-  }
-  100% {
-    -moz-transform: rotateY(360deg);
-         transform: rotateY(360deg);
-  }
+  0% { -moz-transform: rotateY(0deg); transform: rotateY(0deg); }
+  100% { -moz-transform: rotateY(360deg); transform: rotateY(360deg); }
 }
 
 @-o-keyframes animation2 {
-  0% {
-    -o-transform: rotateY(0deg);
-       transform: rotateY(0deg);
-  }
-  100% {
-    -o-transform: rotateY(360deg);
-       transform: rotateY(360deg);
-  }
+  0% { -o-transform: rotateY(0deg); transform: rotateY(0deg); }
+  100% { -o-transform: rotateY(360deg); transform: rotateY(360deg); }
 }
 
 @keyframes animation2 {
   0% {
     -webkit-transform: rotateY(0deg);
-       -moz-transform: rotateY(0deg);
-         -o-transform: rotateY(0deg);
-            transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
   }
   100% {
     -webkit-transform: rotateY(360deg);
-       -moz-transform: rotateY(360deg);
-         -o-transform: rotateY(360deg);
-            transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
   }
 }
+
+
+
 
 
 
@@ -929,51 +927,34 @@
 }
 
 
+
 @-webkit-keyframes service_hexagon_2 {
-  0% {
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-  }
-  100% {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  }
+  0% { -webkit-transform: rotateY(0deg); transform: rotateY(0deg); }
+  100% { -webkit-transform: rotateY(360deg); transform: rotateY(360deg); }
 }
 
 @-moz-keyframes service_hexagon_2 {
-  0% {
-    -moz-transform: rotateY(0deg);
-         transform: rotateY(0deg);
-  }
-  100% {
-    -moz-transform: rotateY(360deg);
-         transform: rotateY(360deg);
-  }
+  0% { -moz-transform: rotateY(0deg); transform: rotateY(0deg); }
+  100% { -moz-transform: rotateY(360deg); transform: rotateY(360deg); }
 }
 
 @-o-keyframes service_hexagon_2 {
-  0% {
-    -o-transform: rotateY(0deg);
-       transform: rotateY(0deg);
-  }
-  100% {
-    -o-transform: rotateY(360deg);
-       transform: rotateY(360deg);
-  }
+  0% { -o-transform: rotateY(0deg); transform: rotateY(0deg); }
+  100% { -o-transform: rotateY(360deg); transform: rotateY(360deg); }
 }
 
 @keyframes service_hexagon_2 {
   0% {
     -webkit-transform: rotateY(0deg);
-       -moz-transform: rotateY(0deg);
-         -o-transform: rotateY(0deg);
-            transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
   }
   100% {
     -webkit-transform: rotateY(360deg);
-       -moz-transform: rotateY(360deg);
-         -o-transform: rotateY(360deg);
-            transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
   }
 }
 
