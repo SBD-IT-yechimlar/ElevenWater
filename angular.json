@@ -20,21 +20,80 @@
             "outputPath": "dist/eleven-water",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
-            ],
+            "assets": ["src/assets", "src/favicon.ico"],
             "styles": [
-              "src/styles.scss"
+              "src/assets/css/style.css",
+              "src/assets/css/module-css/about-section.css",
+              "src/assets/css/module-css/banner-section.css",
+              "src/assets/css/module-css/blog-section.css",
+              "src/assets/css/module-css/breadcrumb-section.css",
+              "src/assets/css/module-css/contact-page.css",
+              "src/assets/css/module-css/fact-counter-section.css",
+              "src/assets/css/module-css/faq-section.css",
+              "src/assets/css/module-css/footer-section.css",
+              "src/assets/css/module-css/header-section.css",
+              "src/assets/css/module-css/partner-section.css",
+              "src/assets/css/module-css/services-section.css",
+              "src/assets/css/module-css/team-section.css",
+              "src/assets/css/module-css/testimonial-section.css",
+"node_modules/animate.css/animate.min.css",
+
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/font-awesome.min.css",
+              "src/assets/css/aos.css",
+              "src/assets/css/animate.css",
+              "src/assets/css/bootstrap-select.min.css",
+              "src/assets/css/bootstrap.min.css",
+              "src/assets/css/bxslider.css",
+              "src/assets/css/custom-animate.css",
+              "src/assets/css/fancybox.min.css",
+              "src/assets/css/flaticon.css",
+              "src/assets/css/icomoon.css",
+              "src/assets/css/imp.css",
+              "src/assets/css/jquery-ui.css",
+              "src/assets/css/jquery.bootstrap-touchspin.css",
+              "src/assets/css/magnific-popup.css",
+              "src/assets/css/nice-select.css",
+              "src/assets/css/owl.css",
+              "src/assets/css/responsive.css",
+              "src/assets/css/rtl.css",
+              "src/assets/css/scrollbar.css"
             ],
-            "scripts": []
+
+            "scripts": [
+              "src/assets/js/aos.js",
+              "src/assets/js/appear.js",
+              "src/assets/js/bootstrap.bundle.min.js",
+              "src/assets/js/bootstrap-select.min.js",
+              "node_modules/wowjs/dist/wow.min.js",
+
+              "src/assets/js/owl.js",
+              "src/assets/js/jquery-ui.js",
+              "src/assets/js/jquery.bootstrap-touchspin.js",
+              "src/assets/js/jquery.countTo.js",
+              "src/assets/js/jquery.enllax.min.js",
+              "src/assets/js/jquery.fancybox.js",
+              "src/assets/js/jquery.magnific-popup.min.js",
+              "src/assets/js/jquery.nice-select.min.js",
+              "src/assets/js/jquery.paroller.min.js",
+              "src/assets/js/scrollbar.js",
+              "src/assets/js/appear.js",
+              "src/assets/js/html5shiv.js",
+              "src/assets/js/isotope.js",
+              "src/assets/js/knob.js",
+              "src/assets/js/map-script.js",
+              "src/assets/js/pagenav.js",
+              "src/assets/js/parallax.min.js",
+              "src/assets/js/tilt.jquery.js",
+              "src/assets/js/TweenMax.min.js",
+              "src/assets/js/validation.js",
+              "src/assets/js/wow.js",
+              "src/assets/js/custom.js",
+              "src/assets/js/jquery.easing.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -78,10 +137,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
@@ -90,9 +146,7 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "styles": ["src/styles.scss"],
             "scripts": []
           }
         }

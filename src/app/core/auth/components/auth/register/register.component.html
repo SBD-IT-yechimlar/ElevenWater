@@ -1,0 +1,134 @@
+<div class="flex items-center py-4 justify-center min-h-screen">
+  <div class="bg-white w-full max-w-md p-6 rounded-xl shadow-2xl relative">
+    <button class="absolute top-4 right-4 text-gray-500 hover:text-black">
+      <mat-icon>cancel</mat-icon>
+    </button>
+
+    <h2 class="text-2xl font-medium mb-2 text-center">Pегистирация</h2>
+    <p class="text-center text-sm text-gray-500 mb-6">
+      Создайте ваш личный кабинет
+    </p>
+
+    <label class="text-sm font-medium text-gray-600">Имя</label>
+    <div
+      class="flex items-center border-2 rounded-md px-3 py-3 mt-2 mb-2 border-gray-400 shadow"
+    >
+      <mat-icon class="mr-2">person</mat-icon>
+      <input
+        type="text"
+        [(ngModel)]="name"
+        placeholder="Bаше имя  "
+        class="flex-1 outline-none text-sm"
+      />
+    </div>
+
+    <label class="text-sm font-medium text-gray-600 capitalize">
+      фамилия
+    </label>
+    <div
+      class="flex items-center border-2 rounded-md px-3 py-3 mt-2 mb-2 border-gray-400 shadow"
+    >
+      <mat-icon class="mr-2">person</mat-icon>
+      <input
+        type="text"
+        [(ngModel)]="surname"
+        placeholder=" Bаше фамилия   "
+        class="flex-1 outline-none text-sm"
+      />
+    </div>
+    <label class="text-sm font-medium text-gray-600">WhatsApp</label>
+    <div
+      class="flex items-center gap-3 border-2 rounded-md px-3 py-3 mt-2 mb-2 border-gray-400 shadow"
+    >
+      <img
+        src="../../../../../../assets/media/images/whatsapp.png"
+        class="w-5 h-5"
+        alt=""
+      />
+      <input
+        type="number"
+        [(ngModel)]="number"
+        placeholder="Bаше имя  "
+        class="flex-1 outline-none text-sm"
+      />
+    </div>
+
+    <label class="text-sm font-medium text-gray-600">Email</label>
+    <div
+      class="flex items-center border-2 rounded-md px-3 py-3 mt-2 mb-2 border-gray-400 shadow"
+    >
+      <mat-icon class="mr-2">email</mat-icon>
+      <input
+        type="email"
+        [(ngModel)]="email"
+        placeholder="your@email.com"
+        class="flex-1 outline-none text-sm"
+      />
+    </div>
+
+    <label class="text-sm font-medium text-gray-600">Пароль</label>
+    <div
+      class="flex items-center border-gray-400 shadow border-2 rounded-md px-3 py-2 mb-2 mt-2"
+    >
+      <mat-icon class="mr-2">lock</mat-icon>
+      <input
+        [type]="showPassword ? 'text' : 'password'"
+        [(ngModel)]="password"
+        placeholder="password"
+        class="flex-1 outline-none text-sm"
+      />
+      <button
+        type="button"
+        (click)="showPassword = !showPassword"
+        class="text-gray-500"
+      >
+        <mat-icon class="mr-2">
+          {{ showPassword ? "visibility_off" : "visibility" }}
+        </mat-icon>
+      </button>
+    </div>
+
+    <div class="flex justify-between items-center text-sm mb-6">
+      <label class="flex items-center gap-2">
+        <input type="checkbox" [(ngModel)]="rememberMe" />
+        Я согласен с условиями использования и политикой конфиденциальности
+      </label>
+    </div>
+
+    <button
+      (click)="onRegister()"
+      class="w-full bg-[#24262B] text-white py-2 mb-3 rounded-md font-semibold"
+    >
+    <ng-container *ngIf="isLoading; else buttonText">
+      <svg class="w-5 h-5 animate-spin text-white" fill="none" viewBox="0 0 24 24">
+        <circle
+          class="opacity-25"
+          cx="12"
+          cy="12"
+          r="10"
+          stroke="currentColor"
+          stroke-width="4"
+        ></circle>
+        <path
+          class="opacity-75"
+          fill="currentColor"
+          d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+        ></path>
+      </svg>
+    </ng-container>
+    <ng-template #buttonText>Зарегистрироваться</ng-template>
+
+    </button>
+
+    <p
+      class="text-center text-sm flex items-center gap-2 justify-center text-gray-500 mt-4"
+    >
+      Уже есть аккаунт?
+      <a
+        [routerLink]="['/auth/login']"
+        class="text-black font-medium hover:underline"
+        >Войти</a
+      >
+    </p>
+  </div>
+</div>
