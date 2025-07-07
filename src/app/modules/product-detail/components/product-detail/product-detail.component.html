@@ -9,13 +9,13 @@
       <div class="col-xl-12">
         <div class="inner-content text-center">
           <div class="title">
-            <h2>Mahsulot Tafsilotlari</h2>
+            <h2>{{"product-detail"|translate}}</h2>
           </div>
           <div class="breadcrumb-menu">
             <ul>
-              <li><a href="index.html">Asosiy</a></li>
+              <li><a href="index.html">{{"main"|translate}}</a></li>
               <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
-              <li class="active">Mahsulot Tafsilotlari</li>
+              <li class="active">{{"product-detail"|translate}}</li>
             </ul>
           </div>
         </div>
@@ -122,8 +122,9 @@
           </div>
 
           <div class="bottom-box">
-            <h6>Mavjudlik: <span>Sotuvda mavjud</span></h6>
+            <h6>{{ 'product_details.availability' | translate }} <span>{{ 'product_details.in_stock' | translate }}</span></h6>
           </div>
+
         </div>
       </div>
 
@@ -149,16 +150,11 @@
             </div>
           </div>
           <div class="product-title">
-            <h2>18.9 L qadoqlangan suv</h2>
+            <h2>{{"product_details.product_name"|translate}}</h2>
           </div>
           <div class="product-description">
             <p>
-              Eleven Water tomonidan taqdim etilgan 18.9 litrli butilkalangan
-              suv – bu tiniq, xavfsiz va yuqori sifatli ichimlik suvidir. U
-              ekologik toza hududlardan olinib, ilg‘or filtrlash texnologiyalari
-              orqali tozalanadi. Har bir idish gigiyena talablariga qat’iy amal
-              qilingan holda qadoqlanadi. Uydagi, ofisdagi yoki sanoat
-              ehtiyojlari uchun ideal tanlov.
+             {{ 'product_details.description' | translate }}
             </p>
           </div>
 
@@ -196,7 +192,8 @@
                     ></span>
                   </div>
                   <div class="title">
-                    <h4>To'lov mahsulot<br />yetkazilganda</h4>
+                    <h4>{{ 'product_details.features.cash_on_delivery' | translate }}</h4>
+
                   </div>
                 </div>
               </li>
@@ -214,10 +211,8 @@
                     ></span>
                   </div>
                   <div class="title">
-                    <h4>
-                      Yuqori sifat<br />
-                      kafolati
-                    </h4>
+                    <h4>{{ 'product_details.features.quality' | translate }}</h4>
+
                   </div>
                 </div>
               </li>
@@ -233,15 +228,16 @@
           <div class="button-box justify-end flex-1">
             <button type="button" class="btn-one">
               <span class="round"></span>
-              <span class="txt">Savatga</span>
+              <span class="txt">{{"shop.add_to_cart"|translate}}</span>
             </button>
           </div>
           <div class="coupon-code-box">
-            <h6>Chegirma kodidan foydalaning: <span>promocode</span></h6>
+            <h6>{{"product_details.promo_note"|translate}}<span>promocode</span></h6>
           </div>
           <div class="product-details-tag-box">
-            <p><span>Teglar#:</span> Butilka, IceTea, Yetkazib berish</p>
+            <p>{{ 'product_details.tags' | translate }}</p>
           </div>
+
         </div>
       </div>
     </div>
@@ -255,14 +251,15 @@
               (click)="setActiveTab('desc')"
               [ngClass]="{ 'active-btn': activeTab === 'desc' }"
             >
-              <span>Tavsif</span>
+            <span>{{ 'product_details.tabs.description' | translate }}</span>
+
             </li>
             <li  data-tab="#review" class="tab-btn"
               (click)="setActiveTab('review')"
               [ngClass]="{ 'active-btn': activeTab === 'review' }"
             >
-              <span>Sharhlar (3)</span>
-            </li>
+            <span>{{ 'product_details.tabs.reviews' | translate }}</span>
+          </li>
           </ul>
           <div class="tabs-content">
             <div class="tab" id="desc" [ngClass]="{'active-tab': activeTab === 'desc'}">
@@ -270,16 +267,37 @@
                   <div class="product-description-content">
                     <div class="text">
                       <p>
-                        Eleven Water sizga toza va sifatli ichimlik suvini taqdim etadi. Suvimiz zamonaviy RO+UV texnologiyasi orqali tozalanadi va tabiiy ta'mini saqlab qoladi. Sog‘lig‘ingizni himoya qilish va organizmingizga foydali minerallar bilan boyitish uchun eng yaxshi tanlov — Eleven Water!
+                       {{"product_details.description_tab.text"|translate}}
                       </p>
                     </div>
                     <ul>
-                      <li><span>Qadoqlash hajmi</span> <b>:</b> Litr</li>
-                      <li><span>Qadoqlash turi</span> <b>:</b> Butilkalar</li>
-                      <li><span>Yaroqlilik muddati</span> <b>:</b> 12 oy</li>
-                      <li><span>Tozalash turi</span> <b>:</b> RO+UV texnologiyasi</li>
-                      <li><span>Ta'mi</span> <b>:</b> Tabiiy (oddiy)</li>
+                      <li>
+                        <span>{{ 'product_details.description_tab.specs.volume_label' | translate }}</span>
+                        <b>:</b>
+                        {{ 'product_details.description_tab.specs.volume_value' | translate }}
+                      </li>
+                      <li>
+                        <span>{{ 'product_details.description_tab.specs.type_label' | translate }}</span>
+                        <b>:</b>
+                        {{ 'product_details.description_tab.specs.type_value' | translate }}
+                      </li>
+                      <li>
+                        <span>{{ 'product_details.description_tab.specs.expiry_label' | translate }}</span>
+                        <b>:</b>
+                        {{ 'product_details.description_tab.specs.expiry_value' | translate }}
+                      </li>
+                      <li>
+                        <span>{{ 'product_details.description_tab.specs.purification_label' | translate }}</span>
+                        <b>:</b>
+                        {{ 'product_details.description_tab.specs.purification_value' | translate }}
+                      </li>
+                      <li>
+                        <span>{{ 'product_details.description_tab.specs.taste_label' | translate }}</span>
+                        <b>:</b>
+                        {{ 'product_details.description_tab.specs.taste_value' | translate }}
+                      </li>
                     </ul>
+
                   </div>
                 </div>
               </div>
@@ -361,15 +379,12 @@
                   <div class="col-xl-6">
                     <div class="review-form text-right-rtl">
                       <div class="title-box">
-                        <h2>Fikringizni qoldiring</h2>
-                        <p>
-                          Email manzilingiz e’lon qilinmaydi. <b>*</b> bilan belgilangan
-                          maydonlarni to‘ldirish majburiy.
-                        </p>
+                        <h2>{{ "product_details.leave_review.title" | translate }}</h2>
+                        <p>{{ "product_details.leave_review.note" | translate }}</p>
                       </div>
                       <div class="add-rating-box">
                         <div class="add-rating-title">
-                          <p>Baholash darajangiz</p>
+                          <p>{{ "product_details.leave_review.rating" | translate }}</p>
                         </div>
                         <div class="review-box">
                           <ul>
@@ -388,8 +403,8 @@
                               <input
                                 type="text"
                                 name="fname"
-                                placeholder="Ismingiz"
-                                required=""
+                                [placeholder]="'product_details.leave_review.name_placeholder' | translate"
+                                required
                               />
                             </div>
                           </div>
@@ -398,8 +413,8 @@
                               <input
                                 type="email"
                                 name="femail"
-                                placeholder="Email manzilingiz"
-                                required=""
+                                [placeholder]="'product_details.leave_review.email_placeholder' | translate"
+                                required
                               />
                             </div>
                           </div>
@@ -409,8 +424,8 @@
                             <div class="input-box">
                               <textarea
                                 name="fcomments"
-                                placeholder="Izohingiz"
-                                required=""
+                                [placeholder]="'product_details.leave_review.comment_placeholder' | translate"
+                                required
                               ></textarea>
                             </div>
                           </div>
@@ -422,22 +437,23 @@
                                 type="checkbox"
                                 name="skipper1"
                                 id="skipper"
-                                checked=""
+                                checked
                               />
                               <label for="skipper">
-                                <span></span> Keyingi izohingiz uchun ma’lumotlarimni
-                                brauzerda saqlab qolish.
+                                <span></span>
+                                {{ "product_details.leave_review.save_info" | translate }}
                               </label>
                             </div>
                             <button class="btn-one" type="submit">
                               <span class="round"></span>
-                              <span class="txt">Yuborish</span>
+                              <span class="txt">{{ "product_details.leave_review.submit" | translate }}</span>
                             </button>
                           </div>
                         </div>
                       </form>
                     </div>
                   </div>
+
 
                 </div>
               </div>
@@ -450,7 +466,7 @@
 
     <div class="related-product-box">
         <div class="shop-page-title">
-          <h2>Shunga o‘xshash mahsulotlar</h2>
+          <h2>{{"product_details.related_products.title"|translate}}</h2>
         </div>
         <div class="row">
           <!-- Mahsulot 1 -->
@@ -461,7 +477,7 @@
                   <img src="assets/images/shop/shop-1.jpg" alt="2 litr suv" />
                   <div class="overlay">
                     <span class="icon-email"></span>
-                    <a href="#">So‘rov yuborish</a>
+                    <a href="#">So‘rov </a>
                   </div>
                 </div>
                 <div class="product-quantity-box">
@@ -480,7 +496,7 @@
                   <div class="btn-box">
                     <a class="btn-one" href="product-details.html">
                       <div class="round"></div>
-                      <span class="txt">Savatga</span>
+                      <span class="txt">{{"shop.add_to_cart"|translate}}</span>
                     </a>
                   </div>
                 </div>
@@ -496,7 +512,7 @@
                   <img src="assets/images/shop/shop-2.jpg" alt="15 litr suv" />
                   <div class="overlay">
                     <span class="icon-email"></span>
-                    <a href="#">So‘rov yuborish</a>
+                    <a href="#">So‘rov </a>
                   </div>
                 </div>
                 <div class="product-quantity-box">
@@ -515,7 +531,7 @@
                   <div class="btn-box">
                     <a class="btn-one" href="product-details.html">
                       <div class="round"></div>
-                      <span class="txt">Savatga</span>
+                      <span class="txt">{{"shop.add_to_cart"|translate}}</span>
                     </a>
                   </div>
                 </div>
@@ -531,7 +547,7 @@
                   <img src="assets/images/shop/shop-3.jpg" alt="12 litr suv" />
                   <div class="overlay">
                     <span class="icon-email"></span>
-                    <a href="#">So‘rov yuborish</a>
+                    <a href="#">So‘rov </a>
                   </div>
                 </div>
                 <div class="product-quantity-box">
@@ -550,7 +566,7 @@
                   <div class="btn-box">
                     <a class="btn-one" href="product-details.html">
                       <div class="round"></div>
-                      <span class="txt">Savatga</span>
+                      <span class="txt">{{"shop.add_to_cart"|translate}}</span>
                     </a>
                   </div>
                 </div>

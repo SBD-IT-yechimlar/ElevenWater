@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { AfterViewInit, Component } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 declare var $: any;
 @Component({
   selector: 'app-product-detail',
-  imports: [CommonModule],
+  imports: [CommonModule,TranslateModule],
   templateUrl: './product-detail.component.html',
   styleUrl: './product-detail.component.scss',
 })

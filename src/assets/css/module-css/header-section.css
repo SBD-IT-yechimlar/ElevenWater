@@ -3,7 +3,7 @@
 
 
 /*==============================================
-    Main Header Css        
+    Main Header Css
 ===============================================*/
 .main-header {
 	position: absolute;
@@ -89,7 +89,7 @@
 
 
 .header-style-one {
- 
+
 }
 .header-top {
     position: relative;
@@ -201,7 +201,7 @@
     font-family: var(--thm-font-2);
 }
 .header-mail-box p a{
-    color: #ffffff;    
+    color: #ffffff;
 }
 
 .space-box1{
@@ -218,7 +218,7 @@
     bottom: 2px;
     width: 1px;
     background-color: #ffffff;
-    opacity: 0.20;    
+    opacity: 0.20;
 }
 
 .our-service-location-area{
@@ -269,8 +269,8 @@
     padding: 0;
     width: 150px;
 }
-.our-service-location-area .select-box .nice-select .option:hover, 
-.our-service-location-area .select-box .nice-select .option.focus, 
+.our-service-location-area .select-box .nice-select .option:hover,
+.our-service-location-area .select-box .nice-select .option.focus,
 .our-service-location-area .select-box .nice-select .option.selected.focus {
     background-color: var(--thm-primary);
 }
@@ -282,7 +282,7 @@
 }
 
 
-  
+
 
 .header {
     position: relative;
@@ -299,7 +299,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0 100px;
+    padding: 0 20px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -401,7 +401,7 @@
     z-index: -1;
 }
 .main-menu .navigation>li.dropdown>a {
-    padding-right: 15px;    
+    padding-right: 15px;
 }
 .main-menu .navigation>li.dropdown>a:after {
     position: absolute;
@@ -445,10 +445,10 @@
 .main-menu .navigation> li> a:hover:before,
 .main-menu .navigation> li.current> a:before {
     transform: scaleY(1.0);
-    transition: all 0.5s ease-in-out 0.1s;   
+    transition: all 0.5s ease-in-out 0.1s;
 }
 
-  
+
 
 .main-menu .navigation> li> ul,
 .main-menu .navigation> li> .megamenu {
@@ -526,7 +526,7 @@
 .main-menu .navigation> li> ul> li:last-child> a,
 .main-menu .navigation> li> .megamenu li:last-child a{
     border: none;
-} 
+}
 .main-menu .navigation> li> ul> li> a:before{
     font-family: FontAwesome;
     content: "\f105";
@@ -544,12 +544,12 @@
     transform: scaleX(1.0);
 }
 .main-menu .navigation> li> ul> li> a:hover{
-    color: var(--thm-primary); 
-    padding-left: 15px; 
+    color: var(--thm-primary);
+    padding-left: 15px;
 }
 .main-menu .navigation> li> ul> li:hover > a {
-    color: var(--thm-primary); 
-    padding-left: 15px; 
+    color: var(--thm-primary);
+    padding-left: 15px;
 }
 .main-menu .navigation> li> ul> li.dropdown a{}
 .main-menu .navigation> li> ul> li.dropdown> a:after {
@@ -604,7 +604,7 @@
 	-moz-transition:all 300ms ease;
 	-webkit-transition:all 500ms ease;
 	-ms-transition:all 300ms ease;
-	-o-transition:all 300ms ease;	
+	-o-transition:all 300ms ease;
 }
 .main-menu .navigation>li>ul>li>ul> li {
 	position: relative;
@@ -631,7 +631,7 @@
     border: none;
 }
 .main-menu .navigation> li> ul> li> ul> li> a:hover {
-    color: var(--thm-primary); 
+    color: var(--thm-primary);
     padding-left: 15px;
 }
 .main-menu .navigation> li> ul> li> ul> li> a:before{
@@ -701,7 +701,7 @@
     text-align: center;
     -webkit-transition: all 0.4s linear;
     -o-transition: all 0.4s linear;
-    transition: all 0.4s linear;    
+    transition: all 0.4s linear;
 }
 .shopping-cart-box a:hover{
     border: 2px solid var(--thm-primary);
@@ -740,6 +740,8 @@
     position: relative;
     display: block;
     margin-left: 40px;
+display: flex;
+align-items: center;
 }
 .header-right_buttom .btns-box {
     position: relative;
@@ -758,7 +760,7 @@
 
 
 
-/*** 
+/***
 =====================================================
 	Main Header style Two Css
 =====================================================
@@ -816,7 +818,7 @@
     border-bottom: 1px solid var(--thm-primary);
     -webkit-transition: all 0.4s linear;
     -o-transition: all 0.4s linear;
-    transition: all 0.4s linear;   
+    transition: all 0.4s linear;
 }
 .header-top_left--style2 .header-contact-info1 ul li a.local-dealer:hover{
     color: #fff;
@@ -884,7 +886,7 @@
     font-family: var(--thm-font-2);
     -webkit-transition: all 0.4s linear;
     -o-transition: all 0.4s linear;
-    transition: all 0.4s linear;   
+    transition: all 0.4s linear;
 }
 .home_or_office-service li a:hover{
     color: var(--thm-primary);
@@ -1038,12 +1040,8 @@
     transition: all 0.4s cubic-bezier(0.62, 0.21, 0.45, 1.52);
 }
 .header-social-link-1 .social-link ul li:hover a:before{
-    transform: scaleX(1.0);      
+    transform: scaleX(1.0);
 }
 .header-social-link-1 .social-link ul li:hover a{
     color: #ffffff;
 }
-
-
-
-

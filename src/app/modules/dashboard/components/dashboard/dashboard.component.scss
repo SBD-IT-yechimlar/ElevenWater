@@ -1,0 +1,12 @@
+.clearfix_class {
+  display: flex;
+  flex-direction: row;
+
+}
+
+@media (max-width: 768px) {
+  .clearfix_class {
+    flex-direction: column;
+    justify-content: center;
+  }
+}

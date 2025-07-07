@@ -1,0 +1,535 @@
+{
+  "main": "Home",
+  "service": "Services",
+  "all_services": "All Services",
+  "service-detail": "Service Details",
+  "products": "Products",
+  "product-detail": "Product Details",
+  "basket": "Cart",
+  "checkout": "Checkout",
+  "about_company": "About Company",
+  "priceandtariffs": "Prices & Tariffs",
+  "team": "Team",
+  "contacts": "Contact",
+  "order": "Order",
+  "notfound": "404 - Page Not Found",
+
+  "limitedoffer": "Limited<br/>Offer",
+  "everyProduct": "For every product",
+  "everyBottle": "For every bottle",
+  "watchVideo": "Watch Video",
+  "videoDesc": "From production to delivery",
+
+  "big-title-1": "Nature and<br/>freshness<br/>at your doorstep",
+  "big-title-2": "Cleanliness and comfort<br/>with Eleven Water",
+  "big-title-3": "Trust in every<br/>drop!",
+
+  "text-1": "Each drop is a step toward a healthy life,<br />and we deliver it straight to your home.",
+  "text-2": "From nature to you — clean,<br />beneficial and reliable water.",
+  "text-3": "Start your day with clean water<br />and live healthy.",
+  "services": {
+    "section_title": "Services",
+    "section_subtitle": "We are proud of our high-quality and reliable <br /> services",
+    "water_18l_title": "Large volume drinking water (18.9 L)",
+    "water_18l_desc": "Large volume water – convenient, economical, and hygienic choice for home and office.",
+    "dispenser_title": "Water Dispenser",
+    "dispenser_desc": "Hot and cold water suitable for any temperature – combined with convenience, hygiene, and efficiency.",
+    "icetea_title": "Eleven Ice Tea",
+    "icetea_desc": "Refreshing iced flavor for hot summer days – a beverage made from natural tea leaves.",
+    "read_more": "Read more",
+
+    "breadcrumb_title": "Our Services",
+    "breadcrumb_home": "Home",
+    "services_subtitle": "Everyone deserves <br/> clean and healthy water",
+    "features_subtitle": "Water and Health",
+    "features_title": "Clean water every day – a key to health",
+    "features_desc": "Eleven Water provides you with the pure and natural drinking water essential for your life. Health in every drop!",
+    "features_point1": "Keeps the body hydrated",
+    "features_point2": "Provides energy and alertness",
+    "features_point3": "Supports internal organs",
+    "features_point4": "Maintains skin health",
+    "features_btn": "Read more",
+    "pricing_subtitle": "Plans and Pricing",
+    "pricing_title": "Affordable prices for every client",
+    "plan_basic": "Basic Plan",
+    "plan_premium": "Premium Plan",
+    "plan_advanced": "Advanced Plan",
+    "plan_note": "*prices may vary",
+    "plan_monthly": "monthly",
+    "plan_yearly": "yearly",
+    "plan_feature1": "Free delivery",
+    "plan_feature2": "Up to 10 bottles per month",
+    "plan_feature3": "Collection of empty bottles",
+    "plan_feature4": "Up to 120 bottles per year",
+    "plan_feature5": "Mineral water",
+    "order_btn": "Order now"
+  },
+  "facts": {
+    "delivered_bottles": "Delivered<br/>Water Bottles",
+    "experience_years": "Years of<br/>Experience",
+    "professional_staff": "Professional<br/>Staff",
+    "active_zones": "Active<br/>Zones",
+    "happy_clients": "Happy<br/>Clients"
+  },
+  "about": {
+    "section_subtitle": "Every drop – <br /> trust and quality",
+    "certified_title": "<span>NSF & IBWA</span><br />Certified Company",
+    "certified_desc": "Answering any doubts on our road to success.",
+    "tab1_title": "Company<br />History",
+    "tab2_title": "Our Mission & Values",
+    "tab_header": "30 years of <br />family-run leadership",
+    "tab1_text": "Despite challenges, we never give up on delivering quality water. We provide comfort and trust to every customer.",
+    "tab2_text": "Our main goal is to deliver high-quality, safe, and eco-friendly water to every household and business. We value our customers' trust.",
+    "more": "Read more",
+
+    "hero": {
+      "title": "Natural water <br> for every home",
+      "subtitle": "100% our product, our care",
+      "description": "Eleven Water is a trusted partner in delivering pure and high-quality drinking water. We care about your health with water produced using modern equipment.",
+      "founder_name": "Max Benjamin",
+      "founder_title": "Founder"
+    },
+    "story_mission": {
+      "story_title": "Our Story",
+      "story_text": "Eleven Water was founded to deliver clean and natural drinking water.",
+      "mission_title": "Our Mission",
+      "mission_text": "Delivering pure and safe water to every household is our main goal.",
+      "read_more": "Read more"
+    },
+    "counters": {
+      "delivered_products": "Delivered Products",
+      "experience_years": "Years of Experience",
+      "team_members": "Team Members",
+      "service_areas": "Service Areas"
+    },
+    "team": {
+      "section_title": "The team behind Eleven Water",
+      "section_subtitle": "Team Members",
+      "see_all": "See All"
+    }
+  },
+  "shop": {
+    "no_limits": "No<br/>Limits<br/>At All",
+    "trust": "100% Trusted",
+    "subtitle": "Our Products",
+    "title": "Always fresh, always on time <br /> to your doorstep",
+    "quantity": "Quantity",
+    "delivery": "Delivery",
+    "enquire": "Send Enquiry",
+    "add_to_cart": "Add to Cart",
+    "breadcrumb_title": "Products",
+
+    "top_info": {
+      "showing": "Showing 1 to 10 of 15 products",
+      "bpa_note": "Our bottled waters come in BPA-free plastic options."
+    }
+  },
+  "choose": {
+    "badge": "No<br/>Limits",
+    "why_title": "Why Eleven Water?",
+    "why_subtitle": "You’ll love the freshness<br />of our natural water",
+    "feature1_title": "High Quality",
+    "feature1_desc": "Every drop goes through strict quality control.",
+    "feature2_title": "No Contracts",
+    "feature2_desc": "Enjoy convenient service with no binding agreements.",
+    "feature3_title": "Reliable",
+    "feature3_desc": "A trustworthy partner in delivery and service.",
+    "feature4_title": "Certified",
+    "feature4_desc": "A company with international certifications in safety and quality.",
+    "feature5_title": "Affordable Prices",
+    "feature5_desc": "Quality water at budget-friendly prices – for every customer.",
+    "feature6_title": "Fast Delivery",
+    "feature6_desc": "Your order will be delivered in the shortest time possible."
+  },
+  "features": {
+    "title_sub": "Water & You",
+    "title_main": "Essential source for a healthy life",
+    "description": "Water is one of the most vital resources for our body.",
+    "point1": "Transporting nutrients and oxygen",
+    "point2": "Aiding digestion",
+    "point3": "Regulating blood pressure",
+    "point4": "Stabilizing heartbeat",
+    "see_all": "See All",
+
+    "box1_title": "Healthy water for your <br/>employees",
+    "box1_text": "Over 70% of the human body is water — vital for health.",
+    "box2_title": "Rent or Buy",
+    "box2_text": "All prices include tax and require a minimum of 2 bottles per month."
+  },
+  "working_process": {
+    "subtitle": "How we work?",
+    "title": "High-quality water<br />delivery process",
+    "step": "Step",
+    "step1_title": "Contact us to order",
+    "step1_desc": "Order your bottle online or by phone – fast and easy!",
+    "step2_title": "Auto Packaging",
+    "step2_desc": "Bottles are packed using modern equipment.",
+    "step3_title": "On-time Delivery",
+    "step3_desc": "Our team delivers your order right on time."
+  },
+  "blog": {
+    "subtitle": "Latest Blog Posts",
+    "title": "Industry News",
+    "all_posts": "All Posts",
+    "category": "Eleven water",
+    "read_more": "Read more",
+    "post1_title": "Eleven water:<br />What to Pay Attention To?",
+    "post1_date": "May 10, 2023",
+    "post1_author": "Shaw",
+    "post1_text": "Be aware of potential issues in advance and...",
+
+    "post2_title": "Key Benefits of<br />Using Our Mobile App",
+    "post2_date": "May 5, 2023",
+    "post2_author": "Philips",
+    "post2_text": "As a simple example, it brings convenience...",
+
+    "post3_title": "Health Benefits of Drinking Clean Water. How Much Should You Drink Daily?",
+    "post3_date": "April 22, 2023",
+    "post3_author": "Shaw",
+    "post3_text": "Be aware of potential issues in advance and..."
+  },
+  "serviceDetails": {
+    "breadcrumb_title": "Service Details",
+    "breadcrumb_home": "Home",
+    "breadcrumb_services": "Services",
+    "breadcrumb_current": "Service Details",
+
+    "sidebar_title": "Services",
+    "sidebar_list": [
+      "Packaged Water",
+      "Water Dispenser",
+      "Water Delivery Trailers",
+      "Water Testing",
+      "System Repair",
+      "Technical Maintenance"
+    ],
+
+    "sidebar_download1_title": "Terms of Use",
+    "sidebar_download2_title": "Return Policy",
+    "sidebar_download_link": "Download",
+
+    "contact_box_title": "Quick Contact",
+    "contact_box_text": "If you have questions, call us anytime – we’re here to help.",
+    "contact_box_btn": "Request Call",
+
+    "online_meeting_text": "We now offer online appointments.",
+    "online_meeting_btn": "Book Now",
+
+    "main_title": "Packaged Water Delivery",
+    "main_subtitle": "The power of clean, quality water – delivered to your doorstep",
+    "main_desc1": "Clean drinking water is essential for our health. That’s why we provide high-quality water anytime for your convenience.",
+    "main_desc2": "Our top priority is to deliver clean water that should always be within your reach, making your lifestyle easier and healthier.",
+
+    "tab_title": "We deliver water bottles to your place within 2 hours",
+    "tab_desc": "A smart person always considers water quality and health benefits when choosing.",
+    "tab_btn": "Read more",
+
+    "why_title": "Why Our Service?",
+    "why_desc": "Some businesses may compromise on convenience, but we always offer the best service.",
+
+    "why_items": [
+      {
+        "title": "High Quality",
+        "desc": "We deliver the best quality water for every customer."
+      },
+      {
+        "title": "Fast Delivery",
+        "desc": "Delivery speed is one of our top priorities."
+      },
+      {
+        "title": "Affordable Prices",
+        "desc": "We offer fair and affordable plans for every client."
+      }
+    ]
+  },
+  "cart": {
+    "title": "Your Cart",
+    "items": "{{count}} items",
+    "total": "Total: {{amount}} UZS",
+    "table": {
+      "product": "Product",
+      "quantity": "Quantity",
+      "price": "Price",
+      "subtotal": "Subtotal",
+      "remove": "Remove"
+    },
+    "products": {
+      "product_1": "15 Litre Bottled Water",
+      "product_2": "12 Litre Bottled Water"
+    },
+    "coupon": {
+      "placeholder": "Enter discount code...",
+      "apply": "Apply"
+    },
+    "actions": {
+      "update": "Update",
+      "checkout": "Checkout"
+    }
+  },
+  "product_details": {
+    "availability": "Availability:",
+    "in_stock": "In Stock",
+    "price_current": "$12.50",
+    "price_old": "$15.00",
+    "product_name": "18.9L Bottled Water",
+    "description": "Eleven Water's 18.9-liter bottled water is pure, safe, and of high quality. It is sourced from ecologically clean areas and purified using advanced filtration technologies. Each container is packaged in strict accordance with hygiene standards. Ideal for home, office, or industrial use.",
+    "features": {
+      "delivery": "Timely <br/> Delivery",
+      "cash_on_delivery": "Cash on Delivery",
+      "quality": "High-Quality Guarantee"
+    },
+    "promo_note": "Use promo code:",
+    "tags": "Tags#: Bottle, IceTea, Delivery",
+    "tabs": {
+      "description": "Description",
+      "reviews": "Reviews (3)"
+    },
+    "description_tab": {
+      "text": "Eleven Water provides you with clean and high-quality drinking water. Our water is purified using advanced RO+UV technology while preserving its natural taste. The best choice for protecting your health and enriching your body with beneficial minerals — Eleven Water!",
+      "specs": {
+        "volume_label": "Packaging Volume",
+        "volume_value": "Liter",
+        "type_label": "Packaging Type",
+        "type_value": "Bottles",
+        "expiry_label": "Shelf Life",
+        "expiry_value": "12 months",
+        "purification_label": "Purification Type",
+        "purification_value": "RO+UV Technology",
+        "taste_label": "Taste",
+        "taste_value": "Natural"
+      }
+    },
+    "leave_review": {
+      "title": "Leave Your Review",
+      "note": "Your email address will not be published. Fields marked with * are required.",
+      "rating": "Your Rating",
+      "name_placeholder": "Your Name",
+      "email_placeholder": "Your Email Address",
+      "comment_placeholder": "Your Comment",
+      "save_info": "Save my info in this browser for next time.",
+      "submit": "Submit"
+    },
+    "related_products": {
+      "title": "Related Products",
+      "products": [
+        {
+          "name": "2L Bottled Water",
+          "delivery": "Delivery",
+          "time": "Tomorrow between 16:30 — 18:30"
+        },
+        {
+          "name": "15L Bottled Water",
+          "delivery": "Delivery",
+          "time": "Monday between 09:30 — 10:30"
+        },
+        {
+          "name": "12L Bottled Water",
+          "delivery": "Delivery",
+          "time": "Tomorrow between 16:30 — 18:30"
+        }
+      ],
+      "enquire": "Send Inquiry",
+      "add_to_cart": "Add to Cart",
+      "quantity": "Quantity:"
+    },
+    "reviews": [
+      {
+        "name": "Malika Karimova",
+        "date": "March 21, 2023",
+        "comment": "Eleven Water is very clean and tasty. The delivery service was fast and on time. Home delivery is super convenient!"
+      },
+      {
+        "name": "Quvonchbek Xasanov",
+        "date": "March 21, 2023",
+        "comment": "I always order water from Eleven Water. The packaging is hygienic and the cleanliness is excellent. A trusted brand!"
+      },
+      {
+        "name": "Hilola Davlatova",
+        "date": "March 20, 2023",
+        "comment": "The 18.9L bottle is perfect for our office. The water quality is top-notch. Delivery is always fast."
+      }
+    ]
+  },
+  "pricing": {
+    "breadcrumb_title": "Plans & Pricing",
+    "breadcrumb_home": "Home",
+    "plans": [
+      {
+        "name": "Basic Plan",
+        "price": "49",
+        "period": "monthly",
+        "note": "*prices may vary",
+        "short_desc": "A convenient plan offering ease and comfort.",
+        "features": [
+          "Free delivery",
+          "Up to 10 bottles per month",
+          "Empty bottle collection",
+          "Up to 120 bottles per year",
+          "Mineral water"
+        ],
+        "button": "Order Now"
+      },
+      {
+        "name": "Premium Plan",
+        "price": "99",
+        "period": "yearly",
+        "note": "*prices may vary",
+        "short_desc": "One-time annual payment, affordable and convenient.",
+        "features": [
+          "Free delivery",
+          "Up to 10 bottles per month",
+          "Empty bottle collection",
+          "Up to 120 bottles per year",
+          "Mineral water"
+        ],
+        "button": "Order Now"
+      },
+      {
+        "name": "Advanced Plan",
+        "price": "79",
+        "period": "monthly",
+        "note": "*prices may vary",
+        "short_desc": "More bottles, greater flexibility.",
+        "features": [
+          "Free delivery",
+          "Up to 10 bottles per month",
+          "Empty bottle collection",
+          "Up to 120 bottles per year",
+          "Mineral water"
+        ],
+        "button": "Order Now"
+      }
+    ]
+  },
+  "contact": {
+    "box_title": "Reliable<br />Fast<br />Support",
+    "subtitle": "Contact",
+    "title": "We are happy to<br />assist your inquiry!",
+    "call_title": "Contact us",
+    "call_text": "+998 55 1510011",
+    "description": "If you have questions or want to use our services,<br />please feel free to reach out.",
+    "call_button": "Request a call",
+    "form_title": "Contact our team",
+    "form_name": "Your name",
+    "form_email": "Your email",
+    "form_address": "Your address",
+    "form_checkbox": " I agree to receive offers and updates",
+    "form_submit": "Continue",
+    "form_loading": "Please wait...",
+    "breadcrumb_title": "Contact",
+    "breadcrumb_home": "Home",
+    "contact_boxes": {
+      "address": {
+        "title": "Address",
+        "text": "Our office address"
+      },
+      "phone": {
+        "title": "Phone",
+        "text": "Tel: +998551510011"
+      },
+      "email": {
+        "title": "Email",
+        "text": "Send a message"
+      },
+      "hours": {
+        "title": "Working hours",
+        "text": "Mon–Fri: 08:00 to 17:00"
+      }
+    },
+    "dealer_finder": {
+      "title": "Find a dealer",
+      "subtitle": "Find the nearest Eleven Water dealer and get fast service.",
+      "placeholder": "Enter postal code ...",
+      "button": "Search",
+      "message": "If you can't find it, please contact +998551510011."
+    },
+    "contact_form": {
+      "subtitle": "Have a question?",
+      "title": "We’re happy to hear from you!",
+      "form_title": "Send a message",
+      "fields": {
+        "name": "Full name:",
+        "email": "Your email:",
+        "phone": "Phone number:",
+        "subject": "Subject:",
+        "message": "Type your message..."
+      },
+      "submit": "Submit",
+      "loading": "Please wait..."
+    },
+    "services": {
+      "family": {
+        "title": "For families",
+        "desc": "Keep your family hydrated with Eleven Water.",
+        "button": "Learn more"
+      },
+      "office": {
+        "title": "For offices",
+        "desc": "An ideal solution to provide clean water to your office.",
+        "button": "Learn more"
+      }
+    },
+    "map": {
+      "title": "Our location",
+      "placeholder": "Find us on the map"
+    }
+  }
+  ,
+    "footer": {
+      "about": {
+        "description": "We provide safe and reliable services to ensure customer convenience. Every order is a trusted step!",
+        "features": [
+          "Free delivery",
+          "Secure and fast payment system"
+        ]
+      },
+      "links": {
+        "title": "Useful Links",
+        "items": [
+          { "label": "Home", "route": "dashboard" },
+          { "label": "About Company", "route": "about" },
+          { "label": "Services", "route": "services" },
+          { "label": "Products", "route": "products" },
+          { "label": "Product Details", "route": "product-details" },
+          { "label": "Cart", "route": "product-basket" },
+          { "label": "Checkout", "route": "checkout-page" },
+          { "label": "Contact", "route": "contact" }
+        ]
+      },
+      "address": {
+        "title": "Address",
+        "region": "Jizzakh Region",
+        "street": "Sharof Rashidov district, S. Ayni street, house 111",
+        "phone": "+998 55 151 00 11",
+        "email": "supportaguapure.com"
+      },
+      "working_hours": {
+        "title": "Working Hours",
+        "days": [
+          { "day": "Monday–Friday", "hours": "08:00 to 17:00" },
+          { "day": "Saturday", "hours": "10:00 to 16:00" }
+        ],
+        "button": "schedule"
+      },
+      "bottom": {
+        "copyright": "Copyright © 2023 Eleven Water. All rights reserved.",
+        "nav": [
+          "Terms of Use",
+          "Privacy Policy",
+          "Site Map"
+        ]
+      },
+      "search_popup": {
+        "placeholder": "Search...",
+        "submit": "Search Now!",
+        "title": "Recent Search Keywords",
+        "recent": [
+          "Water Quality",
+          "Mineral",
+          "Bottle",
+          "Safety",
+          "Plan"
+        ]
+      }
+    }
+  }

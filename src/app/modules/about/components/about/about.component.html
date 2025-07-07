@@ -6,13 +6,13 @@
           <div class="col-xl-12">
               <div class="inner-content text-center">
                   <div class="title">
-                     <h2>Kompaniya haqida</h2>
+                     <h2>{{"about_company"|translate}}</h2>
                   </div>
                   <div class="breadcrumb-menu">
                       <ul>
-                          <li><a href="index.html">Asosiy </a></li>
+                          <li><a href="index.html">{{"main"|translate}} </a></li>
                           <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
-                          <li class="active">Kompaniya haqida</li>
+                          <li class="active">{{"about_company"|translate}}</li>
                       </ul>
                   </div>
               </div>
@@ -36,19 +36,20 @@
                           <div class="about-style3-text-box1">
                               <div class="sec-title">
                                   <div class="sub-title">
-                                      <h5>Kompaniya haqida</h5>
+                                      <h5>{{"about_company"|translate}}</h5>
                                   </div>
-                                  <h2>Tabiiy suv <br> har bir uy uchun</h2>
+                                  <h2 [innerHTML]="'about.hero.title' | translate"></h2>
+
                                   <div class="decor">
                                       <img src="assets/images/shape/decor.png" alt="">
                                   </div>
                               </div>
 
                               <div class="inner-content">
-                                <h5>100% o‘zimizning mahsulot, o‘zimizning g‘amxo‘rlik</h5>
+                                <h5>{{"about.hero.subtitle"|translate}}</h5>
                                 <div class="text">
                                     <p>
-                                      Eleven Water kompaniyasi toza va sifatli ichimlik suvi yetkazib berishda ishonchli hamkor hisoblanadi. Biz zamonaviy uskunalarda ishlab chiqarilgan suv orqali sizning sog‘lig‘ingiz haqida g‘amxo‘rlik qilamiz.
+                                    {{"about.hero.description"|translate}}
                                     </p>
                                   </div>
 
@@ -57,8 +58,12 @@
                                           <img src="assets/images/resources/signature.png" alt="">
                                       </div>
                                       <div class="name">
-                                          <h5>Max Benjamin</h5>
-                                          <span>Founder</span>
+                                          <h5>
+                                            {{ "about.hero.founder_name" | translate }}
+                                          </h5>
+                                          <span>
+                                            {{ "about.hero.founder_title" | translate }}
+                                          </span>
                                       </div>
                                   </div>
                               </div>
@@ -66,47 +71,46 @@
                       </div>
 
                       <div class="col-xl-6">
-                          <div class="about-style3-text-box2">
-                            <ul>
-                                <li>
-                                  <div class="inner">
-                                    <div class="img-box">
-                                      <div class="img-inner">
-                                        <img src="https://st.ourhtmldemo.com/new/aguapure-demo/assets/images/resources/our-story.jpg" alt="">
-                                      </div>
-                                    </div>
-                                    <div class="text-box">
-                                      <h3>Bizning Hikoyamiz</h3>
-                                      <p>
-                                        Eleven Water kompaniyasi toza va tabiiy ichimlik suvini yetkazib berish maqsadida tashkil etilgan.
-                                      </p>
-                                      <div class="btns-box">
-                                        <a class="btn-two" href="#"><span class="icon-right-arrow"></span>Batafsil</a>
-                                      </div>
-                                    </div>
+                        <div class="about-style3-text-box2">
+                          <ul>
+                            <li>
+                              <div class="inner">
+                                <div class="img-box">
+                                  <div class="img-inner">
+                                    <img src="https://st.ourhtmldemo.com/new/aguapure-demo/assets/images/resources/our-story.jpg" alt="Bizning Hikoyamiz">
                                   </div>
-                                </li>
-                                <li>
-                                  <div class="inner">
-                                    <div class="img-box">
-                                      <div class="img-inner">
-                                        <img src="https://st.ourhtmldemo.com/new/aguapure-demo/assets/images/resources/our-mission.jpg" alt="">
-                                      </div>
-                                    </div>
-                                    <div class="text-box">
-                                      <h3>Bizning Maqsadimiz</h3>
-                                      <p>
-                                        Har bir xonadonga sof va xavfsiz suv yetkazish — bizning asosiy vazifamiz.
-                                      </p>
-                                      <div class="btns-box">
-                                        <a class="btn-two" href="#"><span class="icon-right-arrow"></span>Batafsil</a>
-                                      </div>
-                                    </div>
+                                </div>
+                                <div class="text-box">
+                                  <h3>{{ 'about.story_mission.story_title' | translate }}</h3>
+                                  <p>{{ 'about.story_mission.story_text' | translate }}</p>
+                                  <div class="btns-box">
+                                    <a class="btn-two" href="#">
+                                      <span class="icon-right-arrow"></span>{{ 'about.story_mission.read_more' | translate }}
+                                    </a>
                                   </div>
-                                </li>
-                              </ul>
-
-                          </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="inner">
+                                <div class="img-box">
+                                  <div class="img-inner">
+                                    <img src="https://st.ourhtmldemo.com/new/aguapure-demo/assets/images/resources/our-mission.jpg" alt="Bizning Maqsadimiz">
+                                  </div>
+                                </div>
+                                <div class="text-box">
+                                  <h3>{{ 'about.story_mission.mission_title' | translate }}</h3>
+                                  <p>{{ 'about.story_mission.mission_text' | translate }}</p>
+                                  <div class="btns-box">
+                                    <a class="btn-two" href="#">
+                                      <span class="icon-right-arrow"></span>{{ 'about.story_mission.read_more' | translate }}
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
 
                   </div>
@@ -120,87 +124,89 @@
 
 <!--Start Fact Counter Area-->
 <section class="fact-counter-style3-area">
-  <div class="container">
+    <div class="container">
       <div class="row">
-          <div class="col-xl-12">
-              <div class="fact-counter">
-                  <div class="fact-counter-bg" style="background-image: url(assets/images/parallax-background/fact-counter_box-bg.jpg);"></div>
-                  <ul class="clearfix">
-                      <li class="single-fact-counter-style2 wow" data-wow-delay="200ms" data-wow-duration="1500ms">
-                          <div class="icon">
-                              <div class="icon-bg" style="background-image: url(assets/images/shape/fact-counter-icon-bg.png);"></div>
-                              <div class="icon-bg-overlay" style="background-image: url(assets/images/shape/fact-counter-icon-bg-overlay.png);"></div>
-                              <span class="icon-plastic-bottle"></span>
-                          </div>
-                          <div class="outer-box">
-                              <span class="icon-water-drop"></span>
-                              <div class="count-outer count-box">
-                                  <span class="count-text" data-speed="3000" data-stop="6.8">0</span>
-                                  <span class="k">k</span>
-                              </div>
-                              <div class="title">
-                                  <h6>Yetkazilgan mahsulotlar</h6>
-                              </div>
-                          </div>
-                      </li>
-                      <li class="single-fact-counter-style2 wow" data-wow-delay="200ms" data-wow-duration="1500ms">
-                          <div class="icon">
-                              <div class="icon-bg" style="background-image: url(assets/images/shape/fact-counter-icon-bg.png);"></div>
-                              <div class="icon-bg-overlay" style="background-image: url(assets/images/shape/fact-counter-icon-bg-overlay.png);"></div>
-                              <span class="icon-rating"></span>
-                          </div>
-                          <div class="outer-box">
-                              <span class="icon-water-drop"></span>
-                              <div class="count-outer count-box">
-                                  <span class="count-text" data-speed="3000" data-stop="8">0</span>
-                                  <span class="plus">+</span>
-                              </div>
-                              <div class="title">
-                                <h6>Ko‘p yillik tajriba</h6>
-                            </div>
-                          </div>
-                      </li>
-                      <li class="single-fact-counter-style2 wow" data-wow-delay="200ms" data-wow-duration="1500ms">
-                          <div class="icon">
-                              <div class="icon-bg" style="background-image: url(assets/images/shape/fact-counter-icon-bg.png);"></div>
-                              <div class="icon-bg-overlay" style="background-image: url(assets/images/shape/fact-counter-icon-bg-overlay.png);"></div>
-                              <span class="icon-businessman"></span>
-                          </div>
-                          <div class="outer-box">
-                              <span class="icon-water-drop"></span>
-                              <div class="count-outer count-box">
-                                  <span class="count-text" data-speed="3000" data-stop="45">0</span>
-                                  <span class="k">k</span>
-                              </div>
-                              <div class="title">
-                                  <h6>Jamoa a'zolari</h6>
-                              </div>
-                          </div>
-                      </li>
-                      <li class="single-fact-counter-style2 wow" data-wow-delay="200ms" data-wow-duration="1500ms">
-                          <div class="icon">
-                              <div class="icon-bg" style="background-image: url(assets/images/shape/fact-counter-icon-bg.png);"></div>
-                              <div class="icon-bg-overlay" style="background-image: url(assets/images/shape/fact-counter-icon-bg-overlay.png);"></div>
-                              <span class="icon-map"></span>
-                          </div>
-                          <div class="outer-box">
-                              <span class="icon-water-drop"></span>
-                              <div class="count-outer count-box">
-                                  <span class="count-text" data-speed="3000" data-stop="27">0</span>
-                              </div>
-                              <div class="title">
-                                <h6>Xizmat ko‘rsatish hududlari</h6>
-                            </div>
-                          </div>
-                      </li>
+        <div class="col-xl-12">
+          <div class="fact-counter">
+            <div class="fact-counter-bg" style="background-image: url(assets/images/parallax-background/fact-counter_box-bg.jpg);"></div>
+            <ul class="clearfix">
+              <li class="single-fact-counter-style2 wow" data-wow-delay="200ms" data-wow-duration="1500ms">
+                <div class="icon">
+                  <div class="icon-bg" style="background-image: url(assets/images/shape/fact-counter-icon-bg.png);"></div>
+                  <div class="icon-bg-overlay" style="background-image: url(assets/images/shape/fact-counter-icon-bg-overlay.png);"></div>
+                  <span class="icon-plastic-bottle"></span>
+                </div>
+                <div class="outer-box">
+                  <span class="icon-water-drop"></span>
+                  <div class="count-outer count-box">
+                    <span class="count-text" data-speed="3000" data-stop="6.8">0</span>
+                    <span class="k">k</span>
+                  </div>
+                  <div class="title">
+                    <h6>{{ 'about.counters.delivered_products' | translate }}</h6>
+                  </div>
+                </div>
+              </li>
 
-                  </ul>
-              </div>
+              <li class="single-fact-counter-style2 wow" data-wow-delay="200ms" data-wow-duration="1500ms">
+                <div class="icon">
+                  <div class="icon-bg" style="background-image: url(assets/images/shape/fact-counter-icon-bg.png);"></div>
+                  <div class="icon-bg-overlay" style="background-image: url(assets/images/shape/fact-counter-icon-bg-overlay.png);"></div>
+                  <span class="icon-rating"></span>
+                </div>
+                <div class="outer-box">
+                  <span class="icon-water-drop"></span>
+                  <div class="count-outer count-box">
+                    <span class="count-text" data-speed="3000" data-stop="8">0</span>
+                    <span class="plus">+</span>
+                  </div>
+                  <div class="title">
+                    <h6>{{ 'about.counters.experience_years' | translate }}</h6>
+                  </div>
+                </div>
+              </li>
+
+              <li class="single-fact-counter-style2 wow" data-wow-delay="200ms" data-wow-duration="1500ms">
+                <div class="icon">
+                  <div class="icon-bg" style="background-image: url(assets/images/shape/fact-counter-icon-bg.png);"></div>
+                  <div class="icon-bg-overlay" style="background-image: url(assets/images/shape/fact-counter-icon-bg-overlay.png);"></div>
+                  <span class="icon-businessman"></span>
+                </div>
+                <div class="outer-box">
+                  <span class="icon-water-drop"></span>
+                  <div class="count-outer count-box">
+                    <span class="count-text" data-speed="3000" data-stop="45">0</span>
+                    <span class="k">k</span>
+                  </div>
+                  <div class="title">
+                    <h6>{{ 'about.counters.team_members' | translate }}</h6>
+                  </div>
+                </div>
+              </li>
+
+              <li class="single-fact-counter-style2 wow" data-wow-delay="200ms" data-wow-duration="1500ms">
+                <div class="icon">
+                  <div class="icon-bg" style="background-image: url(assets/images/shape/fact-counter-icon-bg.png);"></div>
+                  <div class="icon-bg-overlay" style="background-image: url(assets/images/shape/fact-counter-icon-bg-overlay.png);"></div>
+                  <span class="icon-map"></span>
+                </div>
+                <div class="outer-box">
+                  <span class="icon-water-drop"></span>
+                  <div class="count-outer count-box">
+                    <span class="count-text" data-speed="3000" data-stop="27">0</span>
+                  </div>
+                  <div class="title">
+                    <h6>{{ 'about.counters.service_areas' | translate }}</h6>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
+        </div>
       </div>
-  </div>
-</section>
-<!--End Fact Counter Area-->
+    </div>
+  </section>
+  <!--End Fact Counter Area-->
 
 
 
@@ -211,9 +217,9 @@
     <div class="team-style2_top">
         <div class="sec-title">
           <div class="sub-title">
-            <h5>Jamoa A'zolari</h5>
+            <h5>{{"about.team.section_subtitle"|translate}}</h5>
           </div>
-          <h2 class="clr_white">Eleven Water ortidagi jamoa</h2>
+          <h2 class="clr_white">{{"about.team.section_title"|translate}}</h2>
           <div class="decor">
             <img src="assets/images/shape/decor.png" alt="">
           </div>
@@ -221,7 +227,7 @@
         <div class="btn-box">
           <a class="btn-one" href="shop.html">
             <div class="round"></div>
-            <span class="txt">Barchasini ko‘rish</span>
+            <span class="txt">{{"about.team.see_all"|translate}}</span>
           </a>
         </div>
       </div>

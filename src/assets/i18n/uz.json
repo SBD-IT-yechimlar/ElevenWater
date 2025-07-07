@@ -1,0 +1,563 @@
+{
+  "main": "Asosiy",
+  "service": "Xizmatlar",
+  "all_services": "Barcha xizmatlar",
+  "service-detail": "Xizmat tafsilotlari",
+  "products": "Mahsulotlar",
+  "product-detail": "Mahsulot tafsilotlari",
+  "basket": "Savatcha",
+  "checkout": "Buyurtmani rasmiylashtirish",
+  "about_company": "Kompaniya haqida",
+  "priceandtariffs": "Narxlar va tariflar",
+  "team": "Jamoa",
+  "contacts": "Aloqa",
+  "order": "Buyurtma",
+  "notfound": "404 - Sahifa topilmadi",
+
+  "limitedoffer": "Cheklangan <br/>Aksiya",
+  "everyProduct": "Har bir mahsulot uchun",
+  "everyBottle": "Har bir shisha uchun",
+  "watchVideo": "Videoni tomosha qiling",
+  "videoDesc": "Ishlab chiqarishdan yetkazib berishgacha",
+
+  "big-title-1": "Tabiiylik va<br/>yangilik endi<br/>sizning eshigingizda",
+  "big-title-2": "Eleven Water bilan<br/>hayotingizga tozalik<br/>va qulaylik kirib keladi",
+  "big-title-3": "Har tomchida <br/>ishonch!",
+
+  "text-1": "Har bir tomchi – sog‘lom hayot sari qadam,<br />biz esa uni bevosita uyingizgacha olib kelamiz.",
+  "text-2": "Tabiatdan sizga — toza,<br />foydali va ishonchli suv yetkazamiz.",
+  "text-3": "Har kuningizni toza suv bilan boshlang<br />sog‘liq bilan yashang.",
+
+  "services": {
+    "section_title": "Xizmatlar",
+    "section_subtitle": "Biz sifatli va ishonchli <br /> xizmatlarimiz bilan faxrlanamiz",
+    "water_18l_title": "Katta hajimdagi ichimlik suvi (18.9 L)",
+    "water_18l_desc": "Yirik hajmdagi suv — ofis va uy uchun qulay, tejamkor va gigiyenik tanlov.",
+    "dispenser_title": "Suv Dispenseri",
+    "dispenser_desc": "Haroratga mos issiq va sovuq suv – qulaylik, gigiyena va samaradorlik birlashtirilgan holda.",
+    "icetea_title": "Eleven Ice Tea",
+    "icetea_desc": "Yozning issig‘ida tetiklantiruvchi, muzdek lazzat – tabiiy choy barglaridan tayyorlangan ichimlik.",
+    "read_more": "Batafsil",
+
+    "breadcrumb_title": "Bizning xizmatlar",
+    "breadcrumb_home": "Asosiy",
+    "services_subtitle": "Har bir inson <br/> toza va foydali suvga loyiq",
+    "features_subtitle": "Suv va Salomatlik",
+    "features_title": "Har kuni toza suv – sog‘liq garovi",
+    "features_desc": "Eleven water hayotingiz uchun zarur bo‘lgan tabiiy va sof ichimlik suvi bilan sizni ta’minlaydi. Har bir tomchida – salomatlik!",
+    "features_point1": "Tanani nam holatda saqlash",
+    "features_point2": "Energiya va hushyorlikni ta’minlash",
+    "features_point3": "Ichki organlar faoliyatini qo‘llab-quvvatlash",
+    "features_point4": "Teri salomatligini saqlash",
+    "features_btn": "Ko‘proq o‘qish",
+    "pricing_subtitle": "Tariflar va Rejalar",
+    "pricing_title": "Har bir mijoz uchun qulay narxlar",
+    "plan_basic": "Asosiy reja",
+    "plan_premium": "Premium reja",
+    "plan_advanced": "Advanced reja",
+    "plan_note": "*narxlar o‘zgarishi mumkin",
+    "plan_monthly": "oyiga",
+    "plan_yearly": "yiliga",
+    "plan_feature1": "Bepul yetkazib berish",
+    "plan_feature2": "Oyiga eng ko‘pi 10 dona bak",
+    "plan_feature3": "Bo‘sh baklarni olib ketish",
+    "plan_feature4": "Yiliga eng ko‘pi 120 dona bak",
+    "plan_feature5": "Mineral suv",
+    "order_btn": "Buyurtma berish"
+  },
+  "facts": {
+    "delivered_bottles": "Yetkazilgan<br/>suv idishlari",
+    "experience_years": "Tajriba<br/>yillari",
+    "professional_staff": "Professional<br/>xodimlar",
+    "active_zones": "Shahardagi faol<br/>hududlar",
+    "happy_clients": "Bizdan mamnun<br/>mijozlar"
+  },
+
+  "choose": {
+    "badge": "Hech<br/>Qanday<br/>Cheklovlarsiz",
+    "why_title": "Nima uchun Eleven Water?",
+    "why_subtitle": "Bizning tabiiy suvimizning<br />yangiligi sizga manzur bo‘ladi",
+    "feature1_title": "Yuqori sifat",
+    "feature1_desc": "Har bir tomchi suv qat'iy sifat nazoratidan o'tadi.",
+    "feature2_title": "Shartnomalarsiz",
+    "feature2_desc": "Hech qanday majburiy shartnomalarsiz qulay xizmatdan foydalaning.",
+    "feature3_title": "Ishonchli",
+    "feature3_desc": "Yetkazib berish va xizmat ko‘rsatishda doimiy ishonchli hamkor.",
+    "feature4_title": "Sertifikatlangan",
+    "feature4_desc": "Sifat va xavfsizlik bo‘yicha xalqaro sertifikatlarga ega kompaniya.",
+    "feature5_title": "Qulay narxlar",
+    "feature5_desc": "Hamyonbop narxlarda sifatli suv – har bir mijoz uchun.",
+    "feature6_title": "Tez yetkazib berish",
+    "feature6_desc": "Buyurtmangiz eng qisqa vaqt ichida eshigingizgacha yetkaziladi."
+  },
+  "features": {
+    "title_sub": "Suv va Siz",
+    "title_main": "Sog‘lom hayot uchun  ajralmas manba",
+    "description": "Suv — tanamiz uchun zarur bo‘lgan eng asosiy hayot manbalaridan biridir.",
+    "point1": "Oziq moddalar va kislorodni tashish",
+    "point2": "Ovqat hazm qilishga yordam berish",
+    "point3": "Qon bosimini me'yorda ushlab turish",
+    "point4": "Yurak urishini barqarorlashtirish",
+    "see_all": "Barchasini ko‘rish",
+
+    "box1_title": "Xodimlaringiz uchun <br/>sog‘lom suv",
+    "box1_text": "Inson tanasining 70% dan ortig‘i suvdan iborat bo‘lib, u sog‘liq uchun nihoyatda muhim hisoblanadi.",
+
+    "box2_title": "Ijaraga oling yoki xarid qiling",
+    "box2_text": "Barcha narxlar soliqlarni o‘z ichiga oladi va oyiga kamida 2 dona suv idishi buyurtma qilinishi kerak."
+  },
+  "working_process": {
+    "subtitle": "Qanday ishlaymiz?",
+    "title": "Yuqori sifatdagi suv <br /> yetkazib berish jarayoni",
+
+    "step": "Bosqich",
+
+    "step1_title": "Buyurtma berish uchun bog'laning",
+    "step1_desc": "Suv idishingizni onlayn tarzda yoki telefon orqali buyurtma bering — bu juda qulay va tez!",
+
+    "step2_title": "Avtomatlashtirilgan qadoqlash",
+    "step2_desc": "Suv idishlari gigiyenik sharoitda, zamonaviy uskunalar yordamida qadoqlanadi.",
+
+    "step3_title": "O‘z vaqtida yetkazib berish",
+    "step3_desc": "Jamoamiz tomonidan buyurtmangiz eshigingizga o‘z vaqtida yetkaziladi."
+  },
+
+
+  "blog": {
+    "subtitle": "So‘nggi blog postlar",
+    "title": "Sanoatimiz yangiliklari",
+    "all_posts": "Barcha postlar",
+    "category": "Eleven water",
+    "read_more": "Batafsil",
+    "post1_title": "Eleven water:<br />Nimalarga e’tibor berish kerak?",
+    "post1_date": "10 May, 2023",
+    "post1_author": "Shaw",
+    "post1_text": "Kelib chiqishi mumkin bo‘lgan muammolarni oldindan ko‘ra bilish va...",
+
+    "post2_title": "Mobil ilovamizdan<br />foydalanishning asosiy afzalliklari",
+    "post2_date": "5 May, 2023",
+    "post2_author": "Philips",
+    "post2_text": "Oddiy misol tariqasida aytadigan bo‘lsak, bu ish qulayliklar yaratadi...",
+
+    "post3_title": "Toza suv ichishning sog‘liq uchun foydalari. Bir kunda qancha suv ichish kerak",
+    "post3_date": "22 Aprel, 2023",
+    "post3_author": "Shaw",
+    "post3_text": "Kelib chiqishi mumkin bo‘lgan muammolarni oldindan ko‘ra bilish va..."
+  },
+  "serviceDetails": {
+    "breadcrumb_title": "Xizmat Tafsilotlari",
+    "breadcrumb_home": "Bosh sahifa",
+    "breadcrumb_services": "Xizmatlar",
+    "breadcrumb_current": "Xizmat tafsilotlari",
+
+    "sidebar_title": "Xizmatlar",
+    "sidebar_list": [
+      "Qadoqlangan suv",
+      "Suv dispenseri",
+      "Suv tashuvchi treylerlar",
+      "Suvni tekshirish",
+      "Tizimni ta'mirlash",
+      "Texnik xizmat ko‘rsatish"
+    ],
+
+    "sidebar_download1_title": "Foydalanish shartlari",
+    "sidebar_download2_title": "Qaytarish siyosati",
+    "sidebar_download_link": "Yuklab olish",
+
+    "contact_box_title": "Tezkor aloqa",
+    "contact_box_text": "Savollaringiz bo‘lsa, istalgan vaqt bizga qo‘ng‘iroq qiling – yordam beramiz.",
+    "contact_box_btn": "Qayta qo‘ng‘iroq",
+
+    "online_meeting_text": "Endilikda biz onlayn uchrashuvlarni taklif qilamiz.",
+    "online_meeting_btn": "Book Now",
+
+    "main_title": "Qadoqlangan suv yetkazib berish",
+    "main_subtitle": "Toza va sifatli suv qudrati – uyingiz eshigigacha yetkazib beriladi",
+    "main_desc1": "Toza ichimlik suvi sog‘lig‘imiz uchun beqiyos ahamiyatga ega. Shuning uchun ham biz mijozlarimizga qulaylik yaratish maqsadida eng sifatli suvni istalgan vaqtda yetkazib beramiz.",
+    "main_desc2": "Hayot tarzingizni yengillashtirish uchun har doim qo‘lingizda bo‘lishi kerak bo‘lgan toza suvni yetkazib berish bizning ustuvor vazifamizdir. Endi siz ortiqcha tashvishlarsiz ichimlik suvini qulay tarzda qabul qilishingiz mumkin.",
+
+    "tab_title": "Suv idishlarini 2 soat ichida joyingizga yetkazamiz",
+    "tab_desc": "Aqlli inson har doim suv sifatini va sog‘liq uchun foydasini inobatga olib, to‘g‘ri tanlov qiladi.",
+    "tab_btn": "Batafsil",
+
+    "why_title": "Nega bizning xizmat?",
+    "why_desc": "Biznesda ba'zida qulayliklar rad etilishi mumkin, ammo biz har doim eng yaxshi xizmatni taklif qilamiz.",
+
+    "why_items": [
+      {
+        "title": "Yuqori sifat",
+        "desc": "Har bir mijoz uchun eng yaxshi sifatli suv yetkazamiz."
+      },
+      {
+        "title": "Tez yetkazib berish",
+        "desc": "Yetkazib berishning tezligi biz uchun eng ustuvor masalalardan biri."
+      },
+      {
+        "title": "Arzon narxlar",
+        "desc": "Har bir mijozimiz uchun maqbul va oson to'lanadigan tariflar taklif qilamiz."
+      }
+    ]
+  },
+
+  "shop": {
+    "no_limits": "Hech<br/>Qanday<br/>Cheklovlarsiz",
+    "trust": "100% ishonchli",
+    "subtitle": "Mahsulotlarimiz",
+    "title": "Har doim yangi, har doim o‘z vaqtida <br /> eshigingizgacha",
+    "quantity": "Miqdor",
+    "delivery": "Yetkazib berish",
+    "enquire": "So‘rov yuborish",
+    "add_to_cart": "Savatga",
+    "breadcrumb_title": "Mahsulotlar",
+
+    "top_info": {
+      "showing": "15 ta mahsulotdan 1 dan 10 gacha ko‘rsatilmoqda",
+      "bpa_note": "Bizning butilkalangan suvlarimiz BPA moddasiz plastik variantlarda taqdim etiladi."
+    }
+
+
+  },
+  "cart": {
+    "title": "Savatingiz",
+    "items": "{{count}} ta mahsulot",
+    "total": "Jami: {{amount}} so'm",
+    "table": {
+      "product": "Mahsulot",
+      "quantity": "Soni",
+      "price": "Narxi",
+      "subtotal": "Jami",
+      "remove": "O'chirish"
+    },
+    "products": {
+      "product_1": "15 Litrli idishdagi suv",
+      "product_2": "12 Litrli idishdagi suv"
+    },
+    "coupon": {
+      "placeholder": "Chegirma kodini kiriting...",
+      "apply": "Qo‘llash"
+    },
+    "actions": {
+      "update": "Yangilash",
+      "checkout": "To‘lovga o‘tish"
+    }
+  }
+,
+
+  "product_details": {
+
+    "availability": "Mavjudlik:",
+    "in_stock": "Sotuvda mavjud",
+    "price_current": "$12.50",
+    "price_old": "$15.00",
+    "product_name": "18.9 L qadoqlangan suv",
+
+    "description": "Eleven Water tomonidan taqdim etilgan 18.9 litrli butilkalangan suv – bu tiniq, xavfsiz va yuqori sifatli ichimlik suvidir. U ekologik toza hududlardan olinib, ilg‘or filtrlash texnologiyalari orqali tozalanadi. Har bir idish gigiyena talablariga qat’iy amal qilingan holda qadoqlanadi. Uydagi, ofisdagi yoki sanoat ehtiyojlari uchun ideal tanlov.",
+    "features": {
+      "delivery": "O'z vaqtida <br/> yetkazib berish",
+      "cash_on_delivery": "To'lov mahsulot yetkazilganda",
+      "quality": "Yuqori sifat kafolati"
+    },
+    "promo_note": "Chegirma kodidan foydalaning:",
+    "tags": "Teglar#: Butilka, IceTea, Yetkazib berish",
+
+    "tabs": {
+      "description": "Tavsif",
+      "reviews": "Sharhlar (3)"
+    },
+
+    "description_tab": {
+      "text": "Eleven Water sizga toza va sifatli ichimlik suvini taqdim etadi. Suvimiz zamonaviy RO+UV texnologiyasi orqali tozalanadi va tabiiy ta'mini saqlab qoladi. Sog‘lig‘ingizni himoya qilish va organizmingizga foydali minerallar bilan boyitish uchun eng yaxshi tanlov — Eleven Water!",
+      "specs": {
+        "volume_label": "Qadoqlash hajmi",
+        "volume_value": "Litr",
+        "type_label": "Qadoqlash turi",
+        "type_value": "Butilkalar",
+        "expiry_label": "Yaroqlilik muddati",
+        "expiry_value": "12 oy",
+        "purification_label": "Tozalash turi",
+        "purification_value": "RO+UV texnologiyasi",
+        "taste_label": "Ta'mi",
+        "taste_value": "Tabiiy (oddiy)"
+      }
+
+    },
+
+    "leave_review": {
+      "title": "Fikringizni qoldiring",
+      "note": "Email manzilingiz e’lon qilinmaydi. * bilan belgilangan maydonlarni to‘ldirish majburiy.",
+      "rating": "Baholash darajangiz",
+      "name_placeholder": "Ismingiz",
+      "email_placeholder": "Email manzilingiz",
+      "comment_placeholder": "Izohingiz",
+      "save_info": "Keyingi izohingiz uchun ma’lumotlarimni brauzerda saqlab qolish.",
+      "submit": "Yuborish"
+    },
+
+    "related_products": {
+      "title": "Shunga o‘xshash mahsulotlar",
+      "products": [
+        {
+          "name": "2 litrli butilkadagi suv",
+          "delivery": "Yetkazib berish",
+          "time": "Ertaga 16:30 — 18:30 oralig‘ida"
+        },
+        {
+          "name": "15 litrli butilkadagi suv",
+          "delivery": "Yetkazib berish",
+          "time": "Dushanba 09:30 — 10:30 oralig‘ida"
+        },
+        {
+          "name": "12 litrli butilkadagi suv",
+          "delivery": "Yetkazib berish",
+          "time": "Ertaga 16:30 — 18:30 oralig‘ida"
+        }
+      ],
+      "enquire": "So‘rov yuborish",
+      "add_to_cart": "Savatga",
+      "quantity": "Soni:"
+    },
+
+    "reviews": [
+      {
+        "name": "Malika Karimova",
+        "date": "2023-yil 21-mart",
+        "comment": "Eleven Water suvi juda toza va mazali. Yetkazib berish xizmati ham tezkor va o‘z vaqtida bo‘ldi. Uyga yetkazib berish juda qulay!"
+      },
+      {
+        "name": "Quvonchbek Xasanov",
+        "date": "2023-yil 21-mart",
+        "comment": "Har doim Eleven Waterdan suv buyurtma qilaman. Gigiyenik qadoqlanishi va tozalik darajasi yuqori. Ishonchli brend!"
+      },
+      {
+        "name": "Hilola Davlatova",
+        "date": "2023-yil 20-mart",
+        "comment": "18.9 litrli suv idishi ofisimiz uchun juda qulay. Suvning sifati a’lo darajada. Yetkazib berish ham har doim tezkor."
+      }
+    ]
+  },
+
+  "about": {
+    "section_subtitle": "Har bir tomchi- <br /> ishonch va sifat",
+    "certified_title": "<span>NSF & IBWA</span><br />Sertifikatlangan Kompaniya",
+    "certified_desc": "Bizning muvaffaqiyatimiz yo‘lida bo‘lgan har qanday shubhali qarashlarga javob.",
+    "tab1_title": "Kompaniya<br />Tarixi",
+    "tab2_title": "Maqsad va Qadriyatlarimiz",
+    "tab_header": "30 yildan beri <br />oilaviy boshqaruv ostida",
+    "tab1_text": "Qiyinchiliklarga qaramay, biz sifatli suv yetkazib berishdan voz kechmaymiz. Har bir mijozimizga qulaylik va ishonchni taqdim etamiz.",
+    "tab2_text": "Bizning asosiy maqsadimiz – sifatli, xavfsiz va ekologik toza suvni har bir oila va korxonaga yetkazib berish. Biz mijozlar ishonchini qadrlaymiz.",
+    "more": "Batafsil"
+,
+
+    "hero": {
+      "title": "Tabiiy suv <br> har bir uy uchun",
+      "subtitle": "100% o‘zimizning mahsulot, o‘zimizning g‘amxo‘rlik",
+      "description": "Eleven Water kompaniyasi toza va sifatli ichimlik suvi yetkazib berishda ishonchli hamkor hisoblanadi. Biz zamonaviy uskunalarda ishlab chiqarilgan suv orqali sizning sog‘lig‘ingiz haqida g‘amxo‘rlik qilamiz.",
+      "founder_name": "Max Benjamin",
+      "founder_title": "Founder"
+    },
+    "story_mission": {
+      "story_title": "Bizning Hikoyamiz",
+      "story_text": "Eleven Water kompaniyasi toza va tabiiy ichimlik suvini yetkazib berish maqsadida tashkil etilgan.",
+      "mission_title": "Bizning Maqsadimiz",
+      "mission_text": "Har bir xonadonga sof va xavfsiz suv yetkazish — bizning asosiy vazifamiz.",
+      "read_more": "Batafsil"
+    },
+    "counters": {
+      "delivered_products": "Yetkazilgan mahsulotlar",
+      "experience_years": "Ko‘p yillik tajriba",
+      "team_members": "Jamoa a'zolari",
+      "service_areas": "Xizmat ko‘rsatish hududlari"
+    },
+    "team": {
+      "section_title": "Eleven Water ortidagi jamoa",
+      "section_subtitle": "Jamoa A'zolari",
+      "see_all": "Barchasini ko‘rish"
+
+    }
+  }
+
+,"pricing": {
+  "breadcrumb_title": "Tariflar va Rejalar",
+  "breadcrumb_home": "Bosh sahifa",
+  "plans": [
+    {
+      "name": "Asosiy Tarif",
+      "price": "49",
+      "period": "oyiga",
+      "note": "*narxlar o‘zgarishi mumkin",
+      "short_desc": "Yengillik va qulaylikni taqdim etuvchi qulay tarif.",
+      "features": [
+        "Bepul yetkazib berish",
+        "Oyiga 10 ta idishgacha",
+        "Bo‘sh idishlarni yig‘ish",
+        "Yiliga 120 ta idishgacha",
+        "Mineral suv"
+      ],
+      "button": "Buyurtma berish"
+    },
+    {
+      "name": "Premium Tarif",
+      "price": "99",
+      "period": "yiliga",
+      "note": "*narxlar o‘zgarishi mumkin",
+      "short_desc": "Yiliga bir marta to‘lov, arzon va qulay yechim.",
+      "features": [
+        "Bepul yetkazib berish",
+        "Oyiga 10 ta idishgacha",
+        "Bo‘sh idishlarni yig‘ish",
+        "Yiliga 120 ta idishgacha",
+        "Mineral suv"
+      ],
+      "button": "Buyurtma berish"
+    },
+    {
+      "name": "Advanced Tarif",
+      "price": "79",
+      "period": "oyiga",
+      "note": "*narxlar o‘zgarishi mumkin",
+      "short_desc": "Ko‘proq idishlar, kengroq imkoniyatlar.",
+      "features": [
+        "Bepul yetkazib berish",
+        "Oyiga 10 ta idishgacha",
+        "Bo‘sh idishlarni yig‘ish",
+        "Yiliga 120 ta idishgacha",
+        "Mineral suv"
+      ],
+      "button": "Buyurtma berish"
+    }
+  ]
+}
+,
+"contact": {
+  "box_title": "Ishonchli<br />Tezkor<br />Qo‘llab-quvvatlash",
+  "subtitle": "Bog‘lanish",
+  "title": "Savolingizga <br />yordam berishdan mamnunmiz!",
+  "call_title": "Biz bilan bog'lanish",
+  "call_text": "+998 55 1510011",
+  "description": "Savollaringiz bo‘lsa yoki xizmatlarimizdan foydalanmoqchi bo‘lsangiz,<br />bizga bemalol murojaat qiling.",
+  "call_button": "Qayta qo‘ng‘iroq",
+  "form_title": "Jamoamiz bilan bog‘laning",
+  "form_name": "Ismingiz",
+  "form_email": "Email pochtangiz",
+  "form_address": "Manzilingiz",
+  "form_checkbox": " Takliflar va yangiliklarni <br> olishga roziman",
+  "form_submit": "Davom etish",
+  "form_loading": "Iltimos kuting...",
+  "breadcrumb_title": "Bog‘lanish",
+  "breadcrumb_home": "Bosh sahifa",
+  "contact_boxes": {
+    "address": {
+      "title": "Manzil",
+      "text": "Ofisimiz manzili"
+    },
+    "phone": {
+      "title": "Telefon",
+      "text": "Tel: +998551510011"
+    },
+    "email": {
+      "title": "Email",
+      "text": "Xabar yuborish"
+    },
+    "hours": {
+      "title": "Ish vaqti",
+      "text": "Du- Ju: 08.00 dan 17.00"
+    }
+  },
+  "dealer_finder": {
+    "title": "Diler toping",
+    "subtitle": "Eng yaqin Eleven Water dilerini toping va tezkor xizmatdan foydalaning.",
+    "placeholder": "Pochta indeksini kiriting ...",
+    "button": "Qidirish",
+    "message": "Agar topa olmasangiz, +998551510011 raqamiga murojaat qiling."
+  },
+  "contact_form": {
+    "subtitle": "Savolingiz bormi?",
+    "title": "Sizning murojaatingizni mamnuniyat bilan kutamiz!",
+    "form_title": "Xabar yuboring",
+    "fields": {
+      "name": "Ism familiya :",
+      "email": "Email manzilingiz :",
+      "phone": "Telefon raqam :",
+      "subject": "Mavzu :",
+      "message": "Xabaringizni kiriting..."
+    },
+    "submit": "Yuborish",
+    "loading": "Iltimos kuting..."
+  },
+  "services": {
+    "family": {
+      "title": "Oilaviy xizmat",
+      "desc": "Eleven Water bilan oilangizni sog‘lom suv bilan ta’minlang.",
+      "button": "Batafsil"
+    },
+    "office": {
+      "title": "Ofis uchun",
+      "desc": "Ofisingizni toza suv bilan ta’minlash uchun ideal yechim.",
+      "button": "Batafsil"
+    }
+  },
+  "map": {
+    "title": "Bizning manzil",
+    "placeholder": "Xaritadan joylashuvimizni toping"
+  }
+}
+,
+
+  "footer": {
+    "about": {
+      "description": "Biz mijozlarimizga qulaylik yaratish uchun xavfsiz va ishonchli xizmatlar taqdim etamiz. Har bir buyurtma – ishonchli qadam!",
+      "features": [
+        "Bepul yetkazib berish",
+        "Xavfsiz va tezkor to‘lov tizimi"
+      ]
+    },
+    "links": {
+      "title": "Foydali havolalar",
+      "items": [
+        { "label": "Asosiy", "route": "dashboard" },
+        { "label": "Kompaniya haqida", "route": "about" },
+        { "label": "Xizmatlar", "route": "services" },
+        { "label": "Mahsulotlar", "route": "products" },
+        { "label": "Mahsulot haqida batafsil", "route": "product-details" },
+        { "label": "Savatcha", "route": "product-basket" },
+        { "label": "Buyurtmani rasmiylashtirish", "route": "checkout-page" },
+        { "label": "Aloqa", "route": "contact" }
+      ]
+    },
+    "address": {
+      "title": "Manzil",
+      "region": "Jizzax viloyati",
+      "street": "Sharof Rashidov tumani, S. Ayni ko‘chasi, 111-uy",
+      "phone": "+998 55 151 00 11",
+      "email": "supportaguapure.com"
+    },
+    "working_hours": {
+      "title": "Ish soatlari",
+      "days": [
+        { "day": "Dushanba–Juma", "hours": "08:00 dan 17:00 gacha" },
+        { "day": "Shanba", "hours": "10:00 dan 16:00 gacha" }
+      ],
+      "button": "jadval"
+    },
+    "bottom": {
+      "copyright": "Mualliflik huquqi © 2023 Eleven Water. Barcha huquqlar himoyalangan.",
+      "nav": [
+        "Foydalanish shartlari",
+        "Maxfiylik siyosati",
+        "Sayt xaritasi"
+      ]
+    },
+    "search_popup": {
+      "placeholder": "Qidiruv...",
+      "submit": "Qidirish",
+      "title": "So‘nggi qidiruv kalit so‘zlari",
+      "recent": [
+        "Suv sifati",
+        "Mineral",
+        "Shisha",
+        "Xavfsizlik",
+        "Reja"
+      ]
+    }
+  }
+}

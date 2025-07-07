@@ -1,221 +1,180 @@
-<!--Start breadcrumb area paroller-->
+<!--Start breadcrumb area-->
 <section class="breadcrumb-area">
   <div class="breadcrumb-area-bg" style="background-image: url(assets/images/breadcrumb/breadcrumb-1.jpg);"></div>
   <div class="container">
-      <div class="row">
-          <div class="col-xl-12">
-              <div class="inner-content text-center">
-                  <div class="title">
-                     <h2>Xizmat Tafsilotlari</h2>
-                  </div>
-                  <div class="breadcrumb-menu">
-                      <ul>
-                          <li><a routerLink="/">Bosh sahifa</a></li>
-                          <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
-                          <li><a routerLink="/services">Xizmatlar</a></li>
-                          <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
-                          <li class="active">Xizmat tafsilotlari</li>
-                      </ul>
-                  </div>
-              </div>
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="inner-content text-center">
+          <div class="title">
+            <h2>{{ 'serviceDetails.breadcrumb_title' | translate }}</h2>
           </div>
+          <div class="breadcrumb-menu">
+            <ul>
+              <li><a routerLink="/">{{ 'serviceDetails.breadcrumb_home' | translate }}</a></li>
+              <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+              <li><a routerLink="/services">{{ 'serviceDetails.breadcrumb_services' | translate }}</a></li>
+              <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+              <li class="active">{{ 'serviceDetails.breadcrumb_current' | translate }}</li>
+            </ul>
+          </div>
+        </div>
       </div>
+    </div>
   </div>
 </section>
-
 <!--End breadcrumb area-->
 
 <!--Start Service Details Area-->
 <section class="service-details-area">
   <div class="container">
-      <div class="row">
-          <div class="col-xl-4 col-lg-5 order-box-2">
-              <div class="thm-sidebar-box">
-                <div class="view-all-service">
-                  <div class="sidebar-title">
-                      <h3>Xizmatlar</h3>
-                      <div class="decor">
-                          <img src="assets/images/shape/decor.png" alt="">
-                      </div>
-                  </div>
-                  <ul class="service-pages">
-                      <li><a href="">Qadoqlangan suv</a></li>
-                      <li><a href="">Suv dispenseri</a></li>
-                      <li><a href="">Suv tashuvchi treylerlar</a></li>
-                      <li><a href="">Suvni tekshirish</a></li>
-                      <li><a href="">Tizimni ta'mirlash</a></li>
-                      <li><a href="">Texnik xizmat ko‘rsatish</a></li>
-                  </ul>
-                </div>
+    <div class="row">
 
-                <div class="info-ownload-box">
-                  <ul>
-                      <li>
-                          <div class="inner">
-                              <div class="icon">
-                                  <span class="icon-pdf"></span>
-                              </div>
-                              <div class="title">
-                                  <h3>Foydalanish shartlari</h3>
-                                  <h6><a href="#"><span class="icon-right-arrow"></span> Yuklab olish</a></h6>
-                              </div>
-                          </div>
-                      </li>
-                      <li>
-                          <div class="inner">
-                              <div class="icon">
-                                  <span class="icon-doc"></span>
-                              </div>
-                              <div class="title">
-                                  <h3>Qaytarish siyosati</h3>
-                                  <h6><a href="#"><span class="icon-right-arrow"></span> Yuklab olish</a></h6>
-                              </div>
-                          </div>
-                      </li>
-                  </ul>
-              </div>
+      <!-- Sidebar -->
+      <div class="col-xl-4 col-lg-5 order-box-2">
+        <div class="thm-sidebar-box">
 
-
-              <div class="sidebar-contact-info-box">
-                <div class="icon">
-                    <span class="icon-calling"></span>
-                </div>
-                <h3>Tezkor aloqa</h3>
-                <h2><a href="tel:+998551510011">+998551510011</a></h2>
-                <p>Savollaringiz bo‘lsa, istalgan vaqt bizga qo‘ng‘iroq qiling – yordam beramiz.</p>
-                <div class="btn-box">
-                    <a class="btn-one" href="tel:+998551510011">
-                        <div class="round"></div>
-                        <span class="txt">Qayta qo‘ng‘iroq</span>
-                    </a>
-                </div>
+          <div class="view-all-service">
+            <div class="sidebar-title">
+              <h3>{{ 'serviceDetails.sidebar_title' | translate }}</h3>
+              <div class="decor"><img src="assets/images/shape/decor.png" alt=""></div>
             </div>
-
-                  <div class="sidebar-single-box1">
-                      <div class="sidebar-single-box1-bg" style="background-image: url(assets/images/resources/sidebar-single-box1.jpg);"></div>
-                      <div class="icon">
-                          <span class="icon-water"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span></span>
-                      </div>
-                      <h3>Endilikda biz onlayn uchrashuvlarni taklif qilamiz.</h3>
-                      <div class="btn-box">
-                          <a class="btn-one" href="#">
-                              <div class="round"></div>
-                              <span class="txt">Book Now</span>
-                          </a>
-                      </div>
-                  </div>
-
-              </div>
+            <ul class="service-pages">
+              <li *ngFor="let item of ['0','1','2','3','4','5']">
+                <a href="#">{{ 'serviceDetails.sidebar_list.' + item | translate }}</a>
+              </li>
+            </ul>
           </div>
 
-          <div class="col-xl-8 col-lg-7 order-box-1">
-            <div class="service-details-content">
-                <div class="top">
-                  <h2>Qadoqlangan suv yetkazib berish</h2>
-                  <div class="img-box">
-                    <img src="https://st.ourhtmldemo.com/new/aguapure-demo/assets/images/services/service-details-1.jpg" alt="">
-                  </div>
-                </div>
-                <div class="service-details-text-box1">
-                    <h3>Toza va sifatli suv qudrati – uyingiz eshigigacha yetkazib beriladi</h3>
-                    <p>Toza ichimlik suvi sog‘lig‘imiz uchun beqiyos ahamiyatga ega. Shuning uchun ham biz mijozlarimizga qulaylik yaratish maqsadida eng sifatli suvni istalgan vaqtda yetkazib beramiz.</p>
-                    <p>Hayot tarzingizni yengillashtirish uchun har doim qo‘lingizda bo‘lishi kerak bo‘lgan toza suvni yetkazib berish bizning ustuvor vazifamizdir. Endi siz ortiqcha tashvishlarsiz ichimlik suvini qulay tarzda qabul qilishingiz mumkin.</p>
-                  </div>
-
-
-                <div class="service-details_tab tabs-box">
-
-
-                  <div class="tabs-content">
-                    <div class="tab active-tab" id="insta">
-                      <div class="service-details-tab-content clearfix">
-                        <div class="img-holder">
-                          <div class="pattern-bg" style="background-image: url(assets/images/pattern/round-pattern.png);"></div>
-                          <div class="inner">
-                            <img src="https://st.ourhtmldemo.com/new/aguapure-demo/assets/images/services/service-details-tab-image-1.jpg" alt="">
-                          </div>
-                        </div>
-                        <div class="text-holder">
-                          <div class="sec-title">
-                            <h2>Suv idishlarini 2 soat ichida joyingizga yetkazamiz</h2>
-                            <div class="decor">
-                              <img src="assets/images/shape/decor.png" alt="">
-                            </div>
-                          </div>
-                          <div class="inner-content">
-                            <p>Aqlli inson har doim suv sifatini va sog‘liq uchun foydasini inobatga olib, to‘g‘ri tanlov qiladi.</p>
-
-                            <div class="btn-box">
-                              <a class="btn-two" href="#"><span class="icon-right-arrow"></span>Batafsil</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- Other tabs can be similarly translated -->
-
-                  </div>
-                </div>
-
-                <div class="why-our-service">
+          <div class="info-ownload-box">
+            <ul>
+              <li>
+                <div class="inner">
+                  <div class="icon"><span class="icon-pdf"></span></div>
                   <div class="title">
-                    <h2>Nega bizning xizmat?</h2>
-                    <p>Biznesda ba'zida qulayliklar rad etilishi mumkin, ammo biz har doim eng yaxshi xizmatni taklif qilamiz.</p>
+                    <h3>{{ 'serviceDetails.sidebar_download1_title' | translate }}</h3>
+                    <h6><a href="#"><span class="icon-right-arrow"></span>{{ 'serviceDetails.sidebar_download_link' | translate }}</a></h6>
                   </div>
-                  <div class="row">
-                    <div class="col-xl-4">
-                      <div class="why-service-block text-center">
-                        <div class="icon-holder">
-                          <div class="icon-bg" style="background-image: url(assets/images/shape/why-service-icon-bg.png);"></div>
-                          <div class="icon-bg-overlay" style="background-image: url(assets/images/shape/why-service-icon-overlay-bg.png);"></div>
-                          <span class="icon-water-drop-1"></span>
-                        </div>
-                        <div class="title">
-                          <h3><a href="#">Yuqori sifat</a></h3>
-                        </div>
-                        <div class="text">
-                          <p>Har bir mijoz uchun eng yaxshi sifatli suv yetkazamiz.</p>
-                        </div>
-                      </div>
+                </div>
+              </li>
+              <li>
+                <div class="inner">
+                  <div class="icon"><span class="icon-doc"></span></div>
+                  <div class="title">
+                    <h3>{{ 'serviceDetails.sidebar_download2_title' | translate }}</h3>
+                    <h6><a href="#"><span class="icon-right-arrow"></span>{{ 'serviceDetails.sidebar_download_link' | translate }}</a></h6>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="sidebar-contact-info-box">
+            <div class="icon"><span class="icon-calling"></span></div>
+            <h3>{{ 'serviceDetails.contact_box_title' | translate }}</h3>
+            <h2><a href="tel:+998551510011">+998551510011</a></h2>
+            <p>{{ 'serviceDetails.contact_box_text' | translate }}</p>
+            <div class="btn-box">
+              <a class="btn-one" href="tel:+998551510011">
+                <div class="round"></div>
+                <span class="txt">{{ 'serviceDetails.contact_box_btn' | translate }}</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="sidebar-single-box1">
+            <div class="sidebar-single-box1-bg" style="background-image: url(assets/images/resources/sidebar-single-box1.jpg);"></div>
+            <div class="icon">
+              <span class="icon-water"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span><span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span><span class="path13"></span><span class="path14"></span><span class="path15"></span><span class="path16"></span><span class="path17"></span><span class="path18"></span></span>
+          </div>
+            <h3>{{ 'serviceDetails.online_meeting_text' | translate }}</h3>
+            <div class="btn-box">
+              <a class="btn-one" href="#">
+                <div class="round"></div>
+                <span class="txt">{{ 'serviceDetails.online_meeting_btn' | translate }}</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="col-xl-8 col-lg-7 order-box-1">
+        <div class="service-details-content">
+
+          <div class="top">
+            <h2>{{ 'serviceDetails.main_title' | translate }}</h2>
+            <div class="img-box">
+              <img src="https://st.ourhtmldemo.com/new/aguapure-demo/assets/images/services/service-details-1.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="service-details-text-box1">
+            <h3>{{ 'serviceDetails.main_subtitle' | translate }}</h3>
+            <p>{{ 'serviceDetails.main_desc1' | translate }}</p>
+            <p>{{ 'serviceDetails.main_desc2' | translate }}</p>
+          </div>
+
+          <div class="service-details_tab tabs-box">
+            <div class="tabs-content">
+              <div class="tab active-tab" id="insta">
+                <div class="service-details-tab-content clearfix">
+                  <div class="img-holder">
+                    <div class="pattern-bg" style="background-image: url(assets/images/pattern/round-pattern.png);"></div>
+                    <div class="inner">
+                      <img src="https://st.ourhtmldemo.com/new/aguapure-demo/assets/images/services/service-details-tab-image-1.jpg" alt="">
                     </div>
-                    <div class="col-xl-4">
-                      <div class="why-service-block text-center">
-                        <div class="icon-holder">
-                          <div class="icon-bg" style="background-image: url(assets/images/shape/why-service-icon-bg.png);"></div>
-                          <div class="icon-bg-overlay" style="background-image: url(assets/images/shape/why-service-icon-overlay-bg.png);"></div>
-                          <span class="icon-truck"></span>
-                        </div>
-                        <div class="title">
-                          <h3><a href="#">Tez yetkazib berish</a></h3>
-                        </div>
-                        <div class="text">
-                          <p>Yetkazib berishning tezligi biz uchun eng ustuvor masalalardan biri.</p>
-                        </div>
-                      </div>
+                  </div>
+                  <div class="text-holder">
+                    <div class="sec-title">
+                      <h2>{{ 'serviceDetails.tab_title' | translate }}</h2>
+                      <div class="decor"><img src="assets/images/shape/decor.png" alt=""></div>
                     </div>
-                    <div class="col-xl-4">
-                      <div class="why-service-block text-center">
-                        <div class="icon-holder">
-                          <div class="icon-bg" style="background-image: url(assets/images/shape/why-service-icon-bg.png);"></div>
-                          <div class="icon-bg-overlay" style="background-image: url(assets/images/shape/why-service-icon-overlay-bg.png);"></div>
-                          <span class="icon-hand"></span>
-                        </div>
-                        <div class="title">
-                          <h3><a href="#">Arzon narxlar</a></h3>
-                        </div>
-                        <div class="text">
-                          <p>Har bir mijozimiz uchun maqbul va oson to'lanadigan tariflar taklif qilamiz.</p>
-                        </div>
+                    <div class="inner-content">
+                      <p>{{ 'serviceDetails.tab_desc' | translate }}</p>
+                      <div class="btn-box">
+                        <a class="btn-two" href="#"><span class="icon-right-arrow"></span>{{ 'serviceDetails.tab_btn' | translate }}</a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-
+              <!-- Add more tabs if needed -->
+            </div>
           </div>
 
+          <div class="why-our-service">
+            <div class="title">
+              <h2>{{ 'serviceDetails.why_title' | translate }}</h2>
+              <p>{{ 'serviceDetails.why_desc' | translate }}</p>
+            </div>
+            <div class="row">
+              <div class="col-xl-4" *ngFor="let i of ['0', '1', '2']">
+                <div class="why-service-block text-center">
+                  <div class="icon-holder">
+                    <div class="icon-bg" style="background-image: url(assets/images/shape/why-service-icon-bg.png);"></div>
+                    <div class="icon-bg-overlay" style="background-image: url(assets/images/shape/why-service-icon-overlay-bg.png);"></div>
+                    <span [ngClass]="{
+                      'icon-water-drop-1': i === '0',
+                      'icon-truck': i === '1',
+                      'icon-hand': i === '2'
+                    }"></span>
+                  </div>
+                  <div class="title">
+                    <h3><a href="#">{{ 'serviceDetails.why_items.' + i + '.title' | translate }}</a></h3>
+                  </div>
+                  <div class="text">
+                    <p>{{ 'serviceDetails.why_items.' + i + '.desc' | translate }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
+
+    </div>
   </div>
 </section>
 <!--End Service Details Area-->

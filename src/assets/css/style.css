@@ -2634,6 +2634,7 @@ select:focus {
     top: 0;
     left: 0;
     bottom: 0;
+    max-height: 745px;
     right: 0;
     background-attachment: scroll;
     background-repeat: no-repeat;
@@ -2718,6 +2719,7 @@ select:focus {
     background-size: cover;
     z-index: -1;
     transition: all 500ms ease;
+    opacity: 0.45;
 }
 .features-style1_single-box:hover .features-style1_single-box-bg{
     transform: scale(1.05);
@@ -3075,6 +3077,7 @@ select:focus {
 .single-working-process{
     position: relative;
     display: block;
+    height: 435px;
     text-align: center;
     background-color: rgba(var(--thm-primary-rgb), 0.25);
     padding: 44px 50px 60px;

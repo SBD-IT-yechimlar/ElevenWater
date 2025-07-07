@@ -21,32 +21,25 @@
           />
         </div>
         <div class="round-box">
-          <h3>
-            Cheklangan<br />
-            Aksiya
-          </h3>
+          <h3 [innerHTML]="'limitedoffer' | translate"></h3>
+
           <h2>$15.50</h2>
-          <p>Har bir mahsulot uchun</p>
+          <p>{{"everyProduct"|translate}}</p>
         </div>
         <div class="auto-container">
           <div class="content">
             <div class="big-title">
-              <h2>
-                "Tabiiylik va<br />
-                yangilik endi<br />
-                sizning eshigingizda"
-              </h2>
+              <h2 [innerHTML]="'big-title-1' | translate"></h2>
+
             </div>
             <div class="text">
-              <p>
-                Har bir tomchi – sog‘lom hayot sari qadam,<br />
-                biz esa uni bevosita uyingizgacha olib kelamiz.
-              </p>
+              <p [innerHTML]="'text-1' | translate"></p>
+
             </div>
             <div class="btns-box">
               <a class="btn-one" href="about.html">
                 <div class="round"></div>
-                <span class="txt">Batafsil</span>
+                <span class="txt">{{"about.more"|translate}}</span>
               </a>
               <div class="slider-video-gallery">
                 <div class="icon">
@@ -59,8 +52,8 @@
                   </a>
                 </div>
                 <div class="title">
-                  <h6>Videoni tomosha qiling</h6>
-                  <p>Ishlab chiqarishdan yetkazib berishgacha</p>
+                  <h6>{{"watchVideo"|translate}}</h6>
+                  <p>{{"videoDesc"|translate}}</p>
                 </div>
               </div>
             </div>
@@ -86,33 +79,26 @@
           />
         </div>
         <div class="round-box">
-          <h3>
-            Cheklangan<br />
-            Aksiya
+          <h3
+            [innerHTML]="'limitedoffer' | translate">
           </h3>
           <h2>$15.50</h2>
-          <p>Har bir mahsulot uchun</p>
+          <p>{{"everyProduct"|translate}}</p>
         </div>
         <div class="auto-container">
           <div class="content">
             <div class="big-title">
-              <h2>
-                Eleven Water bilan<br />
-                hayotingizga tozalik<br />
-                va qulaylik kirib keladi
-              </h2>
-              ```
+              <h2 [innerHTML]="'big-title-2' | translate"></h2>
+
             </div>
             <div class="text">
-              <p>
-                Tabiatdan sizga — toza, <br />
-                foydali va ishonchli suv yetkazamiz.
-              </p>
+              <p [innerHTML]="'text-2' | translate"></p>
+
             </div>
             <div class="btns-box">
               <a class="btn-one" href="about.html">
                 <div class="round"></div>
-                <span class="txt">Batafsil</span>
+                <span class="txt">{{"about.more"|translate}}</span>
               </a>
               <div class="slider-video-gallery">
                 <div class="icon">
@@ -125,8 +111,8 @@
                   </a>
                 </div>
                 <div class="title">
-                  <h6>Videoni tomosha qiling</h6>
-                  <p>Ishlab chiqarishdan yetkazib berishgacha</p>
+                  <h6>{{"watchVideo"|translate}}</h6>
+                  <p>{{"videoDesc"|translate}}</p>
                 </div>
               </div>
             </div>
@@ -152,28 +138,25 @@
           />
         </div>
         <div class="round-box">
-          <h3>
-            Cheklangan<br />
-            Aksiya
+          <h3
+            [innerHTML]="'limitedoffer' | translate">
           </h3>
           <h2>$15.50</h2>
-          <p>Har bir shisha uchun</p>
+          <p>{{"everyProduct"|translate}}</p>
         </div>
         <div class="auto-container">
           <div class="content">
             <div class="big-title">
-              <h2>Har tomchida <br />ishonch!</h2>
+              <h2 [innerHTML]="'big-title-3' | translate"></h2>
             </div>
             <div class="text">
-              <p>
-                Har kuningizni toza suv bilan boshlang <br />
-                sog‘liq bilan yashang.
-              </p>
+              <p [innerHTML]="'text-3' | translate"></p>
+
             </div>
             <div class="btns-box">
               <a class="btn-one" href="about.html">
                 <div class="round"></div>
-                <span class="txt">Batafsil</span>
+                <span class="txt">{{"about.more"|translate}}</span>
               </a>
               <div class="slider-video-gallery">
                 <div class="icon">
@@ -186,8 +169,8 @@
                   </a>
                 </div>
                 <div class="title">
-                  <h6>Videoni tomosha qiling</h6>
-                  <p>Ishlab chiqarishdan yetkazib berishgacha</p>
+                  <h6>{{"watchVideo"|translate}}</h6>
+                  <p>{{"videoDesc"|translate}}</p>
                 </div>
               </div>
             </div>
@@ -198,6 +181,29 @@
   </div>
 </section>
 <!-- Asosiy Slayder Tugadi -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!--Start Service Style1 Area-->
 <section class="service-style1-area">
@@ -210,12 +216,10 @@
   <div class="container">
     <div class="sec-title text-center">
       <div class="sub-title">
-        <h5>Xizmatlar</h5>
+        <h5>{{ 'services.section_title' | translate }}</h5>
       </div>
-      <h2>
-        Biz sifatli va ishonchli <br />
-        xizmatlarimiz bilan faxrlanamiz
-      </h2>
+      <h2 [innerHTML]="'services.section_subtitle' | translate"></h2>
+
       <div class="decor">
         <img src="assets/images/shape/decor.png" alt="" />
       </div>
@@ -247,20 +251,15 @@
             </div>
           </div>
           <div class="title-holder">
-            <h3>
-              <a href="services-details.html"
-                >18L idishdagi toza ichimlik suvi</a
-              >
-            </h3>
+            <h3><a routerLink="service-detail">{{ 'services.water_18l_title' | translate }}</a></h3>
+
             <div class="inner-text">
-              <p>
-                Yirik hajmdagi suv — ofis va uy uchun qulay, tejamkor va
-                gigiyenik tanlov.
-              </p>
+              <p>{{ 'services.water_18l_desc' | translate }}</p>
+
             </div>
             <div class="readmore-button">
-              <a href="services-details.html"
-                ><span class="icon-right-arrow"></span>Batafsil</a
+              <a routerLink="service-detail"
+                ><span class="icon-right-arrow"></span>{{"services.read_more"|translate}}</a
               >
             </div>
           </div>
@@ -292,16 +291,17 @@
             </div>
           </div>
           <div class="title-holder">
-            <h3><a href="services-details.html">Suv Dispenseri</a></h3>
+            <h3><a routerLink="service-detail">{{"services.dispenser_title"|translate}}</a></h3>
             <div class="inner-text">
               <p>
-                Haroratga mos issiq va sovuq suv – qulaylik, gigiyena va
-                samaradorlik birlashtirilgan holda.
+              {{ 'services.dispenser_desc' | translate }}
               </p>
             </div>
             <div class="readmore-button">
-              <a href="services-details.html"
-                ><span class="icon-right-arrow"></span>Batafsil</a
+              <a routerLink="service-detail"
+                ><span class="icon-right-arrow"></span>{{
+  'services.read_more' | translate
+                }}</a
               >
             </div>
           </div>
@@ -330,16 +330,19 @@
             </div>
           </div>
           <div class="title-holder">
-            <h3><a href="services-details.html">Eleven Ice Tea</a></h3>
+            <h3><a  routerLink="service-detail">{{
+              "services.icetea_title" | translate
+              }}</a></h3>
             <div class="inner-text">
               <p>
-                Yozning issig‘ida tetiklantiruvchi, muzdek lazzat – tabiiy choy
-                barglaridan tayyorlangan mukammal ichimlik.
+              {{ 'services.icetea_desc' | translate }}
               </p>
             </div>
             <div class="readmore-button">
-              <a href="services-details.html"
-                ><span class="icon-right-arrow"></span>Batafsil</a
+              <a routerLink="service-detail"
+                ><span class="icon-right-arrow"></span>{{
+              'services.read_more' | translate
+                }}</a
               >
             </div>
           </div>
@@ -353,7 +356,7 @@
         <div class="service-style1_btns-box text-center">
           <a routerLink="/services" class="btn-one">
             <div class="round"></div>
-            <span class="txt">Batafsil</span>
+            <span class="txt">{{ 'services.read_more' | translate }}</span>
           </a>
         </div>
       </div>
@@ -361,6 +364,22 @@
   </div>
 </section>
 <!--End Service Style1 Area-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!--Start Fact Counter Area-->
 <section class="fact-counter-area">
@@ -386,10 +405,8 @@
                   <span class=" k">k</span>
                 </div>
                 <div class="title">
-                  <h6>
-                    Yetkazilgan<br />
-                    suv idishlari
-                  </h6>
+                  <h6 [innerHTML]="'facts.delivered_bottles' | translate"></h6>
+
                 </div>
               </div>
             </li>
@@ -409,10 +426,8 @@
                   <span class="plus">+</span>
                 </div>
                 <div class="title">
-                  <h6>
-                    Tajriba<br />
-                    yillari
-                  </h6>
+                  <h6 [innerHTML]="'facts.experience_years' | translate"></h6>
+
                 </div>
               </div>
             </li>
@@ -431,10 +446,8 @@
                   >
                 </div>
                 <div class="title">
-                  <h6>
-                    Professional<br />
-                    xodimlar
-                  </h6>
+                  <h6 [innerHTML]="'facts.professional_staff' | translate"></h6>
+
                 </div>
               </div>
             </li>
@@ -453,10 +466,8 @@
                   >
                 </div>
                 <div class="title">
-                  <h6>
-                    Shahardagi faol<br />
-                    hududlar
-                  </h6>
+                  <h6 [innerHTML]="'facts.active_zones' | translate"></h6>
+
                 </div>
               </div>
             </li>
@@ -473,10 +484,8 @@
                   >
                 </div>
                 <div class="title">
-                  <h6>
-                    Bizdan mamnun<br />
-                    mijozlar
-                  </h6>
+                  <h6 [innerHTML]="'facts.happy_clients' | translate"></h6>
+
                 </div>
               </div>
             </li>
@@ -488,6 +497,14 @@
 </section>
 <!--End Fact Counter Area-->
 
+
+
+
+
+
+
+
+
 <!--Start About Style1 Area-->
 <section class="about-style1-area">
   <div class="container">
@@ -496,32 +513,20 @@
         <div class="about-style1_top">
           <div class="sec-title">
             <div class="sub-title">
-              <h5>Kompaniya Haqida</h5>
+              <h5>{{ 'about.section_title' | translate }}</h5>
             </div>
-            <h2>
-              "Har bir tomchi- <br />
-              ishonch va sifat"
-            </h2>
+            <h2 [innerHTML]="'about.section_subtitle' | translate"></h2>
             <div class="decor">
               <img src="assets/images/shape/decor.png" alt="" />
             </div>
           </div>
           <div class="our-certification-box">
             <div class="certificate-logo">
-              <img
-                src="https://www.elevenwater.uz/img/wp-content/uploads/2020/12/cert1.jpg"
-                alt=""
-              />
+              <img src="https://www.elevenwater.uz/img/wp-content/uploads/2020/12/cert1.jpg" alt="" />
             </div>
             <div class="text">
-              <h3>
-                <span>NSF & IBWA</span><br />
-                Sertifikatlangan Kompaniya
-              </h3>
-              <p>
-                Bizning muvaffaqiyatimiz yo‘lida bo‘lgan har qanday shubhali
-                qarashlarga javob.
-              </p>
+              <h3 [innerHTML]="'about.certified_title' | translate"></h3>
+              <p>{{ 'about.certified_desc' | translate }}</p>
             </div>
           </div>
         </div>
@@ -532,106 +537,65 @@
       <div class="col-xl-12">
         <div class="about-style1_tab tabs-box">
           <ul class="tab-buttons clearfix">
-            <li
-              (click)="setActiveTab('about')"
-              [ngClass]="{ 'active-btn': activeTab === 'about' }"
-              class="tab-btn"
-            >
-              <div class="left">
-                <h2>01.</h2>
-              </div>
+            <li (click)="setActiveTab('about')" [ngClass]="{ 'active-btn': activeTab === 'about' }" class="tab-btn">
+              <div class="left"><h2>01.</h2></div>
               <div class="right">
-                <h5>
-                  Kompaniya<br />
-                  Tarixi
-                </h5>
+                <h5 [innerHTML]="'about.tab1_title' | translate"></h5>
               </div>
             </li>
-            <li
-              (click)="setActiveTab('goal')"
-              [ngClass]="{ 'active-btn': activeTab === 'goal' }"
-              class="tab-btn"
-            >
-              <div class="left">
-                <h2>02.</h2>
-              </div>
+            <li (click)="setActiveTab('goal')" [ngClass]="{ 'active-btn': activeTab === 'goal' }" class="tab-btn">
+              <div class="left"><h2>02.</h2></div>
               <div class="right">
-                <h5>Maqsad va Qadriyatlarimiz</h5>
+                <h5>{{ 'about.tab2_title' | translate }}</h5>
               </div>
             </li>
           </ul>
 
           <div class="tabs-content">
-            <div
-              class="pattern-bg"
-              style="background-image: url(assets/images/pattern/thm-pattern-1.png)"
-            ></div>
+            <div class="pattern-bg" style="background-image: url(assets/images/pattern/thm-pattern-1.png)"></div>
 
             <!-- Tab 1: About -->
-            <div
-              class="tab"
-              [ngClass]="{ 'active-tab': activeTab === 'about' }"
-              *ngIf="activeTab === 'about'"
-              id="about"
-            >
+            <div class="tab" [ngClass]="{ 'active-tab': activeTab === 'about' }" *ngIf="activeTab === 'about'" id="about">
               <div class="about-style1-tab-content clearfix">
-                <div
-                  class="about-style1-tab-content_bg"
-                  style="background-image: url(assets/images/about/about-style3.jpg)"
-                ></div>
+                <div class="about-style1-tab-content_bg" style="background-image: url(assets/images/about/about-style3.jpg)"></div>
                 <div class="inner-content">
                   <div class="sec-title">
-                    <h2>30 yildan beri <br />oilaviy boshqaruv ostida</h2>
+                    <h2 [innerHTML]="'about.tab_header' | translate"></h2>
                     <div class="decor">
                       <img src="assets/images/shape/decor.png" alt="" />
                     </div>
                   </div>
-                  <p>
-                    Qiyinchiliklarga qaramay, biz sifatli suv yetkazib berishdan voz
-                    kechmaymiz. Har bir mijozimizga qulaylik va ishonchni taqdim
-                    etamiz.
-                  </p>
+                  <p>{{ 'about.tab1_text' | translate }}</p>
                   <div class="btn-box">
-                    <a class="btn-two" href="about.html"
-                      ><span class="icon-right-arrow"></span>Batafsil</a
-                    >
+                    <a class="btn-two" href="about.html">
+                      <span class="icon-right-arrow"></span>{{ 'about.more' | translate }}
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
 
             <!-- Tab 2: Goal -->
-            <div
-              class="tab"
-              [ngClass]="{ 'active-tab': activeTab === 'goal' }"
-              *ngIf="activeTab === 'goal'"
-              id="goal"
-            >
+            <div class="tab" [ngClass]="{ 'active-tab': activeTab === 'goal' }" *ngIf="activeTab === 'goal'" id="goal">
               <div class="about-style1-tab-content clearfix">
-                <div
-                  class="about-style1-tab-content_bg"
-                  style="background-image: url(assets/images/about/about-style1.jpg)"
-                ></div>
+                <div class="about-style1-tab-content_bg" style="background-image: url(assets/images/about/about-style1.jpg)"></div>
                 <div class="inner-content">
                   <div class="sec-title">
-                    <h2>30 yildan beri <br />oilaviy boshqaruv ostida</h2>
+                    <h2 [innerHTML]="'about.tab_header' | translate"></h2>
                     <div class="decor">
                       <img src="assets/images/shape/decor.png" alt="" />
                     </div>
                   </div>
-                  <p>
-                    Bizning asosiy maqsadimiz – sifatli, xavfsiz va ekologik toza suvni
-                    har bir oila va korxonaga yetkazib berish. Biz mijozlar ishonchini
-                    qadrlaymiz.
-                  </p>
+                  <p>{{ 'about.tab2_text' | translate }}</p>
                   <div class="btn-box">
-                    <a class="btn-two" href="about.html"
-                      ><span class="icon-right-arrow"></span>Batafsil</a
-                    >
+                    <a class="btn-two" href="about.html">
+                      <span class="icon-right-arrow"></span>{{ 'about.more' | translate }}
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
 
@@ -640,7 +604,6 @@
   </div>
 </section>
 
-<!--End About Style1 Area-->
 
 <!--Start Shop Style1 Area-->
 <section class="shop-style1-area">
@@ -659,23 +622,18 @@
       />
     </div>
     <div class="round-box paroller-2">
-      <h3>
-        Hech <br />
-        Qanday<br />
-        Cheklovlarsiz
-      </h3>
+      <h3 [innerHTML]="'shop.no_limits' | translate"></h3>
+
     </div>
   </div>
-  <div class="big-title">100% ishonchli</div>
+  <div class="big-title">{{ 'shop.trust' | translate }}</div>
   <div class="auto-container">
     <div class="sec-title text-center">
       <div class="sub-title">
-        <h5>Mahsulotlarimiz</h5>
+        <h5>{{ 'shop.subtitle' | translate }}</h5>
       </div>
-      <h2>
-        Har doim yangi, har doim o‘z vaqtida <br />
-        eshigingizgacha
-      </h2>
+      <h2 [innerHTML]="'shop.title' | translate"></h2>
+
       <div class="decor">
         <img src="assets/images/shape/decor.png" alt="" />
       </div>
@@ -914,6 +872,16 @@
 </section>
 <!--End Shop Style1 Area-->
 
+
+
+
+
+
+
+
+
+
+
 <!--Start Choose Style1 Area-->
 <section class="choose-style1-area">
   <div class="container">
@@ -925,164 +893,100 @@
           data-wow-duration="2500ms"
         >
           <img
-            src="	https://st.ourhtmldemo.com/new/aguapure-demo/assets/images/resources/choose-style1-img.jpg"
+            src="https://st.ourhtmldemo.com/new/aguapure-demo/assets/images/resources/choose-style1-img.jpg"
             alt=""
           />
           <div class="round-box js-tilt paroller">
-            <h3>
-              Hech <br />
-              Qanday<br />
-              Cheklovlarsiz
-            </h3>
+            <h3 [innerHTML]="'choose.badge' | translate"></h3>
           </div>
         </div>
       </div>
+
       <div class="col-xl-8">
         <div class="choose-style1-content">
           <div class="sec-title">
             <div class="sub-title">
-              <h5>Nima uchun Eleven Water?</h5>
+              <h5>{{ 'choose.why_title' | translate }}</h5>
             </div>
-            <h2>
-              Bizning tabiiy suvimizning<br />yangiligi sizga manzur bo‘ladi
-            </h2>
+            <h2 [innerHTML]="'choose.why_subtitle' | translate"></h2>
             <div class="decor">
-              <img src="assets/images/shape/decor.pn" alt="" />
+              <img src="assets/images/shape/decor.png" alt="" />
             </div>
           </div>
+
           <div class="inner-content">
             <div class="shape">
               <img src="assets/images/shape/choose-style1-shape-1.png" alt="" />
             </div>
-            <ul class="clearfix">
-              <li
-                class="wow fadeInLeft"
-                data-wow-delay="100ms"
-                data-wow-duration="1500ms"
-              >
+
+            <ul class="clearfix  clearfix_class">
+              <li class="wow fadeInLeft" data-wow-delay="100ms" data-wow-duration="1500ms">
                 <div class="icon">
-                  <div
-                    class="icon-bg"
-                    style="
-                      background-image: url(assets/images/shape/thm-shape-1.png);
-                    "
-                  ></div>
+                  <div class="icon-bg" style="background-image: url(assets/images/shape/thm-shape-1.png);"></div>
                   <span class="icon-water-drop-1"></span>
                 </div>
                 <div class="text">
-                  <h3>Yuqori sifat</h3>
-                  <p>Har bir tomchi suv qat'iy sifat nazoratidan o'tadi.</p>
+                  <h3>{{ 'choose.feature1_title' | translate }}</h3>
+                  <p>{{ 'choose.feature1_desc' | translate }}</p>
                 </div>
               </li>
-              <li
-                class="wow fadeInRight"
-                data-wow-delay="100ms"
-                data-wow-duration="1500ms"
-              >
+
+              <li class="wow fadeInRight" data-wow-delay="100ms" data-wow-duration="1500ms">
                 <div class="icon">
-                  <div
-                    class="icon-bg"
-                    style="
-                      background-image: url(assets/images/shape/thm-shape-1.png);
-                    "
-                  ></div>
+                  <div class="icon-bg" style="background-image: url(assets/images/shape/thm-shape-1.png);"></div>
                   <span class="icon-write-message"></span>
                 </div>
                 <div class="text">
-                  <h3>Shartnomalarsiz</h3>
-                  <p>
-                    Hech qanday majburiy shartnomalarsiz qulay xizmatdan
-                    foydalaning.
-                  </p>
+                  <h3>{{ 'choose.feature2_title' | translate }}</h3>
+                  <p>{{ 'choose.feature2_desc' | translate }}</p>
                 </div>
               </li>
             </ul>
-            <ul class="clearfix">
-              <li
-                class="wow fadeInLeft"
-                data-wow-delay="300ms"
-                data-wow-duration="1500ms"
-              >
+
+            <ul class="clearfix clearfix_class">
+              <li class="wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
                 <div class="icon">
-                  <div
-                    class="icon-bg"
-                    style="
-                      background-image: url(assets/images/shape/thm-shape-1.png);
-                    "
-                  ></div>
+                  <div class="icon-bg" style="background-image: url(assets/images/shape/thm-shape-1.png);"></div>
                   <span class="icon-shield"></span>
                 </div>
                 <div class="text">
-                  <h3>Ishonchli</h3>
-                  <p>
-                    Yetkazib berish va xizmat ko‘rsatishda doimiy ishonchli
-                    hamkor.
-                  </p>
+                  <h3>{{ 'choose.feature3_title' | translate }}</h3>
+                  <p>{{ 'choose.feature3_desc' | translate }}</p>
                 </div>
               </li>
-              <li
-                class="wow fadeInRight"
-                data-wow-delay="300ms"
-                data-wow-duration="1500ms"
-              >
+
+              <li class="wow fadeInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
                 <div class="icon">
-                  <div
-                    class="icon-bg"
-                    style="
-                      background-image: url(assets/images/shape/thm-shape-1.png);
-                    "
-                  ></div>
+                  <div class="icon-bg" style="background-image: url(assets/images/shape/thm-shape-1.png);"></div>
                   <span class="icon-medal"></span>
                 </div>
                 <div class="text">
-                  <h3>Sertifikatlangan</h3>
-                  <p>
-                    Sifat va xavfsizlik bo‘yicha xalqaro sertifikatlarga ega
-                    kompaniya.
-                  </p>
+                  <h3>{{ 'choose.feature4_title' | translate }}</h3>
+                  <p>{{ 'choose.feature4_desc' | translate }}</p>
                 </div>
               </li>
             </ul>
-            <ul class="clearfix">
-              <li
-                class="wow fadeInLeft"
-                data-wow-delay="500ms"
-                data-wow-duration="1500ms"
-              >
+
+            <ul class="clearfix clearfix_class">
+              <li class="wow fadeInLeft" data-wow-delay="500ms" data-wow-duration="1500ms">
                 <div class="icon">
-                  <div
-                    class="icon-bg"
-                    style="
-                      background-image: url(assets/images/shape/thm-shape-1.png);
-                    "
-                  ></div>
+                  <div class="icon-bg" style="background-image: url(assets/images/shape/thm-shape-1.png);"></div>
                   <span class="icon-hand"></span>
                 </div>
                 <div class="text">
-                  <h3>Qulay narxlar</h3>
-                  <p>Hamyonbop narxlarda sifatli suv – har bir mijoz uchun.</p>
+                  <h3>{{ 'choose.feature5_title' | translate }}</h3>
+                  <p>{{ 'choose.feature5_desc' | translate }}</p>
                 </div>
               </li>
-              <li
-                class="wow fadeInRight"
-                data-wow-delay="600ms"
-                data-wow-duration="1500ms"
-              >
+
+              <li class="wow fadeInRight" data-wow-delay="600ms" data-wow-duration="1500ms">
                 <div class="icon">
-                  <div
-                    class="icon-bg"
-                    style="
-                      background-image: url(assets/images/shape/thm-shape-1.png);
-                    "
-                  ></div>
+                  <div class="icon-bg" style="background-image: url(assets/images/shape/thm-shape-1.png);"></div>
                   <span class="icon-truck"></span>
                 </div>
                 <div class="text">
-                  <h3>Tez yetkazib berish</h3>
-                  <p>
-                    Buyurtmangiz eng qisqa vaqt ichida eshigingizgacha
-                    yetkaziladi.
-                  </p>
+                  <h3>{{ 'choose.feature6_title' | translate }}</h3>
+                  <p>{{ 'choose.feature6_desc' | translate }}</p>
                 </div>
               </li>
             </ul>
@@ -1094,6 +998,15 @@
 </section>
 <!--End Choose Style1 Area-->
 
+
+
+
+
+
+
+
+
+
 <!--Start Features Style1 Area-->
 <section class="features-style1-area">
   <div class="auto-container">
@@ -1102,46 +1015,34 @@
         <div class="features-style1_one-content">
           <div
             class="features-style1_one-content-bg"
-            style="
-              background-image: url(assets/images/resources/features-style1_one-content-bg.jpg);
-            "
+            style="background-image: url(assets/images/resources/features-style1_one-content-bg.jpg);"
           ></div>
           <div class="inner-content">
             <div class="sec-title">
               <div class="sub-title">
-                <h5>Suv va Siz</h5>
+                <h5>{{ 'features.title_sub' | translate }}</h5>
               </div>
-              <h2>Sog‘lom hayot uchun  ajralmas manba</h2>
+              <h2>{{ 'features.title_main' | translate }}</h2>
               <div class="decor">
                 <img src="assets/images/shape/decor.png" alt="" />
               </div>
             </div>
             <div class="text">
-              <p>
-                Suv — tanamiz uchun zarur bo‘lgan eng asosiy hayot manbalaridan biridir.
-              </p>
+              <p>{{ 'features.description' | translate }}</p>
               <ul>
-                <li>
-                  <span class="icon-water-drop"></span>Oziq moddalar va kislorodni
-                  tashish
-                </li>
-                <li><span class="icon-water-drop"></span>Ovqat hazm qilishga yordam berish</li>
-                <li>
-                  <span class="icon-water-drop"></span>Qon bosimini me'yorda ushlab turish
-                </li>
-                <li>
-                  <span class="icon-water-drop"></span>Yurak urishini barqarorlashtirish
-                </li>
+                <li><span class="icon-water-drop"></span>{{ 'features.point1' | translate }}</li>
+                <li><span class="icon-water-drop"></span>{{ 'features.point2' | translate }}</li>
+                <li><span class="icon-water-drop"></span>{{ 'features.point3' | translate }}</li>
+                <li><span class="icon-water-drop"></span>{{ 'features.point4' | translate }}</li>
               </ul>
               <div class="btns-box">
                 <a class="btn-one" href="#">
                   <div class="round"></div>
-                  <span class="txt">Barchasini ko‘rish</span>
+                  <span class="txt">{{ 'features.see_all' | translate }}</span>
                 </a>
               </div>
             </div>
           </div>
-
         </div>
       </div>
 
@@ -1149,23 +1050,15 @@
         <div class="features-style1_single-box">
           <div
             class="features-style1_single-box-bg"
-            style="
-              background-image: url(assets/images/resources/features-style1_single-box-bg-1.jpg);
-            "
+            style="background-image: url(assets/images/resources/features-style1_single-box-bg-1.jpg);"
           ></div>
           <div class="inner-content">
-            <h2>
-              Xodimlaringiz uchun <br />
-              sog‘lom suv
-            </h2>
-            <p>
-              Inson tanasining 70% dan ortig‘i suvdan iborat bo‘lib, u sog‘liq uchun nihoyatda muhim hisoblanadi.
-            </p>
+            <h2 [innerHTML]="'features.box1_title' | translate"></h2>
+            <p>{{ 'features.box1_text' | translate }}</p>
             <div class="btn-box">
               <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
             </div>
           </div>
-
         </div>
       </div>
 
@@ -1173,46 +1066,37 @@
         <div class="features-style1_single-box style2">
           <div
             class="features-style1_single-box-bg"
-            style="
-              background-image: url(assets/images/resources/features-style1_single-box-bg-2.jpg);
-            "
+            style="background-image: url(assets/images/resources/features-style1_single-box-bg-2.jpg);"
           ></div>
           <div class="inner-content">
-            <h2>
-
-              Ijaraga oling yoki xarid qiling
-            </h2>
-            <p>
-              Barcha narxlar soliqlarni o‘z ichiga oladi va oyiga kamida 2 dona suv idishi buyurtma qilinishi kerak.
-            </p>
+            <h2>{{ 'features.box2_title' | translate }}</h2>
+            <p>{{ 'features.box2_text' | translate }}</p>
             <div class="btn-box">
               <a href="#"><i class="fa fa-plus" aria-hidden="true"></i></a>
             </div>
           </div>
-
         </div>
       </div>
+
     </div>
   </div>
 </section>
 <!--End Features Style1 Area-->
 
+
+
 <!--Start Working process area -->
 <section class="working-process-area">
   <div
     class="working-process-area-bg"
-    style="
-      background-image: url(assets/images/parallax-background/working-process-area-bg.jpg);
-    "
+    style="background-image: url(assets/images/parallax-background/working-process-area-bg.jpg);"
   ></div>
   <div class="container">
     <div class="sec-title text-center">
       <div class="sub-title">
-        <h5>Qanday ishlaymiz?</h5>
+        <h5>{{ 'working_process.subtitle' | translate }}</h5>
       </div>
-      <h2 class="clr_white">
-        Yuqori sifatdagi suv <br /> yetkazib berish jarayoni
-      </h2>
+      <h2 class="clr_white" [innerHTML]="'working_process.title' | translate"></h2>
       <div class="decor">
         <img src="assets/images/shape/decor.png" alt="" />
       </div>
@@ -1220,72 +1104,54 @@
     <div class="row">
       <!-- Bosqich 1 -->
       <div class="col-xl-4">
-        <div
-          class="single-working-process wow fadeInUp"
-          data-wow-delay="00ms"
-          data-wow-duration="1500ms"
-        >
+        <div class="single-working-process wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
           <div class="counting-box clearfix">
             <div class="text">
-              <h6>Bosqich</h6>
+              <h6>{{ 'working_process.step' | translate }}</h6>
             </div>
             <div class="count"></div>
           </div>
           <div class="content">
-            <h3>Buyurtma berish uchun bog'laning</h3>
-            <p>
-              Suv idishingizni onlayn tarzda yoki telefon orqali buyurtma bering — bu juda qulay va tez!
-            </p>
+            <h3>{{ 'working_process.step1_title' | translate }}</h3>
+            <p>{{ 'working_process.step1_desc' | translate }}</p>
           </div>
           <div class="icon">
             <span class="icon-order"></span>
           </div>
         </div>
       </div>
+
       <!-- Bosqich 2 -->
       <div class="col-xl-4">
-        <div
-          class="single-working-process wow fadeInUp"
-          data-wow-delay="300ms"
-          data-wow-duration="1500ms"
-        >
+        <div class="single-working-process wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
           <div class="counting-box clearfix">
             <div class="text">
-              <h6>Bosqich</h6>
+              <h6>{{ 'working_process.step' | translate }}</h6>
             </div>
             <div class="count"></div>
           </div>
           <div class="content">
-            <h3>Avtomatlashtirilgan qadoqlash
-
-            </h3>
-            <p>
-              Suv idishlari gigiyenik sharoitda, zamonaviy uskunalar yordamida qadoqlanadi.
-            </p>
+            <h3>{{ 'working_process.step2_title' | translate }}</h3>
+            <p>{{ 'working_process.step2_desc' | translate }}</p>
           </div>
           <div class="icon">
             <span class="icon-package"></span>
           </div>
         </div>
       </div>
+
       <!-- Bosqich 3 -->
       <div class="col-xl-4">
-        <div
-          class="single-working-process wow fadeInUp"
-          data-wow-delay="500ms"
-          data-wow-duration="1500ms"
-        >
+        <div class="single-working-process wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
           <div class="counting-box clearfix">
             <div class="text">
-              <h6>Bosqich</h6>
+              <h6>{{ 'working_process.step' | translate }}</h6>
             </div>
             <div class="count"></div>
           </div>
           <div class="content">
-            <h3>O‘z vaqtida yetkazib berish</h3>
-            <p>
-              Jamoamiz tomonidan buyurtmangiz eshigingizga o‘z vaqtida yetkaziladi.
-            </p>
+            <h3>{{ 'working_process.step3_title' | translate }}</h3>
+            <p>{{ 'working_process.step3_desc' | translate }}</p>
           </div>
           <div class="icon">
             <span class="icon-truck-1"></span>
@@ -1294,7 +1160,6 @@
       </div>
     </div>
   </div>
-
 </section>
 <!--End Working process area -->
 
@@ -1302,29 +1167,20 @@
 <section class="contact-style1-area">
   <div
     class="contact-form-box1_bg"
-    style="
-      background-image: url(assets/images/shop/shop-7.jpg);
-    "
+    style="background-image: url(assets/images/shop/shop-7.jpg);"
   ></div>
-  <div class="thm-round-box1">
-    <h3>
-      Ishonchli<br />
-      Tezkor<br />
-      Qo‘llab-quvvatlash
-    </h3>
 
+  <div class="thm-round-box1">
+    <h3 [innerHTML]="'contact.box_title' | translate"></h3>
   </div>
+
   <div class="gray-bg"></div>
   <div class="container">
     <div class="row">
+      <!-- Chap tomondagi matn -->
       <div class="col-xl-6">
         <div class="contact-style1-content">
-          <div
-            class="shape1"
-            data-aos="fade-right"
-            data-aos-easing="linear"
-            data-aos-duration="2000"
-          >
+          <div class="shape1" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="2000">
             <img
               class="paroller-2"
               src="https://st.ourhtmldemo.com/new/aguapure-demo/assets/images/shape/thm-shape-2.png"
@@ -1333,9 +1189,9 @@
           </div>
           <div class="sec-title">
             <div class="sub-title">
-              <h5>Bog‘lanish</h5>
+              <h5>{{ 'contact.subtitle' | translate }}</h5>
             </div>
-            <h2>Savolingizga <br />yordam berishdan mamnunmiz!</h2>
+            <h2 [innerHTML]="'contact.title' | translate"></h2>
             <div class="decor">
               <img src="assets/images/shape/decor.png" alt="" />
             </div>
@@ -1347,249 +1203,83 @@
                 <span class="icon-calling"></span>
               </div>
               <div class="title">
-                <h3>Biz bilan bog'lanish</h3>
-                <h2><a href="tel:+998 55 1510011">+998 55 1510011</a></h2>
+                <h3>{{ 'contact.call_title' | translate }}</h3>
+                <h2><a href="tel:+998551510011">{{ 'contact.call_text' | translate }}</a></h2>
               </div>
             </div>
             <div class="text">
-              <p>
-                Savollaringiz bo‘lsa yoki xizmatlarimizdan foydalanmoqchi bo‘lsangiz,<br />
-                bizga bemalol murojaat qiling.
-              </p>
-
+              <p [innerHTML]="'contact.description' | translate"></p>
             </div>
             <div class="btn-box">
-              <a class="btn-one" href="tel:+998 55 1510011">
+              <a class="btn-one" href="tel:+998551510011">
                 <div class="round"></div>
-                <span class="txt">Qayta qo‘ng‘iroq</span>
+                <span class="txt">{{ 'contact.call_button' | translate }}</span>
               </a>
             </div>
           </div>
         </div>
       </div>
 
+      <!-- O'ng tomondagi forma -->
       <div class="col-xl-6">
         <div class="contact-form-box1">
           <div class="top-title">
-            <h2>Jamoamiz bilan bog‘laning
-
-            </h2>
+            <h2>{{ 'contact.form_title' | translate }}</h2>
           </div>
-          <form
-            id="contact-form"
-            name="contact_form"
-            class="default-form1"
-            action="#"
-            method="post"
-          >
+          <form id="contact-form" name="contact_form" class="default-form1" action="#" method="post">
             <div class="input-box">
               <input
                 type="text"
                 name="form_name"
-                value=""
-                placeholder="Ismingiz"
-                required=""
+                placeholder="{{ 'contact.form_name' | translate }}"
+                required
               />
-              <div class="icon">
-                <i class="fa fa-user" aria-hidden="true"></i>
-              </div>
+              <div class="icon"><i class="fa fa-user" aria-hidden="true"></i></div>
             </div>
             <div class="input-box">
               <input
                 type="email"
                 name="form_email"
-                value=""
-                placeholder="Email pochtangiz"
-                required=""
+                placeholder="{{ 'contact.form_email' | translate }}"
+                required
               />
-              <div class="icon">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-              </div>
+              <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
             </div>
-            <!-- <div class="input-box">
-              <div class="select-box">
-                <div class="round-shape"></div>
-                <select class="wide">
-                  <option data-display="Service You Need">
-                    Service You Need
-                  </option>
-                  <option value="1">Bottled Water</option>
-                  <option value="2">Water Dispenser</option>
-                  <option value="3">Water Trailers</option>
-                </select>
-              </div>
-              <div class="icon">
-                <i class="fa fa-cog" aria-hidden="true"></i>
-              </div>
-            </div> -->
             <div class="input-box">
               <input
                 type="text"
                 name="form_address"
-                value=""
-                placeholder="Manzilingiz"
+                placeholder="{{ 'contact.form_address' | translate }}"
               />
-              <div class="icon">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-              </div>
+              <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
             </div>
             <div class="button-box">
               <div class="left">
                 <div class="checked-box1 mb-2">
                   <input type="checkbox" name="skipper1" id="skipper" checked />
-                  <label for="skipper">
-                    <span></span>Maxsus takliflar va yangiliklarni <br> olishga roziman
-                  </label>
-
+                  <label for="skipper"><span></span>I agree to receive updates<br> from Elewen water</label>
                 </div>
               </div>
               <div class="right">
                 <button
                   class="btn-one"
                   type="submit"
-                  data-loading-text="Please wait..."
+                  [attr.data-loading-text]="'contact.form_loading' | translate"
                 >
                   <span class="round"></span>
-                  <span class="txt">Davom etish</span>
+                  <span class="txt">{{ 'contact.form_submit' | translate }}</span>
                 </button>
               </div>
             </div>
           </form>
         </div>
       </div>
+
     </div>
   </div>
 </section>
 <!--End Contact Style1 Area-->
 
-<!--Start Testimonials Style1 area -->
-<!-- <section class="testimonials-style1-area">
-  <div class="container">
-    <div class="sec-title text-center">
-      <div class="sub-title">
-        <h5>Mijozlar Fikri</h5>
-      </div>
-      <h2>
-        Mijozlarimiz<br />
-        biz haqimizda nima deyishadi
-      </h2>
-      <div class="decor">
-        <img src="assets/images/shape/decor.png" alt="" />
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xl-12">
-        <div
-          class="theme_carousel testimonials-carousel_1 owl-dot-style1 owl-theme owl-carousel"
-          data-options='{"loop": true, "margin": 30, "autoheight":true, "lazyload":true, "nav": false, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 300, "responsive":{ "0" :{ "items": "1" }, "600" :{ "items" : "1" }, "768" :{ "items" : "1" } , "992":{ "items" : "1" }, "1200":{ "items" : "1" }}}'
-        >
-          <div class="single-testimonials-style1">
-            <div class="img-box">
-              <img src="assets/images/testimonial/testimonial-v1-1.jpg" alt="" />
-              <div class="round-1"></div>
-              <div class="round-2"></div>
-            </div>
-            <div class="inner-content">
-              <div class="content-box">
-                <div class="rateing-box">
-                  <ul>
-                    <li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star"></i></li>
-                  </ul>
-                </div>
-                <h3>Eng yaxshi tajribam bo‘ldi</h3>
-                <p>
-                  Eleven Water xizmatidan juda mamnunmiz. Ular har doim o‘z vaqtida yetkazishadi. Hisob-kitoblar to‘g‘ri. Yetkazib berish haqida oldindan xabardor qilishadi — juda qulay.
-                </p>
-                <h4>Rodha Thelma, <span>Kaliforniya</span></h4>
-              </div>
-            </div>
-          </div>
-          <div class="single-testimonials-style1">
-            <div class="img-box">
-              <img src="assets/images/testimonial/testimonial-v1-2.jpg" alt="" />
-              <div class="round-1"></div>
-              <div class="round-2"></div>
-            </div>
-            <div class="inner-content">
-              <div class="content-box">
-                <div class="rateing-box">
-                  <ul>
-                    <li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star"></i></li>
-                  </ul>
-                </div>
-                <h3>Ajoyib ta’m va xizmat</h3>
-                <p>
-                  Besh yildan buyon Eleven Waterdan foydalanamiz. Xizmat har doim mukammal. Haydovchi xushmuomala, suv juda mazali va tavsiya qilamiz.
-                </p>
-                <h4>Lillian Grace, <span>Kaliforniya</span></h4>
-              </div>
-            </div>
-          </div>
-          <div class="single-testimonials-style1">
-            <div class="img-box">
-              <img src="assets/images/testimonial/testimonial-v1-3.jpg" alt="" />
-              <div class="round-1"></div>
-              <div class="round-2"></div>
-            </div>
-            <div class="inner-content">
-              <div class="content-box">
-                <div class="rateing-box">
-                  <ul>
-                    <li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star"></i></li>
-                  </ul>
-                </div>
-                <h3>Juda professionallar</h3>
-                <p>
-                  Eleven Water ofisiga borib xizmatlari haqida ma’lumot oldim. Jamoa juda professionallar va barcha savollarimga aniq javob berishdi.
-                </p>
-                <h4>Luke Nobert, <span>Los-Anjeles</span></h4>
-              </div>
-            </div>
-          </div>
-          <div class="single-testimonials-style1">
-            <div class="img-box">
-              <img src="assets/images/testimonial/testimonial-v1-4.jpg" alt="" />
-              <div class="round-1"></div>
-              <div class="round-2"></div>
-            </div>
-            <div class="inner-content">
-              <div class="content-box">
-                <div class="rateing-box">
-                  <ul>
-                    <li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star"></i></li>
-                    <li><i class="fa fa-star"></i></li>
-                  </ul>
-                </div>
-                <h3>Suv juda mazali!</h3>
-                <p>
-                  Eleven Water ofisida xizmatlar haqida maslahat oldim. Jamoa e’tiborli va malakali edi. Suv sifati esa a’lo darajada.
-                </p>
-                <h4>Luke Nobert, <span>Los-Anjeles</span></h4>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<!--End Testimonials Style1 area -->
 
 <!--Start Blog Style1 Area-->
 <section class="blog-style1-area">
@@ -1599,9 +1289,9 @@
         <div class="blog-style1_top">
           <div class="sec-title">
             <div class="sub-title">
-              <h5>So‘nggi blog postlar</h5>
+              <h5>{{ 'blog.subtitle' | translate }}</h5>
             </div>
-            <h2>Sanoatimiz yangiliklari</h2>
+            <h2>{{ 'blog.title' | translate }}</h2>
             <div class="decor">
               <img src="assets/images/shape/decor.png" alt="" />
             </div>
@@ -1609,7 +1299,7 @@
           <div class="btns-box">
             <a class="btn-one" href="blog.html">
               <div class="round"></div>
-              <span class="txt">Barcha postlar</span>
+              <span class="txt">{{ 'blog.all_posts' | translate }}</span>
             </a>
           </div>
         </div>
@@ -1625,30 +1315,31 @@
               <img src="https://st.ourhtmldemo.com/new/aguapure-demo/assets/images/blog/blog-v1-1.jpg" alt="" />
             </div>
             <div class="categories">
-              <h6><i class="fa fa-folder"></i>Eleven water</h6>
+              <h6><i class="fa fa-folder"></i>{{ 'blog.category' | translate }}</h6>
+
             </div>
           </div>
           <div class="text-holder">
             <h3 class="blog-title">
-              <a href="blog-single.html">
-                Eleven water:<br />
-                Nimalarga e’tibor berish kerak?
-              </a>
+              <a href="blog-single.html" [innerHTML]="'blog.post1_title' | translate"></a>
+
             </h3>
             <div class="meta-box">
               <ul class="meta-info">
-                <li><i class="fa fa-calendar"></i> 10 May, 2023</li>
-                <li><a href="#"><i class="fa fa-user"></i> Shaw</a></li>
+                <li><i class="fa fa-calendar"></i> {{ 'blog.post1_date' | translate }}</li>
+
+                <li><a href="#"><i class="fa fa-user"></i> {{ 'blog.post1_author' | translate }}</a></li>
+
               </ul>
             </div>
             <div class="text">
-              <p>
-                Kelib chiqishi mumkin bo‘lgan muammolarni oldindan ko‘ra bilish va...
-              </p>
+              <p>{{ 'blog.post1_text' | translate }}</p>
+
             </div>
             <div class="btns-box">
               <a class="btn-two" href="blog-single.html">
-                <span class="icon-right-arrow"></span>Batafsil
+                <span class="icon-right-arrow"></span>{{ 'blog.read_more' | translate }}
+
               </a>
             </div>
           </div>
@@ -1662,30 +1353,31 @@
               <img src="	https://st.ourhtmldemo.com/new/aguapure-demo/assets/images/blog/blog-v1-2.jpg" alt="" />
             </div>
             <div class="categories">
-              <h6><i class="fa fa-folder"></i>Eleven water</h6>
+              <h6><i class="fa fa-folder"></i>{{ 'blog.category' | translate }}</h6>
+
             </div>
           </div>
           <div class="text-holder">
             <h3 class="blog-title">
-              <a href="blog-single.html">
-               Mobil ilovamizdan<br />
-                foydalanishning asosiy afzalliklari
-              </a>
+              <a href="blog-single.html" [innerHTML]="'blog.post2_title' | translate"></a>
+
             </h3>
             <div class="meta-box">
               <ul class="meta-info">
-                <li><i class="fa fa-calendar"></i> 5 May, 2023</li>
-                <li><a href="#"><i class="fa fa-user"></i> Philips</a></li>
+                <li><i class="fa fa-calendar"></i> {{ 'blog.post2_date' | translate }}</li>
+
+                <li><a href="#"><i class="fa fa-user"></i> {{ 'blog.post2_author' | translate }}</a></li>
+
               </ul>
             </div>
             <div class="text">
-              <p>
-                Oddiy misol tariqasida aytadigan bo‘lsak, bu ish qulayliklar yaratadi...
-              </p>
+              <p>{{ 'blog.post2_text' | translate }}</p>
+
             </div>
             <div class="btns-box">
               <a class="btn-two" href="blog-single.html">
-                <span class="icon-right-arrow"></span>Batafsil
+                <span class="icon-right-arrow"></span>{{ 'blog.read_more' | translate }}
+
               </a>
             </div>
           </div>
@@ -1699,31 +1391,31 @@
               <img src="	https://st.ourhtmldemo.com/new/aguapure-demo/assets/images/blog/blog-v1-3.jpg" alt="" />
             </div>
             <div class="categories">
-              <h6><i class="fa fa-folder"></i>Eleven water</h6>
+              <h6><i class="fa fa-folder"></i>{{ 'blog.category' | translate }}</h6>
             </div>
           </div>
           <div class="text-holder">
             <h3 class="blog-title">
-              <a href="blog-single.html">
-                Toza suv ichishning sog‘liq uchun foydalari. Bir kunda qancha suv ichish kerak
-              </a>
+              <a href="blog-single.html">{{ 'blog.post3_title' | translate }}</a>
 
 
             </h3>
             <div class="meta-box">
               <ul class="meta-info">
-                <li><i class="fa fa-calendar"></i> 22 Aprel, 2023</li>
-                <li><a href="#"><i class="fa fa-user"></i> Shaw</a></li>
+                <li><i class="fa fa-calendar"></i> {{ 'blog.post3_date' | translate }}</li>
+
+                <li><a href="#"><i class="fa fa-user"></i> {{ 'blog.post3_author' | translate }}</a></li>
+
               </ul>
             </div>
             <div class="text">
-              <p>
-                Kelib chiqishi mumkin bo‘lgan muammolarni oldindan ko‘ra bilish va...
-              </p>
+              <p>{{ 'blog.post3_text' | translate }}</p>
+
             </div>
             <div class="btns-box">
               <a class="btn-two" href="blog-single.html">
-                <span class="icon-right-arrow"></span>Batafsil
+                <span class="icon-right-arrow"></span>{{ 'blog.read_more' | translate }}
+
               </a>
             </div>
           </div>

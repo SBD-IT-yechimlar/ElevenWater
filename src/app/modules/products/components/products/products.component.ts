@@ -1,9 +1,10 @@
 import { Component, AfterViewInit } from '@angular/core';
+import { TranslateModule } from '@ngx-translate/core';
 declare var $: any;
 
 @Component({
   selector: 'app-products',
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './products.component.html',
   styleUrl: './products.component.scss'
 })

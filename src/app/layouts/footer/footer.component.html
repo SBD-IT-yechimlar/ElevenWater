@@ -4,133 +4,105 @@
   <div class="footer">
     <div class="container">
       <div class="row text-right-rtl">
+
         <!--Start single footer widget-->
-        <div
-          class="col-xl-3 col-lg-6 col-md-6 col-sm-12 wow animated fadeInUp"
-          data-wow-delay="0.1s"
-        >
+        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.1s">
           <div class="single-footer-widget marbtm50">
             <div class="our-company-info">
               <div class="footer-logo">
-                <a href="index.html"
-                  ><img
-                    src="https://elevenwater.uz/img/wp-content/uploads/2021/05/eleven_logo.png"
-                    alt=""
-                /></a>
+                <a href="index.html">
+                  <img src="https://elevenwater.uz/img/wp-content/uploads/2021/05/eleven_logo.png" alt="" />
+                </a>
               </div>
               <div class="text-box">
-                <p>
-                  Biz mijozlarimizga qulaylik yaratish uchun xavfsiz va ishonchli xizmatlar taqdim etamiz. Har bir buyurtma – ishonchli qadam!
-                </p>
+                <p>{{ 'footer.about.description' | translate }}</p>
               </div>
               <div class="our-company-info-list">
                 <ul>
-                  <li><span class="icon-check-mark"></span>Bepul yetkazib berish</li>
-                  <li>
-                    <span class="icon-check-mark"></span>Xavfsiz va tezkor to‘lov tizimi
-                  </li>
+                  <li><span class="icon-check-mark"></span>{{ 'footer.about.features.0' | translate }}</li>
+                  <li><span class="icon-check-mark"></span>{{ 'footer.about.features.1' | translate }}</li>
                 </ul>
               </div>
-
             </div>
           </div>
         </div>
         <!--End single footer widget-->
 
         <!--Start single footer widget-->
-        <div
-          class="col-xl-3 col-lg-6 col-md-6 col-sm-12 wow animated fadeInUp"
-          data-wow-delay="0.3s"
-        >
+        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.3s">
           <div class="single-footer-widget martop marbtm50">
             <div class="title">
-              <h3>Foydali havolalar</h3>
+              <h3>{{ 'footer.links.title' | translate }}</h3>
               <div class="decor">
                 <img src="assets/images/shape/decor.png" alt="" />
               </div>
             </div>
             <div class="footer-widget-links">
               <ul class="pull-left">
-                <li><a routerLink="dashboard">Asosiy</a></li>
-                <li><a routerLink="about">Kompaniya haqida</a></li>
-                <li><a routerLink="services">Xizmatlar</a></li>
-
-                    <li><a routerLink="products">Mahsulotlar</a></li>
-                    <li> <a routerLink="product-details">Mahsulot haqida batafsil</a>
-                </li>
-                <li><a routerLink="product-basket">Savatcha</a></li>
-                <li>
-                  <a routerLink="checkout-page">Buyurtmani rasmiylashtirish</a>
-                </li>
-                <li><a routerLink="contact">Aloqa</a></li>
-
+                <li><a routerLink="dashboard">{{ 'footer.links.items.0.label' | translate }}</a></li>
+                <li><a routerLink="about">{{ 'footer.links.items.1.label' | translate }}</a></li>
+                <li><a routerLink="services">{{ 'footer.links.items.2.label' | translate }}</a></li>
+                <li><a routerLink="products">{{ 'footer.links.items.3.label' | translate }}</a></li>
+                <li><a routerLink="product-details">{{ 'footer.links.items.4.label' | translate }}</a></li>
+                <li><a routerLink="product-basket">{{ 'footer.links.items.5.label' | translate }}</a></li>
+                <li><a routerLink="checkout-page">{{ 'footer.links.items.6.label' | translate }}</a></li>
+                <li><a routerLink="contact">{{ 'footer.links.items.7.label' | translate }}</a></li>
               </ul>
-
             </div>
           </div>
         </div>
         <!--End single footer widget-->
 
         <!--Start single footer widget-->
-        <div
-          class="col-xl-3 col-lg-6 col-md-6 col-sm-12 wow animated fadeInUp"
-          data-wow-delay="0.5s"
-        >
+        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.5s">
           <div class="single-footer-widget martop">
             <div class="title">
-              <h3>Manzil</h3>
+              <h3>{{ 'footer.address.title' | translate }}</h3>
               <div class="decor">
                 <img src="assets/images/shape/decor.png" alt="" />
               </div>
             </div>
             <div class="single-footer-widget-Location">
-                <div class="">
-                  <!--Start Single Location Box-->
-                  <div class="single-Location-box">
-                    <h4>Jizzax viloyati</h4>
-                    <p>Sharof Rashidov tumani,<br />S. Ayni ko‘chasi, 111-uy</p>
-                    <div class="phone">
-                      <a href="tel:+998551510011">+998 55 151 00 11</a>
-                    </div>
-                    <div class="email">
-                      <a href="mailto:support@aguapure.com">supportaguapure.com</a>
-                    </div>
-                  </div>
-                  <!--End Single Location Box-->
+              <div class="single-Location-box">
+                <h4>{{ 'footer.address.region' | translate }}</h4>
+                <p>{{ 'footer.address.street' | translate }}</p>
+                <div class="phone">
+                  <a href="tel:+998551510011">{{ 'footer.address.phone' | translate }}</a>
+                </div>
+                <div class="email">
+                  <a href="mailto:support@aguapure.com">{{ 'footer.address.email' | translate }}</a>
                 </div>
               </div>
-
+            </div>
           </div>
         </div>
         <!--End single footer widget-->
 
         <!--Start single footer widget-->
-        <div
-          class="col-xl-3 col-lg-6 col-md-6 col-sm-12 wow animated fadeInUp"
-          data-wow-delay="0.7s"
-        >
+        <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 wow animated fadeInUp" data-wow-delay="0.7s">
           <div class="single-footer-widget martop pdtop50">
             <div class="title">
-              <h3>Ish soatlari</h3>
+              <h3>{{ 'footer.working_hours.title' | translate }}</h3>
               <div class="decor">
                 <img src="assets/images/shape/decor.png" alt="" />
               </div>
             </div>
             <div class="single-footer-widget-business-hours">
-                <ul>
-                  <li>Dushanba–Juma:<br />08:00 dan 17:00 gacha</li>
-                  <li>Shanba:<br />10:00 dan 16:00 gacha</li>
-                </ul>
-                <div class="btn-box">
-                  <a class="btn-one" href="#">
-                    <div class="round"></div>
-                    <span class="txt">jadval</span>
-                  </a>
-                </div>
+              <ul>
+                <li>{{ 'footer.working_hours.days.0.day' | translate }}:<br />{{ 'footer.working_hours.days.0.hours' | translate }}</li>
+                <li>{{ 'footer.working_hours.days.1.day' | translate }}:<br />{{ 'footer.working_hours.days.1.hours' | translate }}</li>
+              </ul>
+              <div class="btn-box">
+                <a class="btn-one" href="#">
+                  <div class="round"></div>
+                  <span class="txt">{{ 'footer.working_hours.button' | translate }}</span>
+                </a>
               </div>
-
+            </div>
           </div>
         </div>
+        <!--End single footer widget-->
+
       </div>
     </div>
   </div>
@@ -140,19 +112,16 @@
     <div class="container">
       <div class="bottom-inner clearfix">
         <div class="copyright pull-left">
-          <p>
-            Mualliflik huquqi &copy;<a href="index.html"> 2023 Eleven Water.</a> Barcha huquqlar himoyalangan.
-          </p>
+          <p>{{ 'footer.bottom.copyright' | translate }}</p>
         </div>
         <ul class="footer-nav pull-right clearfix">
-          <li><a href="index.html">Foydalanish shartlari</a></li>
-          <li><a href="index.html">Maxfiylik siyosati</a></li>
-          <li><a href="index.html">Sayt xaritasi</a></li>
+          <li><a href="index.html">{{ 'footer.bottom.nav.0' | translate }}</a></li>
+          <li><a href="index.html">{{ 'footer.bottom.nav.1' | translate }}</a></li>
+          <li><a href="index.html">{{ 'footer.bottom.nav.2' | translate }}</a></li>
         </ul>
       </div>
     </div>
   </div>
-
 </footer>
 <!--End footer area-->
 
@@ -173,25 +142,24 @@
               type="search"
               class="form-control"
               name="search-input"
-              value=""
-              placeholder="Search Here"
+              placeholder="{{ 'footer.search_popup.placeholder' | translate }}"
               required
             />
             <input
               type="submit"
-              value="Search Now!"
+              value="{{ 'footer.search_popup.submit' | translate }}"
               class="theme-btn style-four"
             />
           </fieldset>
         </div>
       </form>
-      <h3>Recent Search Keywords</h3>
+      <h3>{{ 'footer.search_popup.title' | translate }}</h3>
       <ul class="recent-searches">
-        <li><a href="index.html">Water Quality</a></li>
-        <li><a href="index.html">Mineral</a></li>
-        <li><a href="index.html">Bottle</a></li>
-        <li><a href="index.html">Safety</a></li>
-        <li><a href="index.html">Plan</a></li>
+        <li><a href="index.html">{{ 'footer.search_popup.recent.0' | translate }}</a></li>
+        <li><a href="index.html">{{ 'footer.search_popup.recent.1' | translate }}</a></li>
+        <li><a href="index.html">{{ 'footer.search_popup.recent.2' | translate }}</a></li>
+        <li><a href="index.html">{{ 'footer.search_popup.recent.3' | translate }}</a></li>
+        <li><a href="index.html">{{ 'footer.search_popup.recent.4' | translate }}</a></li>
       </ul>
     </div>
   </div>

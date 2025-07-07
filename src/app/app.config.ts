@@ -18,9 +18,9 @@ import {
 import { EMPTY, Observable } from 'rxjs';
 // import { JwtService } from './core/auth/services/jwt.service';
 // import { UserService } from './core/auth/services/user.service';
-// import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { provideClientHydration } from '@angular/platform-browser';
-// import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 // import { tokenInterceptor } from './core/auth/interceptors/token.interceptor';
 // import { provideAnimations } from '@angular/platform-browser/animations';
 // import { MessageService } from 'primeng/api';
@@ -30,9 +30,9 @@ import { provideClientHydration } from '@angular/platform-browser';
 // }
 
 // AoT requires an exported function for factories
-// export function HttpLoaderFactory(httpClient: HttpClient) {
-//   return new TranslateHttpLoader(httpClient);
-// }
+export function HttpLoaderFactory(httpClient: HttpClient) {
+  return new TranslateHttpLoader(httpClient);
+}
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -48,15 +48,15 @@ export const appConfig: ApplicationConfig = {
         // ErrorInterceptorService,
       ])
     ),
-    // importProvidersFrom(
-    //   TranslateModule.forRoot({
-    //     loader: {
-    //       provide: TranslateLoader,
-    //       useFactory: HttpLoaderFactory,
-    //       deps: [HttpClient],
-    //     },
-    //   })
-    // ),
+    importProvidersFrom(
+      TranslateModule.forRoot({
+        loader: {
+          provide: TranslateLoader,
+          useFactory: HttpLoaderFactory,
+          deps: [HttpClient],
+        },
+      })
+    ),
     // {
     //   provide: APP_INITIALIZER,
     //   useFactory: initAuth,

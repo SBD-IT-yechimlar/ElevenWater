@@ -1,4 +1,4 @@
-/*** 
+/***
 =============================================
     service Style1 Area Css
 =============================================
@@ -34,6 +34,8 @@
     box-shadow: 0px 0px 30px 0px #0000001a;
     padding: 40px 40px 32px;
     border-radius: 10px;
+    width: 350px;
+    height: 515px;
 }
 .single-service-style1__bg {
     position: absolute;
@@ -137,7 +139,7 @@
     background: var(--thm-primary);
 }
 .single-service-style1:hover .img-holder .overlay-icon a::after{
-    transform: scaleX(1.0);   
+    transform: scaleX(1.0);
 }
 .single-service-style1 .img-holder .overlay-icon a span::before{
     color: var(--thm-primary);
@@ -212,7 +214,7 @@
 
 
 
-/*** 
+/***
 =============================================
     service Style2 Area Css
 =============================================
@@ -260,7 +262,7 @@
     z-index: 2;
 }
 .single-service-style2:hover .img-holder .inner:before{
-    transform: skew(0deg) translateY(0);  
+    transform: skew(0deg) translateY(0);
 }
 .single-service-style2 .img-holder .inner img{
     width: 100%;
@@ -360,7 +362,7 @@
 
 
 
-/*** 
+/***
 =============================================
     service Page Css
 =============================================
@@ -381,7 +383,7 @@
 }
 
 
-/*** 
+/***
 =============================================
     Service Details Area Css
 =============================================
@@ -504,7 +506,7 @@
 	opacity: 1;
     transform: perspective(400px) rotateX(0deg);
     transition: all 300ms linear;
-    transition-delay: 0.1s;   
+    transition-delay: 0.1s;
 }
 
 
@@ -542,7 +544,7 @@
 
 .info-ownload-box ul li .inner .icon{
     width: 65px;
-} 
+}
 .info-ownload-box ul li .inner .icon span:before {
     color: #ffffff;
     font-size: 45px;
@@ -800,7 +802,7 @@
 }
 .service-details_tab .tab-buttons li.tab-btn:hover::before,
 .service-details_tab .tab-buttons li.tab-btn.active-btn::before{
-    transform: perspective(400px) scaleX(1.0); 
+    transform: perspective(400px) scaleX(1.0);
 }
 .service-details_tab .tab-buttons li.tab-btn:hover,
 .service-details_tab .tab-buttons li.tab-btn.active-btn{
@@ -833,7 +835,7 @@
 	transform: translateY(0px);
 }
 
-  
+
 .service-details-tab-content{
     position: relative;
     display: block;
@@ -932,6 +934,7 @@
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
     margin-bottom: 40px;
     z-index: 1;
+    height: 341px;
 }
 .why-service-block::before{
     position: absolute;
@@ -1035,4 +1038,3 @@
 .why-service-block:hover .text p{
     color: #ffffff;
 }
-

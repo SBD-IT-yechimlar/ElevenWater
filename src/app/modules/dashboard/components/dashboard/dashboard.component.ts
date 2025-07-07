@@ -1,12 +1,13 @@
 import { CommonModule } from '@angular/common';
 import {  AfterViewInit, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 declare var $: any;
 declare var WOW: any;
 
 @Component({
   selector: 'app-dashboard',
-  imports: [RouterLink,CommonModule],
+  imports: [RouterLink,CommonModule,TranslateModule],
 standalone: true,
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss',
@@ -45,5 +46,8 @@ export class DashboardComponent implements AfterViewInit {
   setActiveTab(tabId: string) {
     this.activeTab = tabId;
   }
+
+
+
 
 }

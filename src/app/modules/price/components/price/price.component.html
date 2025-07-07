@@ -1,187 +1,81 @@
-<!--Start breadcrumb area paroller-->
+<!--Start breadcrumb area-->
 <section class="breadcrumb-area">
-  <div class="breadcrumb-area-bg" style="background-image: url(assets/images/breadcrumb/breadcrumb-1.jpg);"></div>
-  <div class="container">
+    <div class="breadcrumb-area-bg" style="background-image: url(assets/images/breadcrumb/breadcrumb-1.jpg);"></div>
+    <div class="container">
       <div class="row">
-          <div class="col-xl-12">
-              <div class="inner-content text-center">
-                  <div class="title">
-                     <h2>Tariflar va Rejalar</h2> <!-- "Plans & Pricing" -->
-                  </div>
-                  <div class="breadcrumb-menu">
-                      <ul>
-                          <li><a href="index.html">Bosh sahifa</a></li> <!-- "Home" -->
-                          <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
-                          <li class="active">Tariflar va Rejalar</li> <!-- "Plans & Pricing" -->
-                      </ul>
-                  </div>
-              </div>
+        <div class="col-xl-12">
+          <div class="inner-content text-center">
+            <div class="title">
+              <h2>{{ 'pricing.breadcrumb_title' | translate }}</h2>
+            </div>
+            <div class="breadcrumb-menu">
+              <ul>
+                <li><a href="index.html">{{ 'pricing.breadcrumb_home' | translate }}</a></li>
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                <li class="active">{{ 'pricing.breadcrumb_title' | translate }}</li>
+              </ul>
+            </div>
           </div>
+        </div>
       </div>
-  </div>
-</section>
+    </div>
+  </section>
 
-<!--End breadcrumb area-->
-
-<!--Start pricing plan area-->
-<section class="pricing-plan-style2-area">
-  <div class="container">
+  <!--Start pricing plan area-->
+  <section class="pricing-plan-style2-area">
+    <div class="container">
       <div class="row">
-
-          <!--Start single price box-->
+        <ng-container *ngFor="let plan of ['0', '1', '2']; let i = index">
           <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 text-center">
-              <div class="single-price-box--style2-outer">
-                  <div class="single-price-box single-price-box--style2 static-content">
-                      <div class="table-header">
-                          <div class="top">
-                              <h3>Asosiy Tarif</h3>
-                              <span>*narxlar o‘zgarishi mumkin</span>
-                          </div>
-                          <div class="package">
-                              <h1><span>$</span>49</h1>
-                              <div class="date">
-                                  <h3>oyiga</h3>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="text">
-                          <p>Yengillik va qulaylikni taqdim etuvchi <br> qulay tarif.</p>
-                      </div>
-                      <div class="table-footer">
-                          <a class="btn-one" href="#"><span class="round"></span> <span class="txt">Buyurtma berish</span></a>
-                      </div>
+            <div class="single-price-box--style2-outer" [ngClass]="{ 'active': i === 1 }">
+              <!-- Static Content -->
+              <div class="single-price-box single-price-box--style2 static-content">
+                <div class="table-header">
+                  <div class="top">
+                    <h3>{{ ('pricing.plans.' + plan + '.name') | translate }}</h3>
+                    <span>{{ ('pricing.plans.' + plan + '.note') | translate }}</span>
                   </div>
-                  <div class="single-price-box single-price-box--style2 overlay-content">
-                      <div class="package">
-                          <h1><span>$</span>49</h1>
-                          <div class="date">
-                              <h3>oyiga</h3>
-                          </div>
-                      </div>
-                      <div class="top">
-                          <h3>Asosiy Tarif</h3>
-                          <span>*narxlar o‘zgarishi mumkin</span>
-                      </div>
-                      <div class="price-list">
-                          <ul>
-                              <li>Bepul yetkazib berish</li>
-                              <li>Oyiga 10 ta idishgacha</li>
-                              <li>Bo‘sh idishlarni yig‘ish</li>
-                              <li>Yiliga 120 ta idishgacha</li>
-                              <li>Mineral suv</li>
-                          </ul>
-                      </div>
-                      <div class="table-footer">
-                          <a class="btn-one" href="#"><span class="round"></span> <span class="txt">Buyurtma berish</span></a>
-                      </div>
+                  <div class="package">
+                    <h1><span>$</span>{{ ('pricing.plans.' + plan + '.price') | translate }}</h1>
+                    <div class="date">
+                      <h3>{{ ('pricing.plans.' + plan + '.period') | translate }}</h3>
+                    </div>
                   </div>
+                </div>
+                <div class="text">
+                  <p>{{ ('pricing.plans.' + plan + '.short_desc') | translate }}</p>
+                </div>
+                <div class="table-footer">
+                  <a class="btn-one" href="#"><span class="round"></span> <span class="txt">{{ ('pricing.plans.' + plan + '.button') | translate }}</span></a>
+                </div>
               </div>
-          </div>
-          <!--End single price box-->
 
-          <!--Start single price box-->
-          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 text-center">
-              <div class="single-price-box--style2-outer active">
-                  <div class="single-price-box single-price-box--style2 static-content">
-                      <div class="table-header">
-                          <div class="top">
-                              <h3>Premium Tarif</h3>
-                              <span>*narxlar o‘zgarishi mumkin</span>
-                          </div>
-                          <div class="package">
-                              <h1><span>$</span>99</h1>
-                              <div class="date">
-                                  <h3>yiliga</h3>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="text">
-                          <p>Yiliga bir marta to‘lov, <br> arzon va qulay yechim.</p>
-                      </div>
-                      <div class="table-footer">
-                          <a class="btn-one" href="#"><span class="round"></span> <span class="txt">Buyurtma berish</span></a>
-                      </div>
+              <!-- Overlay Content -->
+              <div class="single-price-box single-price-box--style2 overlay-content">
+                <div class="package">
+                  <h1><span>$</span>{{ ('pricing.plans.' + plan + '.price') | translate }}</h1>
+                  <div class="date">
+                    <h3>{{ ('pricing.plans.' + plan + '.period') | translate }}</h3>
                   </div>
-                  <div class="single-price-box single-price-box--style2 overlay-content">
-                      <div class="package">
-                          <h1><span>$</span>99</h1>
-                          <div class="date">
-                              <h3>yiliga</h3>
-                          </div>
-                      </div>
-                      <div class="top">
-                          <h3>Premium Tarif</h3>
-                          <span>*narxlar o‘zgarishi mumkin</span>
-                      </div>
-                      <div class="price-list">
-                          <ul>
-                              <li>Bepul yetkazib berish</li>
-                              <li>Oyiga 10 ta idishgacha</li>
-                              <li>Bo‘sh idishlarni yig‘ish</li>
-                              <li>Yiliga 120 ta idishgacha</li>
-                              <li>Mineral suv</li>
-                          </ul>
-                      </div>
-                      <div class="table-footer">
-                          <a class="btn-one" href="#"><span class="round"></span> <span class="txt">Buyurtma berish</span></a>
-                      </div>
-                  </div>
+                </div>
+                <div class="top">
+                  <h3>{{ ('pricing.plans.' + plan + '.name') | translate }}</h3>
+                  <span>{{ ('pricing.plans.' + plan + '.note') | translate }}</span>
+                </div>
+                <div class="price-list">
+                  <ul>
+                    <li *ngFor="let feature of [0,1,2,3,4]">
+                      {{ ('pricing.plans.' + plan + '.features.' + feature) | translate }}
+                    </li>
+                  </ul>
+                </div>
+                <div class="table-footer">
+                  <a class="btn-one" href="#"><span class="round"></span> <span class="txt">{{ ('pricing.plans.' + plan + '.button') | translate }}</span></a>
+                </div>
               </div>
+            </div>
           </div>
-          <!--End single price box-->
-
-          <!--Start single price box-->
-          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 text-center">
-              <div class="single-price-box--style2-outer">
-                  <div class="single-price-box single-price-box--style2 static-content">
-                      <div class="table-header">
-                          <div class="top">
-                              <h3>Advanced Tarif</h3>
-                              <span>*narxlar o‘zgarishi mumkin</span>
-                          </div>
-                          <div class="package">
-                              <h1><span>$</span>79</h1>
-                              <div class="date">
-                                  <h3>oyiga</h3>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="text">
-                          <p>Ko‘proq idishlar, <br> kengroq imkoniyatlar.</p>
-                      </div>
-                      <div class="table-footer">
-                          <a class="btn-one" href="#"><span class="round"></span> <span class="txt">Buyurtma berish</span></a>
-                      </div>
-                  </div>
-                  <div class="single-price-box single-price-box--style2 overlay-content">
-                      <div class="package">
-                          <h1><span>$</span>79</h1>
-                          <div class="date">
-                              <h3>oyiga</h3>
-                          </div>
-                      </div>
-                      <div class="top">
-                          <h3>Advanced Tarif</h3>
-                          <span>*narxlar o‘zgarishi mumkin</span>
-                      </div>
-                      <div class="price-list">
-                          <ul>
-                              <li>Bepul yetkazib berish</li>
-                              <li>Oyiga 10 ta idishgacha</li>
-                              <li>Bo‘sh idishlarni yig‘ish</li>
-                              <li>Yiliga 120 ta idishgacha</li>
-                              <li>Mineral suv</li>
-                          </ul>
-                      </div>
-                      <div class="table-footer">
-                          <a class="btn-one" href="#"><span class="round"></span> <span class="txt">Buyurtma berish</span></a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <!--End single price box-->
-
+        </ng-container>
       </div>
-  </div>
-</section>
-<!--End pricing plan area-->
+    </div>
+  </section>
