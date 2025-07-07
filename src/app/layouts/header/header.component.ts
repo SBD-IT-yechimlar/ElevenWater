@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostListener } from '@angular/core';
+import { AfterViewInit, Component, HostListener } from '@angular/core';
 import { RouterLink, RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
@@ -7,11 +7,14 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   selector: 'app-header',
   imports: [RouterLink,RouterModule,CommonModule,TranslateModule],
   standalone: true,
+
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
-export class HeaderComponent {
+export class HeaderComponent implements AfterViewInit {
   dropdownOpen = false;
+  isMobile = false;
+
   constructor(private translateService: TranslateService) {
     const savedLang = localStorage.getItem('lang') || 'uz';
     this.selectedLang = savedLang;
@@ -41,12 +44,10 @@ export class HeaderComponent {
     this.selectedLang = lang.code;
     this.dropdownOpen = false;
     localStorage.setItem('lang', lang.code);
-    // i18n yoki ngx-translate tilni almashtirish joyi shu yerda
-    this.translateService.use(lang.code); // Agar ngx-translate ishlatilsa
+    this.translateService.use(lang.code);
 
   }
 
-  // Tashqariga bosilganda dropdown yopilsin
   @HostListener('document:click', ['$event.target'])
   onClickOutside(target: HTMLElement): void {
     const insideDropdown = target.closest('.language-dropdown');
@@ -54,4 +55,48 @@ export class HeaderComponent {
       this.dropdownOpen = false;
     }
   }
+  ngAfterViewInit(): void {
+    this.checkScreenSize();
+
+    const openBtn = document.querySelector('.mobile-nav-toggler');
+    if (openBtn) {
+      openBtn.addEventListener('click', () => {
+        document.body.classList.add('mobile-menu-visible');
+      });
+    }
+
+    const closeBtn = document.querySelector('.mobile-menu .close-btn');
+    const backdrop = document.querySelector('.mobile-menu .menu-backdrop');
+
+    const closeMenu = () => {
+      document.body.classList.remove('mobile-menu-visible');
+
+    };
+
+    if (closeBtn) {
+      closeBtn.addEventListener('click', closeMenu);
+    }
+
+    if (backdrop) {
+      backdrop.addEventListener('click', closeMenu);
+    }
+  }
+
+  @HostListener('window:resize', [])
+  onResize() {
+    this.checkScreenSize();
+
+    if (!this.isMobile && document.body.classList.contains('mobile-menu-visible')) {
+      document.body.classList.remove('mobile-menu-visible');
+    }
+  }
+  checkScreenSize() {
+    this.isMobile = window.innerWidth <= 768;
+  }
+  openMenu: string | null = null;
+
+toggleMenu(menu: string): void {
+  this.openMenu = this.openMenu === menu ? null : menu;
+}
+
 }

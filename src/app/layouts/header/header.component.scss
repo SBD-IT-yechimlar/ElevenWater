@@ -66,3 +66,118 @@
     }
   }
 }
+.menu-outer {
+  padding: 15px;
+}
+
+.mobile-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    background: #111;
+    margin-bottom: 1px;
+    color: white;
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 16px;
+      font-weight: 600;
+      cursor: pointer;
+      text-transform: uppercase;
+
+      a {
+        color: white;
+        text-decoration: none;
+        flex: 1;
+      }
+
+      &:hover {
+        background: #1a1a1a;
+      }
+    }
+
+    .submenu-toggler {
+      i {
+        color: #ccc;
+        transition: transform 0.3s ease;
+      }
+    }
+
+    &.open .submenu-toggler i {
+      transform: rotate(90deg);
+    }
+
+    .submenu {
+      padding-left: 20px;
+
+      li {
+        padding: 10px 15px;
+
+        a {
+          color: #ccc;
+          font-weight: 400;
+          text-decoration: none;
+
+          &:hover {
+            color: #00bfff;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+// LANGUAGE DROPDOWN in MOBILE
+.mobile-lang {
+  margin-top: 20px;
+
+  .selected-language {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: #000;
+    border: 1px solid #444;
+    color: #fff;
+    font-weight: 500;
+
+    img {
+      width: 20px;
+      height: auto;
+    }
+  }
+
+  .language-list {
+    margin-top: 10px;
+    list-style: none;
+    background: #111;
+    padding: 0;
+
+    li {
+      padding: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      &:hover {
+        background: #222;
+      }
+
+      &.active {
+        font-weight: bold;
+        color: #00bfff;
+      }
+
+      img {
+        width: 20px;
+      }
+    }
+  }
+}

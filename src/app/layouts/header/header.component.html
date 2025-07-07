@@ -159,13 +159,16 @@
             >
           </div>
           <div class="space-box2"></div>
-          <div class="language-dropdown" (click)="toggleDropdown()">
+          <div class="language-dropdown hidden " (click)="toggleDropdown()"
+          *ngIf="!isMobile"
+
+          >
             <button class="selected-language">
               <img [src]="selectedFlag" alt="Selected language" />
               <span>{{ getLangName(selectedLang) }}</span>
             </button>
 
-            <ul *ngIf="dropdownOpen" class="language-list">
+            <ul *ngIf="dropdownOpen"  class="language-list">
               <li
                 *ngFor="let lang of languages"
                 (click)="selectLanguage(lang)"
@@ -221,10 +224,75 @@
     <div class="menu-backdrop"></div>
     <div class="close-btn"><span class="icon fa fa-times-circle"></span></div>
     <nav class="menu-box">
-      <!-- <div class="nav-logo"><a href="index.html"><img src="assets/images/resources/mobilemenu-logo.png" alt="" title=""></a></div> -->
+
       <div class="menu-outer">
-        <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+        <ul class="mobile-nav">
+          <!-- HOME -->
+          <li>
+            <div class="menu-item">
+              <a routerLink="/dashboard">{{ "main" | translate }}</a>
+            </div>
+          </li>
+
+          <!-- SERVICES -->
+          <li [class.open]="openMenu === 'services'">
+            <div class="menu-item" (click)="toggleMenu('services')">
+              <span>{{ "service" | translate }}</span>
+              <span class="submenu-toggler">
+                <i class="fa" [ngClass]="openMenu === 'services' ? 'fa-angle-down' : 'fa-angle-right'"></i>
+              </span>
+            </div>
+            <ul class="submenu" *ngIf="openMenu === 'services'">
+              <li><a routerLink="/services">{{ "all_services" | translate }}</a></li>
+              <li><a routerLink="/service-detail">{{ "service-detail" | translate }}</a></li>
+            </ul>
+          </li>
+
+          <!-- PRODUCTS -->
+          <li [class.open]="openMenu === 'products'">
+            <div class="menu-item" (click)="toggleMenu('products')">
+              <span>{{ "products" | translate }}</span>
+              <span class="submenu-toggler">
+                <i class="fa" [ngClass]="openMenu === 'products' ? 'fa-angle-down' : 'fa-angle-right'"></i>
+              </span>
+            </div>
+            <ul class="submenu" *ngIf="openMenu === 'products'">
+              <li><a routerLink="/product-details">{{ "product-detail" | translate }}</a></li>
+              <li><a routerLink="/product-basket">{{ "basket" | translate }}</a></li>
+              <li><a routerLink="/checkout-page">{{ "checkout" | translate }}</a></li>
+            </ul>
+          </li>
+
+          <!-- CONTACT -->
+          <li>
+            <div class="menu-item">
+              <a routerLink="/contact">{{ "contacts" | translate }}</a>
+            </div>
+          </li>
+        </ul>
+
+        <!-- LANGUAGE DROPDOWN -->
+        <div class="language-dropdown mobile-lang" (click)="toggleDropdown()" *ngIf="isMobile">
+          <button class="selected-language">
+            <img [src]="selectedFlag" alt="Selected language" />
+            <span>{{ getLangName(selectedLang) }}</span>
+          </button>
+
+          <ul *ngIf="dropdownOpen" class="language-list">
+            <li
+              *ngFor="let lang of languages"
+              (click)="selectLanguage(lang)"
+              [class.active]="lang.code === selectedLang"
+            >
+              <img [src]="lang.flag" alt="{{ lang.code }}" />
+              <span>{{ lang.name }}</span>
+            </li>
+          </ul>
+        </div>
       </div>
+
+
+
       <!--Social Links-->
       <div class="social-links">
         <ul class="clearfix">
