@@ -30,7 +30,7 @@
           <div class="col-xl-12">
               <!--Start Checkout Inner Box -->
               <div class="checkout_inner-box">
-                  <form method="post" action="checkout.html">
+                  <form method="post" action="checkout.html" (ngSubmit)="submitOrder()" #checkoutForm="ngForm">
                       <div class="row">
 
                           <div class="col-xl-8">
@@ -43,10 +43,10 @@
                                       <div class="row">
                                           <div class="col-xl-12">
                                               <div class="field-input">
-                                                  <input type="tel" name="phone" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required="">
+                                                  <input type="tel" name="phone" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required="" [(ngModel)]="orderForm.phone">
                                               </div>
                                               <div class="field-input">
-                                                  <input type="email" name="email" value="" placeholder="Email Address" required="">
+                                                  <input type="email" name="email" value="" placeholder="Email Address" required="" [(ngModel)]="orderForm.email">
                                               </div>
                                               <div class="checked-box2">
                                                   <input type="checkbox" name="skipper1" id="skipper" checked="">
@@ -65,17 +65,17 @@
                                       <div class="row">
                                           <div class="col-lg-6">
                                               <div class="field-input">
-                                                  <input type="text" name="ffname" value="" placeholder="First Name" required="">
+                                                  <input type="text" name="ffname" value="" placeholder="First Name" required="" [(ngModel)]="orderForm.firstName">
                                               </div>
                                           </div>
                                           <div class="col-lg-6">
                                               <div class="field-input">
-                                                  <input type="text" name="flname" value="" placeholder="Last Name" required="">
+                                                  <input type="text" name="flname" value="" placeholder="Last Name" required="" [(ngModel)]="orderForm.lastName">
                                               </div>
                                           </div>
                                           <div class="col-lg-12">
                                               <div class="field-input">
-                                                  <input type="text" name="faddress" value="" placeholder="Address">
+                                                  <input type="text" name="faddress" value="" placeholder="Address" [(ngModel)]="orderForm.address">
                                               </div>
                                           </div>
                                           <div class="col-lg-12">
@@ -83,24 +83,7 @@
                                                   <input type="text" name="fcity" value="" placeholder="City">
                                               </div>
                                           </div>
-                                          <div class="col-lg-6">
-                                              <div class="field-input">
-                                                  <div class="select-box clearfix">
-                                                      <select class="wide">
-                                                      <option data-display="County">County</option>
-                                                      <option value="1">Albania</option>
-                                                      <option value="2">Canada</option>
-                                                      <option value="3">India</option>
-                                                      <option value="3">Bangladesh</option>
-                                                      </select>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                          <div class="col-lg-6">
-                                              <div class="field-input">
-                                                  <input type="text" name="zipcode" value="" placeholder="Zipcode">
-                                              </div>
-                                          </div>
+
                                           <div class="col-lg-12">
                                               <div class="checked-box2">
                                                   <input type="checkbox" name="skipper1" id="skipper-2" checked="">
@@ -112,77 +95,57 @@
                                   <!--End Form Box2-->
                               </div>
                           </div>
-
-                          <div class="col-xl-4">
-                              <div class="order-summary-box">
-                                  <div class="top-title">
-                                      <h3>Order Summary</h3>
-                                      <div class="decor">
-                                          <img src="assets/images/shape/decor.png" alt="">
-                                      </div>
-                                  </div>
-                                  <ul>
-                                      <li>
-                                          <h4>15 Ltr Bottled Water</h4>
-                                          <div class="value">
-                                              <div class="left">$20.00*2</div>
-                                              <div class="right">$40.00</div>
-                                          </div>
-                                      </li>
-                                      <li>
-                                          <h4>12 Ltr Bottled Water</h4>
-                                          <div class="value">
-                                              <div class="left">$16.00*3</div>
-                                              <div class="right">$48.00</div>
-                                          </div>
-                                      </li>
-                                  </ul>
-
-                                  <div class="sub-total-box">
-                                      <div class="left">
-                                          <h4>Sub Total</h4>
-                                      </div>
-                                      <div class="right">
-                                          <p>$88.00</p>
-                                      </div>
-                                  </div>
-
-                                  <div class="shipping">
-                                      <div class="left">
-                                          <h4>Shipping</h4>
-                                      </div>
-                                      <div class="right">
-                                          <p>Free</p>
-                                      </div>
-                                  </div>
-
-                                  <div class="tax-box">
-                                      <div class="left">
-                                          <h4>Tax</h4>
-                                      </div>
-                                      <div class="right">
-                                          <p>$0.00</p>
-                                      </div>
-                                  </div>
-
-                                  <div class="total-order">
-                                      <div class="left">
-                                          <h4>Total - Including Tax</h4>
-                                      </div>
-                                      <div class="right">
-                                          <p>$88.00</p>
-                                      </div>
-                                  </div>
-
-                                  <div class="checkout-button">
-                                      <button class="btn-one" type="submit">
-                                          <span class="round"></span>
-                                          <span class="txt">Continue</span>
-                                      </button>
-                                  </div>
-
+                          <div class="order-summary-box">
+                            <div class="top-title">
+                              <h3>Order Summary</h3>
+                              <div class="decor">
+                                <img src="assets/images/shape/decor.png" alt="">
                               </div>
+                            </div>
+
+                            <!-- Cart items -->
+                            <ul>
+                              <li *ngFor="let item of cartItems">
+                                <h4>{{ item.name }}</h4>
+                                <div class="value">
+                                  <div class="left">
+                                    {{ item.sell_cost_uzs  }} × {{ item.quantity }}
+                                  </div>
+                                  <div class="right">
+                                    {{ (item.sell_cost_uzs * item.quantity)  }}
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+
+                            <!-- Subtotal -->
+                            <div class="sub-total-box">
+                              <div class="left"><h4>Hammasi</h4></div>
+                              <div class="right">
+                                <p>{{ getSubtotal()  }}</p>
+                              </div>
+                            </div>
+
+                            <div class="shipping">
+                              <div class="left"><h4>Yetkazib berish</h4></div>
+                              <div class="right"><p>Free</p></div>
+                            </div>
+
+
+
+                            <div class="total-order">
+                              <div class="left"><h4>Hammasi</h4></div>
+                              <div class="right"><p>{{ getSubtotal()  }}</p></div>
+                            </div>
+
+                            <div class="checkout-button">
+                              <button class="btn-one" type="submit">
+                                <span class="round"></span>
+                                <span class="txt">Continue</span>
+                              </button>
+                            </div>
                           </div>
+
 
                       </div>
                   </form>

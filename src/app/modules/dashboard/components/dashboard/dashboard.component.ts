@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
-import {  AfterViewInit, Component } from '@angular/core';
+import {  AfterViewInit, Component, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
+import { ShopService } from '../../../../core/auth/services/shop.service';
 declare var $: any;
 declare var WOW: any;
 
@@ -12,8 +13,24 @@ standalone: true,
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss',
 })
-export class DashboardComponent implements AfterViewInit {
+export class DashboardComponent implements OnInit, AfterViewInit {
+  constructor(private shopService: ShopService) {}
+  products: any[] = [];
 
+  ngOnInit(): void {
+    this.shopService.getProducts().subscribe({
+      next: (res) => {
+        this.products = res?.data?.items || [];
+        console.log('Mahsulotlar:', this.products);
+      },
+      error: (err) => {
+        console.error('Mahsulotlarni yuklashda xatolik:', err);
+      }
+    });
+  }
+  addToCart(product: any) {
+    this.shopService.addToCart(product);
+  }
   ngAfterViewInit(): void {
     this.initCarousel();
     setTimeout(() => {

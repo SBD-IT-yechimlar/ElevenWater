@@ -1,16 +1,28 @@
 import { CommonModule } from '@angular/common';
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
+import { ActivatedRoute } from '@angular/router';
+
 declare var $: any;
 @Component({
   selector: 'app-product-detail',
-  imports: [CommonModule,TranslateModule],
-  templateUrl: './product-detail.component.html',
+  imports: [CommonModule, TranslateModule,RouterModule],
+templateUrl: './product-detail.component.html',
   styleUrl: './product-detail.component.scss',
 })
-export class ProductDetailComponent implements AfterViewInit {
-  activeTab: string = 'about';
-
+export class ProductDetailComponent implements OnInit, AfterViewInit {
+  activeTab: string = 'desc';
+  product: any = null;
+  constructor(private route: ActivatedRoute) {}
+  ngOnInit(): void {
+    const id = Number(this.route.snapshot.paramMap.get('id'));
+    const stored = localStorage.getItem('products');
+    if (stored) {
+      const products = JSON.parse(stored);
+      this.product = products.find((p: any) => p.id === id);
+    }
+  }
   setActiveTab(tabId: string) {
     this.activeTab = tabId;
   }
@@ -21,7 +33,7 @@ export class ProductDetailComponent implements AfterViewInit {
           pagerCustom: '.thumb-box',
           adaptiveHeight: true,
           mode: 'fade',
-          captions: true
+          captions: true,
         });
       }
     }, 0);

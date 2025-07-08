@@ -51,7 +51,7 @@ export class LayoutComponent implements AfterViewInit {
       if (loader) {
         loader.style.display = 'none';
       }
-    }, 1000); // 1 soniyadan keyin o‘chadi (ishlatishga mos ravishda sozlang)
+    }, 1000);
   }
   // This component can be used for authentication purposes
   // It can include login, registration, and other auth-related functionalities

@@ -638,20 +638,19 @@
         <img src="assets/images/shape/decor.png" alt="" />
       </div>
     </div>
-    <div class="shop-style1_content">
-      <!--Start Single Shop Item-->
-      <div class="single-shop-item">
+    <div  class="shop-style1_content">
+      <div class="single-shop-item" *ngFor="let product of products">
         <div class="single-shop-item_inner">
           <div class="img-holder">
-            <img src="assets/images/shop/shop-1.jpg" alt="" />
+            <img [src]="product.image_url" alt="" />
             <div class="overlay">
               <span class="icon-email"></span>
-              <a href="#">Enquire</a>
+              <a href="#">{{ "shop.enquire" | translate }}</a>
             </div>
           </div>
           <div class="product-quantity-box">
             <div class="input-box">
-              <span>Quantity:</span>
+              <span>Soni:</span>
               <input
                 class="quantity-spinner"
                 type="text"
@@ -660,213 +659,22 @@
               />
             </div>
             <div class="rate-box">
-              <h3>$12.50</h3>
+              <h3>{{product.sell_cost_uzs}}</h3>
             </div>
           </div>
           <div class="title-holder">
-            <h3><a routerLink="product-details">2 Ltr Bottled Water</a></h3>
-            <h6>Delivery</h6>
-            <p>Tom 4:30pm - 6:30pm</p>
+            <h3><a href="product-details.html">{{product.product_name}}</a></h3>
+            <!-- <h6>yetkazib berish</h6> -->
+            <!-- <p>Dushanba 4:30pm - 6:30pm</p> -->
             <div class="btn-box">
-              <a class="btn-one" routerLink="product-details">
+              <a class="btn-one" href="product-details.html">
                 <div class="round"></div>
-                <span class="txt">Savatga</span>
+                <span class="txt"  (click)="addToCart(product)">{{ "shop.add_to_cart" | translate }}</span>
               </a>
             </div>
           </div>
         </div>
       </div>
-      <!--End Single Shop Item-->
-      <!--Start Single Shop Item-->
-      <div class="single-shop-item">
-        <div class="single-shop-item_inner">
-          <div class="img-holder">
-            <img src="assets/images/shop/shop-2.jpg" alt="" />
-            <div class="overlay">
-              <span class="icon-email"></span>
-              <a href="#">Enquire</a>
-            </div>
-          </div>
-          <div class="product-quantity-box">
-            <div class="input-box">
-              <span>Quantity:</span>
-              <input
-                class="quantity-spinner"
-                type="text"
-                value="1"
-                name="quantity"
-              />
-            </div>
-            <div class="rate-box">
-              <h3>$20.00</h3>
-            </div>
-          </div>
-          <div class="title-holder">
-            <h3><a routerLink="product-details">15 Ltr Bottled Water</a></h3>
-            <h6>Delivery</h6>
-            <p>Mon 9:30am - 10:30am</p>
-            <div class="btn-box">
-              <a class="btn-one" routerLink="product-details">
-                <div class="round"></div>
-                <span class="txt">Savatga</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--End Single Shop Item-->
-      <!--Start Single Shop Item-->
-      <div class="single-shop-item">
-        <div class="single-shop-item_inner">
-          <div class="img-holder">
-            <img src="assets/images/shop/shop-3.jpg" alt="" />
-            <div class="overlay">
-              <span class="icon-email"></span>
-              <a href="#">Enquire</a>
-            </div>
-          </div>
-          <div class="product-quantity-box">
-            <div class="input-box">
-              <span>Quantity:</span>
-              <input
-                class="quantity-spinner"
-                type="text"
-                value="1"
-                name="quantity"
-              />
-            </div>
-            <div class="rate-box">
-              <h3>$16.00</h3>
-            </div>
-          </div>
-          <div class="title-holder">
-            <h3><a routerLink="product-details">12 Ltr Bottled Water</a></h3>
-            <h6>Delivery</h6>
-            <p>Tom 4:30pm - 6:30pm</p>
-            <div class="btn-box">
-              <a class="btn-one" routerLink="product-details">
-                <div class="round"></div>
-                <span class="txt">Savatga</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--End Single Shop Item-->
-      <!--Start Single Shop Item-->
-      <div class="single-shop-item">
-        <div class="single-shop-item_inner">
-          <div class="img-holder">
-            <img src="assets/images/shop/shop-4.jpg" alt="" />
-            <div class="overlay">
-              <span class="icon-email"></span>
-              <a href="#">Enquire</a>
-            </div>
-          </div>
-          <div class="product-quantity-box">
-            <div class="input-box">
-              <span>Quantity:</span>
-              <input
-                class="quantity-spinner"
-                type="text"
-                value="1"
-                name="quantity"
-              />
-            </div>
-            <div class="rate-box">
-              <h3>$25.50</h3>
-            </div>
-          </div>
-          <div class="title-holder">
-            <h3><a routerLink="product-details">15+2 Ltr Combo Pack</a></h3>
-            <h6>Delivery</h6>
-            <p>Tom 4:30pm - 6:30pm</p>
-            <div class="btn-box">
-              <a class="btn-one" routerLink="product-details">
-                <div class="round"></div>
-                <span class="txt">Savatga</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--End Single Shop Item-->
-      <!--Start Single Shop Item-->
-      <div class="single-shop-item">
-        <div class="single-shop-item_inner">
-          <div class="img-holder">
-            <img src="assets/images/shop/shop-5.jpg" alt="" />
-            <div class="overlay">
-              <span class="icon-email"></span>
-              <a href="#">Enquire</a>
-            </div>
-          </div>
-          <div class="product-quantity-box">
-            <div class="input-box">
-              <span>Quantity:</span>
-              <input
-                class="quantity-spinner"
-                type="text"
-                value="1"
-                name="quantity"
-              />
-            </div>
-            <div class="rate-box">
-              <h3>$69.00</h3>
-            </div>
-          </div>
-          <div class="title-holder">
-            <h3><a routerLink="product-details">Water Dispenser</a></h3>
-            <h6>Delivery</h6>
-            <p>Mon 8:30am - 9:30am</p>
-            <div class="btn-box">
-              <a class="btn-one" routerLink="product-details">
-                <div class="round"></div>
-                <span class="txt">Savatga</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--End Single Shop Item-->
-      <!--Start Single Shop Item-->
-      <div class="single-shop-item">
-        <div class="single-shop-item_inner">
-          <div class="img-holder">
-            <img src="assets/images/shop/shop-6.jpg" alt="" />
-            <div class="overlay">
-              <span class="icon-email"></span>
-              <a href="#">Enquire</a>
-            </div>
-          </div>
-          <div class="product-quantity-box">
-            <div class="input-box">
-              <span>Quantity:</span>
-              <input
-                class="quantity-spinner"
-                type="text"
-                value="1"
-                name="quantity"
-              />
-            </div>
-            <div class="rate-box">
-              <h3>$69.00</h3>
-            </div>
-          </div>
-          <div class="title-holder">
-            <h3><a routerLink="product-details">Water Dispenser</a></h3>
-            <h6>Delivery</h6>
-            <p>Mon 8:30am - 9:30am</p>
-            <div class="btn-box">
-              <a class="btn-one" routerLink="product-details">
-                <div class="round"></div>
-                <span class="txt">Savatga</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--End Single Shop Item-->
     </div>
   </div>
 </section>

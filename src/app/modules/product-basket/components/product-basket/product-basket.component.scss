@@ -1,0 +1,17 @@
+.custom-quantity-input {
+  width: 80px;
+  height: 40px;
+  border: 2px solid #d1d5db; /* Tailwind border-gray-300 */
+  border-radius: 9999px; /* to make it pill shaped */
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  appearance: none; /* removes spinners in some browsers */
+  -moz-appearance: textfield; /* removes spinners in Firefox */
+}
+
+.custom-quantity-input::-webkit-inner-spin-button,
+.custom-quantity-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

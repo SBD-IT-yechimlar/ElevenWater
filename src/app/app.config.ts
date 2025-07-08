@@ -23,7 +23,8 @@ import { provideClientHydration } from '@angular/platform-browser';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 // import { tokenInterceptor } from './core/auth/interceptors/token.interceptor';
 // import { provideAnimations } from '@angular/platform-browser/animations';
-// import { MessageService } from 'primeng/api';
+import { MessageService } from 'primeng/api';
+import { provideAnimations } from '@angular/platform-browser/animations';
 
 // export function initAuth(jwtService: JwtService, userService: UserService) {
 //   return () => (jwtService.getToken() ? userService.getCurrentUser() : EMPTY);
@@ -39,6 +40,8 @@ export const appConfig: ApplicationConfig = {
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
     provideClientHydration(),
+    MessageService,
+    provideAnimations(),
     // provideAnimationsAsync(),
     // provideAnimations(),
     provideHttpClient(

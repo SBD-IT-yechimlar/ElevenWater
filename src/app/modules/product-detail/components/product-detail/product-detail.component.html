@@ -26,7 +26,7 @@
 <!--End breadcrumb area-->
 
 <!--Start Product Details Area-->
-<section class="product-details-area">
+<section class="product-details-area " *ngIf="product">
   <div class="container">
     <div class="row">
       <div class="col-xl-6">
@@ -37,93 +37,19 @@
                 <div class="single-box clearfix">
                   <div class="img-holder">
                     <img
-                      src="assets/images/shop/product-details-1.jpg"
-                      alt="Awesome Image"
+                    [src]="product.image_url"
+                      alt="{{product.product_name}}"
                     />
                   </div>
                 </div>
               </li>
-              <li>
-                <div class="single-box clearfix">
-                  <div class="img-holder">
-                    <img
-                      src="assets/images/shop/product-details-2.jpg"
-                      alt="Awesome Image"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="single-box clearfix">
-                  <div class="img-holder">
-                    <img
-                      src="assets/images/shop/product-details-3.jpg"
-                      alt="Awesome Image"
-                    />
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="single-box clearfix">
-                  <div class="img-holder">
-                    <img
-                      src="assets/images/shop/product-details-4.jpg"
-                      alt="Awesome Image"
-                    />
-                  </div>
-                </div>
-              </li>
+
             </ul>
+            <div class="bottom-box">
+              <h6>{{ 'product_details.availability' | translate }} <span>{{ 'product_details.in_stock' | translate }}</span></h6>
+            </div>
           </div>
 
-          <div class="slider-pager">
-            <ul class="thumb-box">
-              <li>
-                <a class="active" data-slide-index="0" href="#">
-                  <div class="thumb-image">
-                    <img
-                      src="assets/images/shop/product-details-1-thumb.jpg"
-                      alt="Awesome Thumb Image"
-                    />
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a data-slide-index="1" href="#">
-                  <div class="thumb-image">
-                    <img
-                      src="assets/images/shop/product-details-2-thumb.jpg"
-                      alt="Awesome Thumb Image"
-                    />
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a data-slide-index="2" href="#">
-                  <div class="thumb-image">
-                    <img
-                      src="assets/images/shop/product-details-3-thumb.jpg"
-                      alt="Awesome Thumb Image"
-                    />
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a data-slide-index="3" href="#">
-                  <div class="thumb-image">
-                    <img
-                      src="assets/images/shop/product-details-4-thumb.jpg"
-                      alt="Awesome Thumb Image"
-                    />
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="bottom-box">
-            <h6>{{ 'product_details.availability' | translate }} <span>{{ 'product_details.in_stock' | translate }}</span></h6>
-          </div>
 
         </div>
       </div>
@@ -133,11 +59,9 @@
           <div class="top">
             <div class="rate-box">
               <div class="current-rate">
-                <h3>$12.50</h3>
+                <h3>{{product.sell_cost_uzs}}</h3>
               </div>
-              <div class="old-rate">
-                <del>$15.00</del>
-              </div>
+
             </div>
             <div class="review-box">
               <ul>
@@ -150,12 +74,11 @@
             </div>
           </div>
           <div class="product-title">
-            <h2>{{"product_details.product_name"|translate}}</h2>
+            <h2>{{ product.product_name }}</h2>
           </div>
           <div class="product-description">
-            <p>
-             {{ 'product_details.description' | translate }}
-            </p>
+            <p
+              [innerHTML]="product.description " >            </p>
           </div>
 
           <div class="product-info">
@@ -464,118 +387,6 @@
     </div>
     <!--End product tab box-->
 
-    <div class="related-product-box">
-        <div class="shop-page-title">
-          <h2>{{"product_details.related_products.title"|translate}}</h2>
-        </div>
-        <div class="row">
-          <!-- Mahsulot 1 -->
-          <div class="col-xl-4 col-lg-6 col-md-6">
-            <div class="single-shop-item single-shop-item--style2">
-              <div class="single-shop-item_inner">
-                <div class="img-holder">
-                  <img src="assets/images/shop/shop-1.jpg" alt="2 litr suv" />
-                  <div class="overlay">
-                    <span class="icon-email"></span>
-                    <a href="#">So‘rov </a>
-                  </div>
-                </div>
-                <div class="product-quantity-box">
-                  <div class="input-box">
-                    <span>Soni:</span>
-                    <input class="quantity-spinner" type="text" value="1" name="quantity" />
-                  </div>
-                  <div class="rate-box">
-                    <h3>$12.50</h3>
-                  </div>
-                </div>
-                <div class="title-holder">
-                  <h3><a href="product-details.html">2 litrli butilkadagi suv</a></h3>
-                  <h6>Yetkazib berish</h6>
-                  <p>Ertaga 16:30 — 18:30 oralig‘ida</p>
-                  <div class="btn-box">
-                    <a class="btn-one" href="product-details.html">
-                      <div class="round"></div>
-                      <span class="txt">{{"shop.add_to_cart"|translate}}</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Mahsulot 2 -->
-          <div class="col-xl-4 col-lg-6 col-md-6">
-            <div class="single-shop-item single-shop-item--style2">
-              <div class="single-shop-item_inner">
-                <div class="img-holder">
-                  <img src="assets/images/shop/shop-2.jpg" alt="15 litr suv" />
-                  <div class="overlay">
-                    <span class="icon-email"></span>
-                    <a href="#">So‘rov </a>
-                  </div>
-                </div>
-                <div class="product-quantity-box">
-                  <div class="input-box">
-                    <span>Soni:</span>
-                    <input class="quantity-spinner" type="text" value="1" name="quantity" />
-                  </div>
-                  <div class="rate-box">
-                    <h3>$20.00</h3>
-                  </div>
-                </div>
-                <div class="title-holder">
-                  <h3><a href="product-details.html">15 litrli butilkadagi suv</a></h3>
-                  <h6>Yetkazib berish</h6>
-                  <p>Dushanba 09:30 — 10:30 oralig‘ida</p>
-                  <div class="btn-box">
-                    <a class="btn-one" href="product-details.html">
-                      <div class="round"></div>
-                      <span class="txt">{{"shop.add_to_cart"|translate}}</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Mahsulot 3 -->
-          <div class="col-xl-4 col-lg-6 col-md-6">
-            <div class="single-shop-item single-shop-item--style2">
-              <div class="single-shop-item_inner">
-                <div class="img-holder">
-                  <img src="assets/images/shop/shop-3.jpg" alt="12 litr suv" />
-                  <div class="overlay">
-                    <span class="icon-email"></span>
-                    <a href="#">So‘rov </a>
-                  </div>
-                </div>
-                <div class="product-quantity-box">
-                  <div class="input-box">
-                    <span>Soni:</span>
-                    <input class="quantity-spinner" type="text" value="1" name="quantity" />
-                  </div>
-                  <div class="rate-box">
-                    <h3>$16.00</h3>
-                  </div>
-                </div>
-                <div class="title-holder">
-                  <h3><a href="product-details.html">12 litrli butilkadagi suv</a></h3>
-                  <h6>Yetkazib berish</h6>
-                  <p>Ertaga 16:30 — 18:30 oralig‘ida</p>
-                  <div class="btn-box">
-                    <a class="btn-one" href="product-details.html">
-                      <div class="round"></div>
-                      <span class="txt">{{"shop.add_to_cart"|translate}}</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
 
   </div>
 </section>
