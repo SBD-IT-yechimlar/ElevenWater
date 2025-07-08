@@ -107,12 +107,12 @@
                             <ul>
                               <li *ngFor="let item of cartItems">
                                 <h4>{{ item.name }}</h4>
-                                <div class="value">
+                                <div class="value items-center">
                                   <div class="left">
-                                    {{ item.sell_cost_uzs  }} × {{ item.quantity }}
+                                    {{ item.sell_cost_uzs |number }} × {{ item.quantity }}
                                   </div>
                                   <div class="right">
-                                    {{ (item.sell_cost_uzs * item.quantity)  }}
+                                    {{ (item.sell_cost_uzs * item.quantity)|number  }}
                                   </div>
                                 </div>
                               </li>
@@ -122,11 +122,11 @@
                             <div class="sub-total-box">
                               <div class="left"><h4>Hammasi</h4></div>
                               <div class="right">
-                                <p>{{ getSubtotal()  }}</p>
+                                <p>{{ getSubtotal()|number  }}</p>
                               </div>
                             </div>
 
-                            <div class="shipping">
+                            <div class="shipping ">
                               <div class="left"><h4>Yetkazib berish</h4></div>
                               <div class="right"><p>Free</p></div>
                             </div>
@@ -135,7 +135,7 @@
 
                             <div class="total-order">
                               <div class="left"><h4>Hammasi</h4></div>
-                              <div class="right"><p>{{ getSubtotal()  }}</p></div>
+                              <div class="right"><p>{{ getSubtotal() |number }}</p></div>
                             </div>
 
                             <div class="checkout-button">

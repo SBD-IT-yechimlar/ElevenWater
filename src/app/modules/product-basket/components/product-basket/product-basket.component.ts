@@ -7,11 +7,12 @@ import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 import { Notyf } from 'notyf';
 import 'notyf/notyf.min.css';
+import { RouterModule, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-product-basket',
-  imports: [TranslateModule, CommonModule, FormsModule, ToastModule],
-  templateUrl: './product-basket.component.html',
+  imports: [TranslateModule, CommonModule, FormsModule, ToastModule ,RouterModule,RouterLink],
+templateUrl: './product-basket.component.html',
   styleUrl: './product-basket.component.scss',
   providers: [MessageService],
 })

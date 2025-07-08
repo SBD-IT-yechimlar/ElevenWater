@@ -7502,6 +7502,7 @@ select:focus {
 .order-summary-box{
     position: relative;
     display: block;
+    min-width: 350px;
     background: #ecf2f6;
     border-radius: 10px;
     padding: 40px 30px 50px;
