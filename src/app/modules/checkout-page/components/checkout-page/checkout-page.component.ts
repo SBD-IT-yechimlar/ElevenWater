@@ -73,17 +73,16 @@ export class CheckoutPageComponent implements OnInit {
             date: new Date().toISOString()
           };
 
-          console.log('Yuborilayotgan payload:', payload);
+          console.log('payload---', payload);
 
     this.shopService.placeOrder(payload, headers).subscribe({
       next: res => {
-        alert('Buyurtma muvaffaqiyatli yuborildi!');
         this.shopService.clearCart();
         this.router.navigate(['/thank-you']);
+        console.log('ketti:', res);
       },
       error: err => {
-        console.error('Buyurtma yuborishda xatolik:', err);
-        alert('Xatolik yuz berdi, iltimos qayta urinib ko‘ring.');
+        console.error('ketmadi:', err);
       }
     });
   }

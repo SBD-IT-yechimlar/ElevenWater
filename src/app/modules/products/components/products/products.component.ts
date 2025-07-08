@@ -36,6 +36,11 @@ export class ProductsComponent implements OnInit, AfterViewInit {
       },
       error: (err) => {
         console.error(err);
+        this.messageService.add({
+          severity: 'error',
+          summary: 'xatolik',
+          detail: 'Buyurtma yuborilmadi!',
+        });
       },
     });
   }
