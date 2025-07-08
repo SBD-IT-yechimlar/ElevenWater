@@ -7,6 +7,7 @@ import { Notyf } from 'notyf';
 import 'notyf/notyf.min.css';
 import { ShopService } from './../../../../core/auth/services/shop.service';
 declare var $: any;
+
 @Component({
   selector: 'app-product-detail',
   imports: [CommonModule, TranslateModule,RouterModule],

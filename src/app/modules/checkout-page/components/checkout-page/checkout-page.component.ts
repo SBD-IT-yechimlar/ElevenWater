@@ -4,7 +4,8 @@ import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HttpHeaders } from '@angular/common/http';
-
+import { Notyf } from 'notyf';
+import 'notyf/notyf.min.css';
 @Component({
   selector: 'app-checkout-page',
   imports: [FormsModule,CommonModule],
@@ -12,7 +13,13 @@ templateUrl: './checkout-page.component.html',
   styleUrl: './checkout-page.component.scss'
 })
 export class CheckoutPageComponent implements OnInit {
-
+  private notyf = new Notyf({
+    position: {
+      x: 'right',
+      y: 'top'
+    },
+    duration: 3000
+  });
   orderForm = {
     phone: '',
     email: '',
@@ -35,7 +42,7 @@ export class CheckoutPageComponent implements OnInit {
     }, 0);}
 
     generateGuestClientId(): number {
-      return Math.floor(Math.random() * 1000000); // bu endi son
+      return Math.floor(Math.random() * 1000000);
     }
 
 
@@ -78,11 +85,13 @@ export class CheckoutPageComponent implements OnInit {
     this.shopService.placeOrder(payload, headers).subscribe({
       next: res => {
         this.shopService.clearCart();
-        this.router.navigate(['/thank-you']);
-        console.log('ketti:', res);
+        console.log('jonatildi:', res);
+        this.notyf.success('Buyurtma muvaffaqiyatli yuborildi!');
+
       },
       error: err => {
-        console.error('ketmadi:', err);
+        console.error('jonatilmadi:', err);
+        this.notyf.error('Buyurtma yuborishda xatolik yuz berdi!');
       }
     });
   }
