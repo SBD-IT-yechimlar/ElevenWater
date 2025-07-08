@@ -44,4 +44,8 @@ export class ProductBasketComponent implements OnInit {
     this.notyf.error('Mahsulot savatdan olib tashlandi!');
 
   }
+  updateCart() {
+    this.shopService.clearCart();
+    this.notyf.success('Savat yangilandi');
+  }
 }

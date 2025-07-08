@@ -4,6 +4,10 @@
 ,
 "email_address": "Email manzil"
 ,
+"go_to_payment": "To‘lovga o‘tish",
+"update": "Yangilash",
+
+
   "main": "Asosiy",
   "service": "Xizmatlar",
   "all_services": "Barcha xizmatlar",

@@ -4,6 +4,8 @@
 ,
 "email_address": "Email address"
 ,
+"update": "Update",
+"go_to_payment": "Proceed to payment",
   "call": "Call Us",
   "main": "Home",
   "service": "Services",

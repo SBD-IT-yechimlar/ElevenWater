@@ -5,6 +5,9 @@
 ,
 "email_address": "Электронная почта"
 ,
+"go_to_payment": "Перейти к оплате",
+"update": "Обновить",
+
   "main": "Главная",
   "service": "Услуги",
   "all_services": "Все услуги",

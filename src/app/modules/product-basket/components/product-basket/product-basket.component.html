@@ -110,11 +110,11 @@
           </div>
           <div class="update-cart">
             <button class="btn-one update-cart-button" type="button">
-              <span class="round"></span><span class="txt">Yangilash</span>
+              <span class="round"></span><span class="txt" (click)="updateCart()">{{ 'update' | translate }}</span>
             </button>
             <button class="btn-one" type="button">
               <span class="round"></span
-              ><span class="txt">To‘lovga o‘tish</span>
+              ><span class="txt">{{ 'go_to_payment' | translate }}</span>
             </button>
           </div>
         </div>
