@@ -265,7 +265,9 @@
               </span>
             </div>
             <ul class="submenu" *ngIf="openMenu === 'products'">
-
+              <li>
+                <a routerLink="/products">{{ "products" | translate }}</a>
+              </li>
               <li>
                 <a routerLink="/product-basket">{{ "basket" | translate }}</a>
               </li>

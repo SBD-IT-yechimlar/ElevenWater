@@ -28,11 +28,9 @@ export class DashboardComponent implements OnInit, AfterViewInit {
     this.shopService.getProducts().subscribe({
       next: (res) => {
         this.products = res?.data?.items || [];
-        console.log('Mahsulotlar:', this.products);
       },
       error: (err) => {
-        console.error('Mahsulotlarni yuklashda xatolik:', err);
-      }
+        console.error(err);}
     });
   }
   addToCart(product: any) {
