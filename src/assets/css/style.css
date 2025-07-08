@@ -1862,11 +1862,7 @@ select:focus {
     padding-left: 20px;
     margin: 10px 0 0;
 }
-.product-quantity-box .input-box{
-    position: relative;
-    display: flex;
-    width: 170px;
-}
+
 .product-quantity-box .input-box span{
     position: relative;
     display: inline-block;

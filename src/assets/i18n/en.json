@@ -1,4 +1,10 @@
-{
+{   "currency": "UZS"
+,
+"working_hours": "Mon - Thu: 08:00 AM to 5:00 PM"
+,
+"email_address": "Email address"
+,
+  "call": "Call Us",
   "main": "Home",
   "service": "Services",
   "all_services": "All Services",

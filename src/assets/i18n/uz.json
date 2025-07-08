@@ -1,4 +1,9 @@
-{
+{ "currency": "so'm",
+"call":"Qo'ng'iroq qiling",
+"working_hours": "Du - Ju: 08.00 dan 17.00 gacha"
+,
+"email_address": "Email manzil"
+,
   "main": "Asosiy",
   "service": "Xizmatlar",
   "all_services": "Barcha xizmatlar",
@@ -560,4 +565,5 @@
       ]
     }
   }
+
 }

@@ -1,39 +1,55 @@
 import { CommonModule } from '@angular/common';
-import { AfterViewInit, Component, HostListener } from '@angular/core';
+import { AfterViewInit, Component, HostListener, OnInit } from '@angular/core';
 import { RouterLink, RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { ShopService } from '../../core/auth/services/shop.service';
 
 @Component({
   selector: 'app-header',
-  imports: [RouterLink,RouterModule,CommonModule,TranslateModule],
+  imports: [RouterLink, RouterModule, CommonModule, TranslateModule],
   standalone: true,
 
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrl: './header.component.scss',
 })
-export class HeaderComponent implements AfterViewInit {
+export class HeaderComponent implements OnInit, AfterViewInit {
   dropdownOpen = false;
   isMobile = false;
+  cartItemCount = 0;
 
-  constructor(private translateService: TranslateService) {
+  constructor(
+    private translateService: TranslateService,
+    private shopService: ShopService
+  ) {
     const savedLang = localStorage.getItem('lang') || 'uz';
     this.selectedLang = savedLang;
     this.translateService.use(savedLang);
   }
+  ngOnInit(): void {
+    this.shopService.cartItems$.subscribe((items) => {
+      this.cartItemCount = items.length;
+    });
+  }
   languages = [
     { code: 'uz', name: 'Uzbek', flag: 'assets/media/flags/uzbekistan.svg' },
     { code: 'ru', name: 'Russian', flag: 'assets/media/flags/russia.svg' },
-    { code: 'en', name: 'English', flag: 'assets/media/flags/united-kingdom.svg' }
+    {
+      code: 'en',
+      name: 'English',
+      flag: 'assets/media/flags/united-kingdom.svg',
+    },
   ];
 
   selectedLang = 'uz';
 
   get selectedFlag(): string {
-    return this.languages.find(lang => lang.code === this.selectedLang)?.flag ?? '';
+    return (
+      this.languages.find((lang) => lang.code === this.selectedLang)?.flag ?? ''
+    );
   }
 
   getLangName(code: string): string {
-    return this.languages.find(lang => lang.code === code)?.name ?? '';
+    return this.languages.find((lang) => lang.code === code)?.name ?? '';
   }
 
   toggleDropdown(): void {
@@ -45,7 +61,6 @@ export class HeaderComponent implements AfterViewInit {
     this.dropdownOpen = false;
     localStorage.setItem('lang', lang.code);
     this.translateService.use(lang.code);
-
   }
 
   @HostListener('document:click', ['$event.target'])
@@ -70,7 +85,6 @@ export class HeaderComponent implements AfterViewInit {
 
     const closeMenu = () => {
       document.body.classList.remove('mobile-menu-visible');
-
     };
 
     if (closeBtn) {
@@ -86,7 +100,10 @@ export class HeaderComponent implements AfterViewInit {
   onResize() {
     this.checkScreenSize();
 
-    if (!this.isMobile && document.body.classList.contains('mobile-menu-visible')) {
+    if (
+      !this.isMobile &&
+      document.body.classList.contains('mobile-menu-visible')
+    ) {
       document.body.classList.remove('mobile-menu-visible');
     }
   }
@@ -95,8 +112,7 @@ export class HeaderComponent implements AfterViewInit {
   }
   openMenu: string | null = null;
 
-toggleMenu(menu: string): void {
-  this.openMenu = this.openMenu === menu ? null : menu;
-}
-
+  toggleMenu(menu: string): void {
+    this.openMenu = this.openMenu === menu ? null : menu;
+  }
 }

@@ -6,6 +6,8 @@ import { CommonModule } from '@angular/common';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 declare var $: any;
+import { Notyf } from 'notyf';
+import 'notyf/notyf.min.css';
 
 @Component({
   selector: 'app-products',
@@ -17,10 +19,19 @@ templateUrl: './products.component.html',
 export class ProductsComponent implements OnInit, AfterViewInit {
   products: any[] = [];
 
+  private notyf = new Notyf({
+    position: {
+      x: 'right',
+      y: 'top'
+    },
+    duration: 3000
+  });
   constructor(private shopService: ShopService ,private messageService:MessageService) {}
 
   addToCart(product: any) {
     this.shopService.addToCart(product);
+    this.notyf.success('Mahsulot savatchaga qo‘shildi!');
+
   }
   ngOnInit(): void {
     this.shopService.getProducts().subscribe({
@@ -28,11 +39,8 @@ export class ProductsComponent implements OnInit, AfterViewInit {
 
         this.products = res?.data?.items || [];
         localStorage.setItem('products', JSON.stringify(this.products));
-        this.messageService.add({
-          severity: 'success',
-          summary: 'Muvaffaqiyatli',
-          detail: 'Buyurtma yuborildi!',
-        });
+
+
       },
       error: (err) => {
         console.error(err);

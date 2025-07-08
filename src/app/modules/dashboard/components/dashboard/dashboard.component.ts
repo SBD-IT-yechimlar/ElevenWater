@@ -5,7 +5,8 @@ import { TranslateModule } from '@ngx-translate/core';
 import { ShopService } from '../../../../core/auth/services/shop.service';
 declare var $: any;
 declare var WOW: any;
-
+import { Notyf } from 'notyf';
+import 'notyf/notyf.min.css';
 @Component({
   selector: 'app-dashboard',
   imports: [RouterLink,CommonModule,TranslateModule],
@@ -16,7 +17,13 @@ standalone: true,
 export class DashboardComponent implements OnInit, AfterViewInit {
   constructor(private shopService: ShopService) {}
   products: any[] = [];
-
+  private notyf = new Notyf({
+    position: {
+      x: 'right',
+      y: 'top'
+    },
+    duration: 3000
+  });
   ngOnInit(): void {
     this.shopService.getProducts().subscribe({
       next: (res) => {
@@ -30,6 +37,8 @@ export class DashboardComponent implements OnInit, AfterViewInit {
   }
   addToCart(product: any) {
     this.shopService.addToCart(product);
+    this.notyf.success('Mahsulot savatchaga qo‘shildi!');
+
   }
   ngAfterViewInit(): void {
     this.initCarousel();

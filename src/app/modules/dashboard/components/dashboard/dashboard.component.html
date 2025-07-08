@@ -649,25 +649,15 @@
             </div>
           </div>
           <div class="product-quantity-box">
-            <div class="input-box">
-              <span>Soni:</span>
-              <input
-                class="quantity-spinner"
-                type="text"
-                value="1"
-                name="quantity"
-              />
-            </div>
-            <div class="rate-box">
-              <h3>{{product.sell_cost_uzs}}</h3>
-            </div>
+
+            <h3>{{ product.sell_cost_uzs | number }} {{ 'currency' | translate }}</h3>
           </div>
           <div class="title-holder">
             <h3><a href="product-details.html">{{product.product_name}}</a></h3>
             <!-- <h6>yetkazib berish</h6> -->
             <!-- <p>Dushanba 4:30pm - 6:30pm</p> -->
             <div class="btn-box">
-              <a class="btn-one" href="product-details.html">
+              <a class="btn-one text-white">
                 <div class="round"></div>
                 <span class="txt"  (click)="addToCart(product)">{{ "shop.add_to_cart" | translate }}</span>
               </a>

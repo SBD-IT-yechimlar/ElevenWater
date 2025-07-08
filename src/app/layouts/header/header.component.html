@@ -4,7 +4,7 @@
       <div class="outer-box clearfix">
         <div class="header-top_left pull-left">
           <div class="text">
-            <p>Qo'ng'iroq qiling</p>
+            <p>{{"call"|translate}}</p>
           </div>
           <div class="header-contact-info1">
             <ul>
@@ -13,7 +13,7 @@
                 ><a href="tel:+998551510011">+998551510011</a>
               </li>
               <li>
-                <span class="icon-clock"></span>Du - Ju: 08.00 dan 17.00 gacha
+                <span class="icon-clock"></span>{{ 'working_hours' | translate }}
               </li>
             </ul>
           </div>
@@ -22,7 +22,7 @@
         <div class="header-top_right pull-right">
           <div class="header-mail-box">
             <span class="icon-email"></span>
-            <p><a href="mailto:info@example.com">Email Manzil </a></p>
+            <p><a href="mailto:info@example.com">{{"email_address"|translate}}</a></p>
           </div>
           <div class="space-box1"></div>
           <div class="header-mail-box">
@@ -66,14 +66,14 @@
                 id="navbarSupportedContent"
               >
                 <ul class="navigation clearfix">
-                  <li class="dropdown current">
+                  <li class="dropdown" routerLinkActive="current">
                     <a routerLink="/dashboard"
                       ><span>{{ "main" | translate }}</span></a
                     >
                   </li>
 
-                  <li class="dropdown">
-                    <a href="#"
+                  <li class="dropdown" routerLinkActive="current">
+                    <a routerLink="/services"
                       ><span>{{ "service" | translate }}</span></a
                     >
                     <ul>
@@ -89,16 +89,12 @@
                       </li>
                     </ul>
                   </li>
-                  <li class="dropdown">
+                  <li class="dropdown" routerLinkActive="current">
                     <a routerLink="/products"
                       ><span>{{ "products" | translate }}</span></a
                     >
                     <ul>
-                      <li>
-                        <a routerLink="product-details">{{
-                          "product-detail" | translate
-                        }}</a>
-                      </li>
+
                       <li>
                         <a routerLink="product-basket">{{
                           "basket" | translate
@@ -112,8 +108,8 @@
                     </ul>
                   </li>
 
-                  <li class="dropdown">
-                    <a href="#"
+                  <li class="dropdown" routerLinkActive="current">
+                    <a routerLink="/about"
                       ><span>{{ "about_company" | translate }}</span></a
                     >
                     <ul>
@@ -136,7 +132,7 @@
                     </ul>
                   </li>
 
-                  <li>
+                  <li routerLinkActive="current">
                     <a routerLink="/contact"
                       ><span>{{ "contacts" | translate }}</span></a
                     >
@@ -147,28 +143,25 @@
             <!-- Main Menu End-->
           </div>
 
-          <div class="serach-button-style1">
-            <button type="button" class="search-toggler">
-              <i class="icon-search"></i>
-            </button>
-          </div>
+
           <div class="space-box2"></div>
           <div class="shopping-cart-box">
             <a routerLink="product-basket"
-              ><i class="icon-shopping-bag"></i><span class="count">3</span></a
+              ><i class="icon-shopping-bag"></i><span class="count">{{ cartItemCount }}</span></a
             >
           </div>
           <div class="space-box2"></div>
-          <div class="language-dropdown hidden " (click)="toggleDropdown()"
-          *ngIf="!isMobile"
-
+          <div
+            class="language-dropdown hidden"
+            (click)="toggleDropdown()"
+            *ngIf="!isMobile"
           >
             <button class="selected-language">
               <img [src]="selectedFlag" alt="Selected language" />
               <span>{{ getLangName(selectedLang) }}</span>
             </button>
 
-            <ul *ngIf="dropdownOpen"  class="language-list">
+            <ul *ngIf="dropdownOpen" class="language-list">
               <li
                 *ngFor="let lang of languages"
                 (click)="selectLanguage(lang)"
@@ -184,7 +177,7 @@
             <div class="btns-box">
               <a class="btn-one" routerLink="contact">
                 <div class="round"></div>
-                <span class="txt">{{"order"|translate}}</span>
+                <span class="txt">{{ "order" | translate }}</span>
               </a>
             </div>
           </div>
@@ -224,7 +217,6 @@
     <div class="menu-backdrop"></div>
     <div class="close-btn"><span class="icon fa fa-times-circle"></span></div>
     <nav class="menu-box">
-
       <div class="menu-outer">
         <ul class="mobile-nav">
           <!-- HOME -->
@@ -239,12 +231,23 @@
             <div class="menu-item" (click)="toggleMenu('services')">
               <span>{{ "service" | translate }}</span>
               <span class="submenu-toggler">
-                <i class="fa" [ngClass]="openMenu === 'services' ? 'fa-angle-down' : 'fa-angle-right'"></i>
+                <i
+                  class="fa"
+                  [ngClass]="
+                    openMenu === 'services' ? 'fa-angle-down' : 'fa-angle-right'
+                  "
+                ></i>
               </span>
             </div>
             <ul class="submenu" *ngIf="openMenu === 'services'">
-              <li><a routerLink="/services">{{ "all_services" | translate }}</a></li>
-              <li><a routerLink="/service-detail">{{ "service-detail" | translate }}</a></li>
+              <li>
+                <a routerLink="/services">{{ "all_services" | translate }}</a>
+              </li>
+              <li>
+                <a routerLink="/service-detail">{{
+                  "service-detail" | translate
+                }}</a>
+              </li>
             </ul>
           </li>
 
@@ -253,13 +256,22 @@
             <div class="menu-item" (click)="toggleMenu('products')">
               <span>{{ "products" | translate }}</span>
               <span class="submenu-toggler">
-                <i class="fa" [ngClass]="openMenu === 'products' ? 'fa-angle-down' : 'fa-angle-right'"></i>
+                <i
+                  class="fa"
+                  [ngClass]="
+                    openMenu === 'products' ? 'fa-angle-down' : 'fa-angle-right'
+                  "
+                ></i>
               </span>
             </div>
             <ul class="submenu" *ngIf="openMenu === 'products'">
-              <li><a routerLink="/product-details">{{ "product-detail" | translate }}</a></li>
-              <li><a routerLink="/product-basket">{{ "basket" | translate }}</a></li>
-              <li><a routerLink="/checkout-page">{{ "checkout" | translate }}</a></li>
+
+              <li>
+                <a routerLink="/product-basket">{{ "basket" | translate }}</a>
+              </li>
+              <li>
+                <a routerLink="/checkout-page">{{ "checkout" | translate }}</a>
+              </li>
             </ul>
           </li>
 
@@ -272,7 +284,11 @@
         </ul>
 
         <!-- LANGUAGE DROPDOWN -->
-        <div class="language-dropdown mobile-lang" (click)="toggleDropdown()" *ngIf="isMobile">
+        <div
+          class="language-dropdown mobile-lang"
+          (click)="toggleDropdown()"
+          *ngIf="isMobile"
+        >
           <button class="selected-language">
             <img [src]="selectedFlag" alt="Selected language" />
             <span>{{ getLangName(selectedLang) }}</span>
@@ -290,8 +306,6 @@
           </ul>
         </div>
       </div>
-
-
 
       <!--Social Links-->
       <div class="social-links">
