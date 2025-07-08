@@ -40,6 +40,7 @@
               "src/assets/css/module-css/team-section.css",
               "src/assets/css/module-css/testimonial-section.css",
 "node_modules/animate.css/animate.min.css",
+"node_modules/notyf/notyf.min.css",
 
               "src/assets/css/bootstrap.min.css",
               "src/assets/css/font-awesome.min.css",
