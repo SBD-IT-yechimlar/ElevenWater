@@ -24,6 +24,19 @@ export class ProductsComponent implements OnInit, AfterViewInit {
       x: 'right',
       y: 'top'
     },
+    types: [
+      {
+        type: 'success',
+        background: 'green',
+        duration: 3000,
+
+      },
+      {
+        type: 'error',
+        background: 'indianred',
+        duration: 3000,
+      }
+    ],
     duration: 3000
   });
   constructor(private shopService: ShopService ,private messageService:MessageService) {}
