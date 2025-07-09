@@ -12,7 +12,7 @@ import 'notyf/notyf.min.css';
 @Component({
   selector: 'app-products',
   standalone: true,
-  imports: [TranslateModule, RouterLink, CommonModule,ToastModule],
+  imports: [TranslateModule, RouterLink, CommonModule],
 templateUrl: './products.component.html',
   styleUrls: ['./products.component.scss'],
 })
