@@ -1,2 +1,9 @@
 @import "primeng/resources/primeng.min.css";
 @import "primeicons/primeicons.css";
+.notyf__toast--error {
+  background-color: #f44336 !important;
+  color: white !important;
+}
+.notyf__toast {
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
