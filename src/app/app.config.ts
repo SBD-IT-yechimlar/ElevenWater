@@ -1,36 +1,27 @@
 import {
-  APP_INITIALIZER,
   ApplicationConfig,
   importProvidersFrom,
   provideZoneChangeDetection,
 } from '@angular/core';
 import { provideRouter } from '@angular/router';
-
-import { routes } from './app.routes';
 import {
   HttpClient,
-  HttpEvent,
-  HttpHandlerFn,
-  HttpRequest,
   provideHttpClient,
   withInterceptors,
 } from '@angular/common/http';
-import { EMPTY, Observable } from 'rxjs';
-// import { JwtService } from './core/auth/services/jwt.service';
-// import { UserService } from './core/auth/services/user.service';
+
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { provideClientHydration } from '@angular/platform-browser';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-// import { tokenInterceptor } from './core/auth/interceptors/token.interceptor';
-// import { provideAnimations } from '@angular/platform-browser/animations';
-import { MessageService } from 'primeng/api';
+
+import { provideToastr } from 'ngx-toastr';
 import { provideAnimations } from '@angular/platform-browser/animations';
 
-// export function initAuth(jwtService: JwtService, userService: UserService) {
-//   return () => (jwtService.getToken() ? userService.getCurrentUser() : EMPTY);
-// }
+import { routes } from './app.routes';
+import { EMPTY } from 'rxjs';
 
-// AoT requires an exported function for factories
+import { MessageService } from 'primeng/api';
+
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
 }
@@ -41,16 +32,18 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
     provideClientHydration(),
     MessageService,
+
+    // ✅ Toastr va Animations uchun to‘g‘ri standalone variantlar:
     provideAnimations(),
-    // provideAnimationsAsync(),
-    // provideAnimations(),
+    provideToastr(),
+
     provideHttpClient(
       withInterceptors([
-        // apiInterceptor,
         // tokenInterceptor,
         // ErrorInterceptorService,
       ])
     ),
+
     importProvidersFrom(
       TranslateModule.forRoot({
         loader: {
@@ -60,11 +53,5 @@ export const appConfig: ApplicationConfig = {
         },
       })
     ),
-    // {
-    //   provide: APP_INITIALIZER,
-    //   useFactory: initAuth,
-    //   deps: [JwtService, UserService],
-    //   multi: true,
-    // },
   ],
 };

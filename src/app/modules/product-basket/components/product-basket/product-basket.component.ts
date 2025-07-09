@@ -5,9 +5,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
-import { Notyf } from 'notyf';
-import 'notyf/notyf.min.css';
 import { RouterModule, RouterLink } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-product-basket',
@@ -19,14 +18,8 @@ templateUrl: './product-basket.component.html',
 export class ProductBasketComponent implements OnInit {
   cartItems: any[] = [];
 
-  private notyf = new Notyf({
-    position: {
-      x: 'right',
-      y: 'top'
-    },
-    duration: 3000
-  });
-  constructor(public shopService: ShopService) {}
+
+  constructor(public shopService: ShopService, private toastr:ToastrService) {}
 
   ngOnInit(): void {
     this.shopService.cartItems$.subscribe((items: any[]) => {
@@ -42,11 +35,11 @@ export class ProductBasketComponent implements OnInit {
   }
   removeItem(id: number) {
     this.shopService.removeFromCart(id);
-    this.notyf.error('Mahsulot savatdan olib tashlandi!');
+    this.toastr.error('Mahsulot savatdan olib tashlandi!');
 
   }
   updateCart() {
     this.shopService.clearCart();
-    this.notyf.success('Savat yangilandi');
+    this.toastr.success('Savat tozalandi!', 'Muvaffaqiyatli!');
   }
 }

@@ -4,8 +4,7 @@ import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HttpHeaders } from '@angular/common/http';
-import { Notyf } from 'notyf';
-import 'notyf/notyf.min.css';
+import { ToastrService } from 'ngx-toastr';
 @Component({
   selector: 'app-checkout-page',
   imports: [FormsModule,CommonModule],
@@ -13,13 +12,7 @@ templateUrl: './checkout-page.component.html',
   styleUrl: './checkout-page.component.scss'
 })
 export class CheckoutPageComponent implements OnInit {
-  private notyf = new Notyf({
-    position: {
-      x: 'right',
-      y: 'top'
-    },
-    duration: 3000
-  });
+
   orderForm = {
     phone: '',
     email: '',
@@ -30,7 +23,7 @@ export class CheckoutPageComponent implements OnInit {
 
   cartItems: any[] = [];
 
-  constructor(private shopService: ShopService, private router: Router) {}
+  constructor(private shopService: ShopService, private router: Router,private toastr:ToastrService) {}
 
   ngOnInit() {
     const stored = localStorage.getItem('cart');
@@ -85,13 +78,11 @@ export class CheckoutPageComponent implements OnInit {
     this.shopService.placeOrder(payload, headers).subscribe({
       next: res => {
         this.shopService.clearCart();
-        console.log('jonatildi:', res);
-        this.notyf.success('Buyurtma muvaffaqiyatli yuborildi!');
+        this.toastr.success('Buyurtma muvaffaqiyatli yuborildi!');
 
       },
       error: err => {
-        console.error('jonatilmadi:', err);
-        this.notyf.error('Buyurtma yuborishda xatolik yuz berdi!');
+        this.toastr.error('Buyurtma yuborishda xatolik yuz berdi!');
       }
     });
   }

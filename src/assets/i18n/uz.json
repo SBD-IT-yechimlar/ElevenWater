@@ -456,20 +456,20 @@
   "breadcrumb_home": "Bosh sahifa",
   "contact_boxes": {
     "address": {
-      "title": "Manzil",
-      "text": "Ofisimiz manzili"
+      "title": "Instagram",
+      "text": "Instagram sahifamiz"
     },
     "phone": {
       "title": "Telefon",
       "text": "Tel: +998551510011"
     },
     "email": {
-      "title": "Email",
-      "text": "Xabar yuborish"
+      "title": "Telegram",
+      "text": "Telegram kanalimiz"
     },
     "hours": {
-      "title": "Ish vaqti",
-      "text": "Du- Ju: 08.00 dan 17.00"
+      "title": "Telegram",
+      "text": "Telegram bot"
     }
   },
   "dealer_finder": {
@@ -538,7 +538,7 @@
       "region": "Jizzax viloyati",
       "street": "Sharof Rashidov tumani, S. Ayni ko‘chasi, 111-uy",
       "phone": "+998 55 151 00 11",
-      "email": "supportaguapure.com"
+      "email": "elevenwater@mail.ru"
     },
     "working_hours": {
       "title": "Ish soatlari",
@@ -549,7 +549,7 @@
       "button": "jadval"
     },
     "bottom": {
-      "copyright": "Mualliflik huquqi © 2023 Eleven Water. Barcha huquqlar himoyalangan.",
+      "copyright": "Mualliflik huquqi © {{year}} Eleven Water. Barcha huquqlar himoyalangan.",
       "nav": [
         "Foydalanish shartlari",
         "Maxfiylik siyosati",

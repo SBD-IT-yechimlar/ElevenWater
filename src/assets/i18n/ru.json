@@ -432,20 +432,20 @@
     "breadcrumb_home": "Главная",
     "contact_boxes": {
       "address": {
-        "title": "Адрес",
-        "text": "Адрес нашего офиса"
+        "title": "Инстаграм",
+        "text": "Наша страница в Instagram"
       },
       "phone": {
         "title": "Телефон",
         "text": "Тел: +998551510011"
       },
       "email": {
-        "title": "Эл. почта",
-        "text": "Отправить сообщение"
+        "title": "Телеграм",
+        "text": "Наш Telegram канал"
       },
       "hours": {
-        "title": "Часы работы",
-        "text": "Пн–Пт: с 08:00 до 17:00"
+        "title": "Телеграм",
+        "text": "Наш Telegram бот"
       }
     },
     "dealer_finder": {
@@ -513,7 +513,7 @@
       "region": "Джизакская область",
       "street": "Ш. Рашидовский район, ул. С. Айни, дом 111",
       "phone": "+998 55 151 00 11",
-      "email": "supportaguapure.com"
+      "email": "elevenwater@mail.ru"
     },
     "working_hours": {
       "title": "Часы работы",
@@ -524,7 +524,7 @@
       "button": "расписание"
     },
     "bottom": {
-      "copyright": "Авторские права © 2023 Eleven Water. Все права защищены.",
+      "copyright": "Авторские права © {{year}} Eleven Water. Все права защищены.",
       "nav": [
         "Условия использования",
         "Политика конфиденциальности",

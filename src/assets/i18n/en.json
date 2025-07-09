@@ -428,20 +428,20 @@
     "breadcrumb_home": "Home",
     "contact_boxes": {
       "address": {
-        "title": "Address",
-        "text": "Our office address"
+        "title": "Instagram",
+        "text": "Our Instagram page"
       },
       "phone": {
         "title": "Phone",
         "text": "Tel: +998551510011"
       },
       "email": {
-        "title": "Email",
-        "text": "Send a message"
+        "title": "Telegram",
+        "text": "Our Telegram channel"
       },
       "hours": {
-        "title": "Working hours",
-        "text": "Mon–Fri: 08:00 to 17:00"
+        "title": "Telegram",
+        "text": "Our Telegram bot"
       }
     },
     "dealer_finder": {
@@ -509,7 +509,7 @@
         "region": "Jizzakh Region",
         "street": "Sharof Rashidov district, S. Ayni street, house 111",
         "phone": "+998 55 151 00 11",
-        "email": "supportaguapure.com"
+        "email": "elevenwater@mail.ru"
       },
       "working_hours": {
         "title": "Working Hours",
@@ -520,7 +520,7 @@
         "button": "schedule"
       },
       "bottom": {
-        "copyright": "Copyright © 2023 Eleven Water. All rights reserved.",
+        "copyright": "Copyright © {{year}} Eleven Water. All rights reserved.",
         "nav": [
           "Terms of Use",
           "Privacy Policy",

@@ -3,9 +3,9 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { ActivatedRoute } from '@angular/router';
-import { Notyf } from 'notyf';
 import 'notyf/notyf.min.css';
 import { ShopService } from './../../../../core/auth/services/shop.service';
+import { ToastrService } from 'ngx-toastr';
 declare var $: any;
 
 @Component({
@@ -17,14 +17,8 @@ templateUrl: './product-detail.component.html',
 export class ProductDetailComponent implements OnInit, AfterViewInit {
   activeTab: string = 'desc';
   product: any = null;
-  private notyf = new Notyf({
-    position: {
-      x: 'right',
-      y: 'top'
-    },
-    duration: 3000
-  });
-  constructor(private route: ActivatedRoute,private shopService:ShopService) {}
+
+  constructor(private route: ActivatedRoute,private shopService:ShopService, private toastr:ToastrService) {}
   ngOnInit(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
     const stored = localStorage.getItem('products');
@@ -50,7 +44,7 @@ export class ProductDetailComponent implements OnInit, AfterViewInit {
   }
   addToCart(product: any) {
     this.shopService.addToCart(product);
-    this.notyf.success('Mahsulot savatchaga qo‘shildi!');
+    this.toastr.success('Mahsulot savatga qo\'shildi!', 'Muvaffaqiyatli!');
 
   }
 }

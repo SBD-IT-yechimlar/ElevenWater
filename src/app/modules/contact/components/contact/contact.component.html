@@ -1,192 +1,324 @@
 <!--Start breadcrumb area paroller-->
 <section class="breadcrumb-area breadcrumb-area--style2">
-    <div class="breadcrumb-area-bg" style="background-image: url(assets/images/breadcrumb/breadcrumb-2.jpg);"></div>
-    <div class="man-outer wow slideInRight" data-wow-duration="2000ms">
-      <img src="https://st.ourhtmldemo.com/new/aguapure-demo/assets/images/breadcrumb/breadcrumb-man.png" alt="" />
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-12">
-          <div class="inner-content text-center">
-            <div class="title">
-              <h2>{{ 'contact.breadcrumb_title' | translate }}</h2>
-            </div>
-            <div class="breadcrumb-menu">
-              <ul>
-                <li><a href="index.html">{{ 'contact.breadcrumb_home' | translate }}</a></li>
-                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
-                <li class="active">{{ 'contact.breadcrumb_title' | translate }}</li>
-              </ul>
-            </div>
+  <div
+    class="breadcrumb-area-bg"
+    style="background-image: url(assets/images/breadcrumb/breadcrumb-2.jpg)"
+  ></div>
+  <div class="man-outer wow slideInRight" data-wow-duration="2000ms">
+    <img
+      src="https://st.ourhtmldemo.com/new/aguapure-demo/assets/images/breadcrumb/breadcrumb-man.png"
+      alt=""
+    />
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="inner-content text-center">
+          <div class="title">
+            <h2>{{ "contact.breadcrumb_title" | translate }}</h2>
           </div>
-        </div>
-      </div>
-
-      <!-- Contact Info Boxes -->
-      <div class="row">
-        <div class="col-xl-3 col-lg-6 col-md-6" *ngFor="let box of ['address', 'phone', 'email', 'hours']">
-          <div class="single-contact-info-box">
-            <div class="icon">
-              <span [ngClass]="{
-                'icon-placeholder': box === 'address',
-                'icon-calling': box === 'phone',
-                'icon-email': box === 'email',
-                'icon-clock': box === 'hours'
-              }"></span>
-            </div>
-            <div class="text">
-              <h3>{{ ('contact.contact_boxes.' + box + '.title') | translate }}</h3>
-              <p>
-                <ng-container *ngIf="box === 'phone'; else normalText">
-                  {{ ('contact.contact_boxes.phone.text' | translate).replace('Tel: ', '') }}
-                </ng-container>
-                <ng-template #normalText>
-                  {{ ('contact.contact_boxes.' + box + '.text') | translate }}
-                </ng-template>
-              </p>
-            </div>
+          <div class="breadcrumb-menu">
+            <ul>
+              <li>
+                <a href="index.html">{{
+                  "contact.breadcrumb_home" | translate
+                }}</a>
+              </li>
+              <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+              <li class="active">
+                {{ "contact.breadcrumb_title" | translate }}
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <!--End breadcrumb area-->
 
-  <!--Start Thm Form Style1 Area-->
-  <section class="thm-form-style1-area">
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-12 text-center">
-          <div id="thm-form-style1">
-            <div class="thm-form-style1-bg" style="background-image: url(assets/images/pattern/thm-form-style1-bg.jpg);"></div>
-            <div class="title">
-              <h2>{{ 'contact.dealer_finder.title' | translate }}</h2>
-              <span>{{ 'contact.dealer_finder.subtitle' | translate }}</span>
-            </div>
-            <form class="thm-form" action="#">
-              <input type="text" name="zip" [placeholder]="'contact.dealer_finder.placeholder' | translate" />
-              <button class="btn-one" type="submit"><span class="txt">{{ 'contact.dealer_finder.button' | translate }}</span></button>
-            </form>
-            <div class="message">
-              {{ 'contact.dealer_finder.message' | translate }}
-            </div>
+    <!-- Contact Info Boxes -->
+    <div class="row">
+      <!-- Address -->
+      <div class="col-xl-3 col-lg-6 col-md-6">
+        <div class="single-contact-info-box">
+          <div class="icon">
+            <a href="https://www.instagram.com/eleven_water.uz/ ">
+              <img
+                src="assets/images/icons8-instagram.svg "
+                class="cursor-pointer"
+                alt=""
+            /></a>
+          </div>
+          <div class="text">
+            <h3>{{ "contact.contact_boxes.address.title" | translate }}</h3>
+            <p>{{ "contact.contact_boxes.address.text" | translate }}</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phone -->
+      <div class="col-xl-3 col-lg-6 col-md-6">
+        <div class="single-contact-info-box">
+          <div class="icon cursor-pointer">
+            <span class="icon-calling cursor-pointer"></span>
+          </div>
+          <div class="text">
+            <h3>{{ "contact.contact_boxes.phone.title" | translate }}</h3>
+            <p>
+              {{
+                ("contact.contact_boxes.phone.text" | translate).replace(
+                  "Tel: ",
+                  ""
+                )
+              }}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="col-xl-3 col-lg-6 col-md-6">
+        <div class="single-contact-info-box">
+          <div class="icon">
+            <a href="https://t.me/elevenwater">
+              <img
+                src="assets/images/icons8-telegram.svg "
+                class="style"
+                alt=""
+            /></a>
+          </div>
+          <div class="text">
+            <h3>{{ "contact.contact_boxes.email.title" | translate }}</h3>
+            <p>{{ "contact.contact_boxes.email.text" | translate }}</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hours -->
+      <div class="col-xl-3 col-lg-6 col-md-6">
+        <div class="single-contact-info-box">
+          <div class="icon">
+            <a href="https://t.me/Eleven_water_bot" target="_blank">
+              <img
+                src="assets/images/icons8-telegram.svg "
+                class="style"
+                alt=""
+            /></a>
+          </div>
+          <div class="text">
+            <h3>{{ "contact.contact_boxes.hours.title" | translate }}</h3>
+            <p>{{ "contact.contact_boxes.hours.text" | translate }}</p>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <!--End Thm Form Style1 Area-->
+  </div>
+</section>
+<!--End breadcrumb area-->
 
-  <!--Start Main Contact Form Area-->
-  <section class="main-contact-form-area">
-    <div class="container">
-      <div class="sec-title text-center">
-        <div class="sub-title">
-          <h5>{{ 'contact.contact_form.subtitle' | translate }}</h5>
-        </div>
-        <h2>{{ 'contact.contact_form.title' | translate }}</h2>
-        <div class="decor">
-          <img src="assets/images/shape/decor.png" alt="" />
+<!--Start Thm Form Style1 Area-->
+<section class="thm-form-style1-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12 text-center">
+        <div id="thm-form-style1">
+          <div
+            class="thm-form-style1-bg"
+            style="
+              background-image: url(assets/images/pattern/thm-form-style1-bg.jpg);
+            "
+          ></div>
+          <div class="title">
+            <h2>{{ "contact.dealer_finder.title" | translate }}</h2>
+            <span>{{ "contact.dealer_finder.subtitle" | translate }}</span>
+          </div>
+          <form class="thm-form" action="#">
+            <input
+              type="text"
+              name="zip"
+              [placeholder]="'contact.dealer_finder.placeholder' | translate"
+            />
+            <button class="btn-one" type="submit">
+              <span class="txt">{{
+                "contact.dealer_finder.button" | translate
+              }}</span>
+            </button>
+          </form>
+          <div class="message">
+            {{ "contact.dealer_finder.message" | translate }}
+          </div>
         </div>
       </div>
-      <div class="row">
-        <!-- Services -->
-        <div class="col-xl-6">
-          <div class="our-service-box">
-            <div class="row">
-              <div class="col-xl-6 col-lg-6 col-md-6" *ngFor="let service of ['family', 'office']">
-                <div class="single-service">
-                  <div class="img-holder">
-                    <img [src]="service === 'family' ? 'https://st.ourhtmldemo.com/new/aguapure-demo/assets/images/resources/family-service.jpg' : 'https://st.ourhtmldemo.com/new/aguapure-demo/assets/images/resources/office-service.jpg'" alt="" />
+    </div>
+  </div>
+</section>
+<!--End Thm Form Style1 Area-->
+
+<!--Start Main Contact Form Area-->
+<section class="main-contact-form-area">
+  <div class="container">
+    <div class="sec-title text-center">
+      <div class="sub-title">
+        <h5>{{ "contact.contact_form.subtitle" | translate }}</h5>
+      </div>
+      <h2>{{ "contact.contact_form.title" | translate }}</h2>
+      <div class="decor">
+        <img src="assets/images/shape/decor.png" alt="" />
+      </div>
+    </div>
+    <div class="row">
+      <!-- Services -->
+      <div class="col-xl-6">
+        <div class="our-service-box">
+          <div class="row">
+            <div
+              class="col-xl-6 col-lg-6 col-md-6"
+              *ngFor="let service of ['family', 'office']"
+            >
+              <div class="single-service">
+                <div class="img-holder">
+                  <img
+                    [src]="
+                      service === 'family'
+                        ? 'https://st.ourhtmldemo.com/new/aguapure-demo/assets/images/resources/family-service.jpg'
+                        : 'https://st.ourhtmldemo.com/new/aguapure-demo/assets/images/resources/office-service.jpg'
+                    "
+                    alt=""
+                  />
+                </div>
+                <div class="text-holder">
+                  <div class="title">
+                    <h3>
+                      {{ "contact.services." + service + ".title" | translate }}
+                    </h3>
+                    <div class="decor">
+                      <img src="assets/images/shape/decor.png" alt="" />
+                    </div>
                   </div>
-                  <div class="text-holder">
-                    <div class="title">
-                      <h3>{{ ('contact.services.' + service + '.title') | translate }}</h3>
-                      <div class="decor">
-                        <img src="assets/images/shape/decor.png" alt="" />
-                      </div>
-                    </div>
-                    <p>{{ ('contact.services.' + service + '.desc') | translate }}</p>
-                    <div class="btns-box">
-                      <a class="btn-two" href="#"><span class="icon-right-arrow"></span>{{ 'contact.services.' + service + '.button' | translate }}</a>
-                    </div>
+                  <p>
+                    {{ "contact.services." + service + ".desc" | translate }}
+                  </p>
+                  <div class="btns-box">
+                    <a class="btn-two" href="#"
+                      ><span class="icon-right-arrow"></span
+                      >{{
+                        "contact.services." + service + ".button" | translate
+                      }}</a
+                    >
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Contact Form -->
-        <div class="col-xl-6">
-          <div class="contact-style1_form">
-            <div class="top-title">
-              <h3>{{ 'contact.contact_form.form_title' | translate }}</h3>
-            </div>
-            <div class="contact-form">
-              <form id="contact-form" name="contact_form" class="default-form2" action="assets/inc/sendmail.php" method="post">
-                <div class="row">
-                  <div class="col-xl-12">
-                    <div class="input-box">
-                      <input type="text" name="form_name" [placeholder]="'contact.contact_form.fields.name' | translate" required />
-                      <div class="icon"><i class="fa fa-user" aria-hidden="true"></i></div>
-                    </div>
-                  </div>
-                  <div class="col-xl-12">
-                    <div class="input-box">
-                      <input type="email" name="form_email" [placeholder]="'contact.contact_form.fields.email' | translate" required />
-                      <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+
+
+
+
+
+
+
+
+
+
+
+      <!-- Contact Form -->
+      <div class="col-xl-6">
+        <div class="contact-style1_form">
+          <div class="top-title">
+            <h3>{{ "contact.contact_form.form_title" | translate }}</h3>
+          </div>
+          <div class="contact-form">
+            <form
+              id="contact-form"
+              name="contact_form"
+              class="default-form2"
+              action="https://formsubmit.co/elevenwater@mail.ru" method="POST">
+              <input type="hidden" name="_feedback" value="true" />
+
+              <div class="row">
+                <div class="col-xl-12">
+                  <div class="input-box">
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Ismingiz"
+                      required
+                    />
+                    <div class="icon">
+                      <i class="fa fa-user" aria-hidden="true"></i>
                     </div>
                   </div>
                 </div>
-
-                <div class="row">
-                  <div class="col-xl-12">
-                    <div class="input-box">
-                      <input type="text" name="form_phone" [placeholder]="'contact.contact_form.fields.phone' | translate" />
-                      <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
-                    </div>
-                  </div>
-                  <div class="col-xl-12">
-                    <div class="input-box">
-                      <input type="text" name="form_subject" [placeholder]="'contact.contact_form.fields.subject' | translate" />
-                      <div class="icon"><i class="fa fa-file" aria-hidden="true"></i></div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="col-xl-12">
-                    <div class="input-box two">
-                      <textarea name="form_message" [placeholder]="'contact.contact_form.fields.message' | translate" required></textarea>
-                      <div class="icon"><i class="fa fa-text-width" aria-hidden="true"></i></div>
-                    </div>
-                    <div class="button-box">
-                      <input id="form_botcheck" name="form_botcheck" type="hidden" value="" />
-                      <button class="btn-one" type="submit" [attr.data-loading-text]="'contact.contact_form.loading' | translate">
-                        <span class="round"></span>
-                        <span class="txt">{{ 'contact.contact_form.submit' | translate }}</span>
-                      </button>
+                <div class="col-xl-12">
+                  <div class="input-box">
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Emailingiz"
+                      required
+                    />
+                    <div class="icon">
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
                     </div>
                   </div>
                 </div>
-              </form>
-            </div>
+                <div class="col-xl-12">
+                  <div class="input-box">
+                    <input
+                      type="text"
+                      name="phone"
+                      placeholder="Telefon raqam"
+                    />
+                    <div class="icon">
+                      <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-12">
+                  <div class="input-box">
+                    <input type="text" name="subject" placeholder="Mavzu" />
+                    <div class="icon">
+                      <i class="fa fa-file" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-12">
+                  <div class="input-box two">
+                    <textarea
+                      name="message"
+                      placeholder="Xabaringiz"
+                      required
+                    ></textarea>
+                    <div class="icon">
+                      <i class="fa fa-text-width" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <div class="button-box">
+                    <button class="btn-one" type="submit">
+                      <span class="round"></span>
+                      <span class="txt">Yuborish</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!--Start Google map area-->
-  <section class="google-map-areav">
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-12">
-          <div class="contact-page-map-outer">
-            <div id="yandex-map" style="width: 100%; height: 400px;"></div>
-          </div>
+<!--Start Google map area-->
+<section class="google-map-areav">
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12">
+        <div class="contact-page-map-outer">
+          <div id="yandex-map" style="width: 100%; height: 400px"></div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
