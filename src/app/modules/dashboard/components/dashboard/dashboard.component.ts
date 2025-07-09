@@ -56,7 +56,10 @@ export class DashboardComponent implements OnInit, AfterViewInit {
         dots: true,
         items: 1,
         autoplay: true,
-        autoplayTimeout: 5000,
+        smartSpeed: 6000,
+        autoplaySpeed: 2000,
+
+        autoplayTimeout: 6000,
         navText: [
           '<span class="flaticon-left-arrow"></span>',
           '<span class="flaticon-right-arrow"></span>'

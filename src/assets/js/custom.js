@@ -44,7 +44,7 @@ if($('.mobile-menu').length){
     //Dropdown Button
     $('.mobile-menu li.dropdown .dropdown-btn').on('click', function() {
         $(this).toggleClass('open');
-        $(this).prev('ul').slideToggle(500);
+        $(this).prev('ul').slideToggle(700);
     });
 
     //Dropdown Button
@@ -310,14 +310,13 @@ if ($('.theme_carousel').length) {
 // Main Slider Carousel
 if ($('.banner-carousel').length) {
     $('.banner-carousel').owlCarousel({
-        animateOut: 'fadeOut',
-        animateIn: 'fadeIn',
+
         loop:true,
         margin:0,
         dots: true,
         nav:true,
         singleItem:true,
-        smartSpeed: 500,
+        smartSpeed: 2000,
         autoplay: true,
         autoplayTimeout:6000,
         navText: [ '<span class="flaticon-left-arrow"></span>', '<span class="flaticon-right-arrow"></span>' ],
@@ -382,7 +381,7 @@ if ($('.partner-carousel').length) {
         nav: false,
         stagePadding: 0,
         singleItem:true,
-        smartSpeed: 500,
+        smartSpeed: 1000,
         autoplay: true,
         autoplayTimeout:6000,
         navText: [ '<span class="flaticon-next left"></span>', '<span class="flaticon-next right"></span>' ],

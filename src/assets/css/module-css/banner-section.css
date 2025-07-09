@@ -1,6 +1,6 @@
 
 
-/*** 
+/***
 =====================================================
 	Main Slider style
 =====================================================
@@ -35,7 +35,7 @@
 	-webkit-transform: scale(1);
 	-ms-transform:scale(1);
 	transform:scale (1);
-    transition: all .8s ease-in-out .4s;
+    transition: all .2s ease-in-out .1s;
     z-index: 1;
 }
 .main-slider .slide .image-layer:before{
@@ -48,9 +48,9 @@
     z-index: -1;
 }
 .main-slider .active .slide .image-layer{
-	-webkit-transform:scale(1.05);
-	-ms-transform:scale(1.05);
-	transform:scale(1.05);
+	-webkit-transform:scale(2.05);
+	-ms-transform:scale(2.05);
+	transform:scale(2.05);
 }
 .main-slider .content{
 	position:relative;
@@ -107,7 +107,7 @@
     -moz-transition-delay: 1000ms;
     -ms-transition-delay: 1000ms;
     -o-transition-delay: 1000ms;
-    transition-delay: 1000ms;   
+    transition-delay: 1000ms;
 }
 .main-slider .content .big-title h2{
 	color: #ffffff;
@@ -145,7 +145,7 @@
     -moz-transition-delay: 1500ms;
     -ms-transition-delay: 1500ms;
     -o-transition-delay: 1500ms;
-    transition-delay: 1500ms;   
+    transition-delay: 1500ms;
 }
 .main-slider .content .text p{
 	color: #ecf2f6;
@@ -157,7 +157,7 @@
 
 
 .main-slider .content .btns-box{
-	position: relative; 
+	position: relative;
     display: block;
     overflow: hidden;
     line-height: 0;
@@ -187,7 +187,7 @@
     -moz-transition-delay: 2000ms;
     -ms-transition-delay: 2000ms;
     -o-transition-delay: 2000ms;
-    transition-delay: 2000ms; 
+    transition-delay: 2000ms;
 }
 .main-slider .content .btns-box a.btn-one{
     padding-left: 35px;
@@ -271,22 +271,22 @@
     -webkit-transform-origin: right;
     -ms-transform-origin: right;
     transform-origin: right;
-    -webkit-transition: all 1000ms ease;
-    -moz-transition: all 1000ms ease;
-    -ms-transition: all 1000ms ease;
-    -o-transition: all 1000ms ease;
-    transition: all 1000ms ease;
+    -webkit-transition: all 2000ms ease;
+    -moz-transition: all 2000ms ease;
+    -ms-transition: all 2000ms ease;
+    -o-transition: all 2000ms ease;
+    transition: all 2000ms ease;
 }
 .main-slider .active .slider-bg-box {
     opacity: 1;
     -webkit-transform: perspective(400px) translateX(0px) scale(1.0);
     -ms-transform: perspective(400px) translateX(0px) scale(1.0);
     transform: perspective(400px) translateX(0px) scale(1.0);
-    -webkit-transition-delay: 2000ms;
-    -moz-transition-delay: 2000ms;
-    -ms-transition-delay: 2000ms;
-    -o-transition-delay: 2000ms;
-    transition-delay: 2000ms;
+    -webkit-transition-delay: 3000ms;
+    -moz-transition-delay: 3000ms;
+    -ms-transition-delay: 3000ms;
+    -o-transition-delay: 3000ms;
+    transition-delay: 3000ms;
 }
 
 
@@ -317,7 +317,7 @@
     -moz-transition-delay: 2500ms;
     -ms-transition-delay: 2500ms;
     -o-transition-delay: 2500ms;
-    transition-delay: 2500ms; 
+    transition-delay: 2500ms;
 }
 
 
@@ -357,7 +357,7 @@
     -moz-transition-delay: 3000ms;
     -ms-transition-delay: 3000ms;
     -o-transition-delay: 3000ms;
-    transition-delay: 3000ms; 
+    transition-delay: 3000ms;
 }
 .main-slider .round-box:before{
     content: "";
@@ -425,7 +425,7 @@
     opacity: 1;
     transform: scaleX(1.0) translateY(-65px);
 }
-.main-slider .owl-theme .owl-prev span, 
+.main-slider .owl-theme .owl-prev span,
 .main-slider .owl-theme .owl-next span{
     display: block;
 }
@@ -543,7 +543,7 @@
 
 
 
-/*** 
+/***
 =====================================================
 	Main Slider style2 style
 =====================================================
@@ -652,7 +652,7 @@
 
 
 
-/*** 
+/***
 =====================================================
 	Main Slider style3 style
 =====================================================
@@ -756,7 +756,7 @@
     -moz-transition-delay: 1000ms;
     -ms-transition-delay: 1000ms;
     -o-transition-delay: 1000ms;
-    transition-delay: 1000ms;     
+    transition-delay: 1000ms;
 }
 
 
@@ -811,14 +811,3 @@
     border-color: var(--thm-base);
     background-color: var(--thm-base);
 }
-
-
-
-
-
-
-
-
-
-
-
