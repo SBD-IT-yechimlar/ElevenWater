@@ -21,6 +21,10 @@ export class ShopService {
     };
     return this.postRequest('bot/shop/data', payload);
   }
+  loginGuest(payload: { email: string, password: string }) {
+    return this.http.post('https://api.asbd.uz/api/user/login', payload);
+  }
+
 
   postRequest<T>(url: string, data: any): Observable<T> {
     return this.http.post<T>(`https://api.asbd.uz/api/${url}`, data);
@@ -46,6 +50,7 @@ export class ShopService {
 
     this.saveCart(cart);
   }
+
 
   removeFromCart(productId: number) {
     const updated = this.cartItems

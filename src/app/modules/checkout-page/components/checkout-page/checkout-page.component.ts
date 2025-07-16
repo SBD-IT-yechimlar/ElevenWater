@@ -42,52 +42,72 @@ export class CheckoutPageComponent implements OnInit {
 
 
 
-  submitOrder() {
-    const clientId = this.generateGuestClientId();
+    submitOrder() {
+      const clientId = this.generateGuestClientId();
 
-    if (!localStorage.getItem('token')) {
-      localStorage.setItem('token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJvdCIsInVzZXJJZCI6MzM0LCJvd25lciI6MTYsImJyYW5jaCI6MjEsImlzX21haW4iOjEsImlhdCI6MTc1MTk3MDY4MywiZXhwIjoxNzUyMDA2NjgzfQ.AS1sMkW7_KZlXNIJ7Y2TErE54ZVltdtaiuC77FI2mv0');
+      const token = localStorage.getItem('token');
+      const expiry = localStorage.getItem('token_expiry');
+
+      const now = new Date().getTime();
+
+      if (!token || !expiry || now > +expiry) {
+        // Token yo‘q yoki eskirgan — login qilish kerak
+        const loginPayload = {
+          email: 'bot',
+          password: 'Asd*-'
+        };
+
+        this.shopService.loginGuest(loginPayload).subscribe({
+          next: (loginRes: any) => {
+            localStorage.setItem('token', loginRes.token);
+            localStorage.setItem('token_expiry', (new Date().getTime() + loginRes.expiresIn * 1000).toString());
+
+            this.sendOrder(loginRes.token, clientId);
+          },
+          error: () => {
+            this.toastr.error('Login qilishda xatolik yuz berdi!');
+          }
+        });
+      } else {
+        this.sendOrder(token, clientId);
+      }
+    }
+    sendOrder(token: string, clientId: number) {
+      const headers = new HttpHeaders({
+        Authorization: `Bearer ${token}`,
+      });
+
+      const fullComment = `
+        Telefon: ${this.orderForm.phone}
+        Ism: ${this.orderForm.firstName} ${this.orderForm.lastName}
+        Manzil: ${this.orderForm.address}
+        Izoh: ${this.orderForm.comment}
+      `.trim();
+
+      const payload = {
+        client_id: clientId,
+        delivery_address: this.orderForm.address,
+        comment: fullComment,
+        products: this.cartItems.map(item => ({
+          product_id: item.id,
+          price: +item.sell_cost_uzs,
+          ordered_amount: item.quantity,
+          sum_row: +item.sell_cost_uzs * item.quantity
+        })),
+        location: "41.33942112744839, 69.27167081193654",
+        date: new Date().toISOString()
+      };
+
+      this.shopService.placeOrder(payload, headers).subscribe({
+        next: () => {
+          this.shopService.clearCart();
+          this.toastr.success('Buyurtma muvaffaqiyatli yuborildi!');
+        },
+        error: () => {
+          this.toastr.error('Buyurtma yuborishda xatolik yuz berdi!');
+        }
+      });
     }
 
-    const token = localStorage.getItem('token');
-
-    const headers = new HttpHeaders({
-      Authorization: `Bearer ${token}`,
-    });
-
-    const fullComment = `
-     Telefon: ${this.orderForm.phone}
-     Ism: ${this.orderForm.firstName} ${this.orderForm.lastName}
-     Manzil: ${this.orderForm.address}
-     Izoh: ${this.orderForm.comment}
-    `.trim();
-
-          const payload = {
-            client_id: clientId,
-            delivery_address: this.orderForm.address,
-            comment: fullComment,
-            products: this.cartItems.map(item => ({
-              product_id: item.id,
-              price: +item.sell_cost_uzs,
-              ordered_amount: item.quantity,
-              sum_row: +item.sell_cost_uzs * item.quantity
-            })),
-            location: "41.33942112744839, 69.27167081193654",
-            date: new Date().toISOString()
-          };
-
-          console.log('payload---', payload);
-
-    this.shopService.placeOrder(payload, headers).subscribe({
-      next: res => {
-        this.shopService.clearCart();
-        this.toastr.success('Buyurtma muvaffaqiyatli yuborildi!');
-
-      },
-      error: err => {
-        this.toastr.error('Buyurtma yuborishda xatolik yuz berdi!');
-      }
-    });
-  }
 
 }
