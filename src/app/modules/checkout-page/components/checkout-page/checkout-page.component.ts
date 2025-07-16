@@ -44,7 +44,10 @@ export class CheckoutPageComponent implements OnInit {
 
     submitOrder() {
       const clientId = this.generateGuestClientId();
-
+      if (this.cartItems.length === 0) {
+        this.toastr.warning('Savat bo‘sh! Iltimos, mahsulot tanlang.');
+        return;
+      }
       const token = localStorage.getItem('token');
       const expiry = localStorage.getItem('token_expiry');
 
