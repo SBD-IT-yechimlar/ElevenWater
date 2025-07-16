@@ -9,13 +9,15 @@
       <div class="col-xl-12">
         <div class="inner-content text-center">
           <div class="title">
-            <h2>{{"checkout"|translate}}</h2>
+            <h2>{{ "checkout" | translate }}</h2>
           </div>
           <div class="breadcrumb-menu">
             <ul>
-              <li><a href="index.html">{{"main"|translate}}</a></li>
+              <li>
+                <a href="index.html">{{ "main" | translate }}</a>
+              </li>
               <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
-              <li class="active">{{"checkout"|translate}}</li>
+              <li class="active">{{ "checkout" | translate }}</li>
             </ul>
           </div>
         </div>
@@ -41,11 +43,10 @@
             <div class="row">
               <div class="col-xl-8">
                 <div class="checkout-form shadow-sm">
-
                   <!--Start Form Box2-->
                   <div class="form-box2">
                     <div class="shop-page-title">
-                        <h2>{{ 'shipping_address' | translate }}</h2>
+                      <h2>{{ "shipping_address" | translate }}</h2>
                     </div>
                     <div class="row">
                       <div class="col-lg-6">
@@ -112,7 +113,6 @@
                             id="skipper-2"
                             checked=""
                           />
-
                         </div>
                       </div>
                     </div>
@@ -122,7 +122,7 @@
               </div>
               <div class="order-summary-box">
                 <div class="top-title">
-                  <h3>{{ 'ordersymmary.summaryTitle' | translate }}</h3>
+                  <h3>{{ "ordersymmary.summaryTitle" | translate }}</h3>
                   <div class="decor">
                     <img src="assets/images/shape/decor.png" alt="" />
                   </div>
@@ -145,39 +145,47 @@
 
                 <!-- Subtotal -->
                 <div class="sub-total-box">
-                  <div class="left"><h4>{{ 'ordersymmary.subtotal' | translate }}</h4></div>
+                  <div class="left">
+                    <h4>{{ "ordersymmary.subtotal" | translate }}</h4>
+                  </div>
                   <div class="right">
                     <p>{{ getSubtotal() | number }}</p>
                   </div>
                 </div>
 
                 <div class="shipping">
-                  <div class="left"><h4>{{ 'ordersymmary.delivery' | translate }}</h4></div>
-                  <div class="right"><p>{{ 'ordersymmary.free' | translate }}</p></div>
+                  <div class="left">
+                    <h4>{{ "ordersymmary.delivery" | translate }}</h4>
+                  </div>
+                  <div class="right">
+                    <p>{{ "ordersymmary.free" | translate }}</p>
+                  </div>
                 </div>
 
                 <div class="total-order">
-                  <div class="left"><h4>{{ 'ordersymmary.total' | translate }}</h4></div>
+                  <div class="left">
+                    <h4>{{ "ordersymmary.total" | translate }}</h4>
+                  </div>
                   <div class="right">
                     <p>{{ getSubtotal() | number }}</p>
                   </div>
                 </div>
 
                 <div class="checkout-button">
-                  <button class="btn-one" type="submit">
-                    <span class="round"></span>
-                    <span class="txt" (click)="submitOrder()">
-                      {{ 'ordersymmary.continue' | translate }}
-                    </span>
-                  </button>
+                  <form (ngSubmit)="submitOrder()">
+                    <button class="btn-one" type="submit">
+                      <span class="round"></span>
+                      <span class="txt">
+                        {{ "ordersymmary.continue" | translate }}
+                      </span>
+                    </button>
+                  </form>
                 </div>
               </div>
-
             </div>
           </form>
         </div>
         <!--End Checkout Inner Box -->
-
       </div>
     </div>
   </div>
