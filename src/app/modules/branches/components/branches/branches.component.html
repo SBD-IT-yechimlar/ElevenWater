@@ -1,0 +1,36 @@
+<section class="breadcrumb-area">
+  <div class="breadcrumb-area-bg" style="background-image: url(assets/images/breadcrumb/breadcrumb-1.jpg);"></div>
+  <div class="container">
+      <div class="row">
+          <div class="col-xl-12">
+              <div class="inner-content text-center">
+                  <div class="title">
+                     <h2>{{"branches"|translate}}</h2>
+                  </div>
+                  <div class="breadcrumb-menu">
+                      <ul>
+                          <li><a href="index.html">{{"main"|translate}} </a></li>
+                          <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                          <li class="active">{{"branches"|translate}}</li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<section class="branches-section">
+  <div class="branches-container">
+    <div class="branch-list">
+      <h3>{{ "branches" | translate }}</h3>
+      <div *ngFor="let branch of branches" class="branch-card" (click)="focusOn(branch)">
+        <h4>{{ branch.name }}</h4>
+        <p>{{ branch.address }}</p>
+      </div>
+    </div>
+
+    <div class="map-container">
+      <div id="yandex-map"></div>
+    </div>
+  </div>
+</section>

@@ -69,6 +69,11 @@ const routes: Routes = [
         loadChildren: () =>
           import('../modules/service-detail/service-detail.routes').then((m) => m.default),
       },
+      {
+        path: 'branches',
+        loadChildren: () =>
+          import('../modules/branches/branches.routes').then((m) => m.default),
+      },
     ],
   },
 ];

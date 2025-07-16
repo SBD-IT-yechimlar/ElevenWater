@@ -7,6 +7,23 @@
 ,
 "go_to_payment": "Перейти к оплате",
 "update": "Обновить",
+"shipping_address": "Адрес доставки"
+,
+"branches": "Филиал",
+"symmary": {
+  "summaryTitle": "Сводка заказа",
+  "subtotal": "Итого",
+  "delivery": "Доставка",
+  "free": "Бесплатно",
+  "total": "Итого",
+  "continue": "Продолжить"
+},
+  "name": "Имя",
+  "surname": "Фамилия",
+  "address": "Адрес",
+  "phone": "Номер телефона",
+  "comment": "Комментарий"
+,
 
   "main": "Главная",
   "service": "Услуги",

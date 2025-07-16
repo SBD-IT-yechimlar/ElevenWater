@@ -6,8 +6,17 @@
 ,
 "go_to_payment": "To‘lovga o‘tish",
 "update": "Yangilash",
+"shipping_address": "Yetkazib berish manzili"
+,
 
 
+"branches": "Filiallar",
+
+"name": "Ism",
+"surname": "Familiya",
+"address": "Manzil",
+"phone": "Telefon raqam",
+"comment": "Izoh",
   "main": "Asosiy",
   "service": "Xizmatlar",
   "all_services": "Barcha xizmatlar",
@@ -21,6 +30,15 @@
   "team": "Jamoa",
   "contacts": "Aloqa",
   "order": "Buyurtma",
+
+  "ordersymmary": {
+    "summaryTitle": "Buyurtma Tafsilotlari",
+    "subtotal": "Hammasi",
+    "delivery": "Yetkazib berish",
+    "free": "Bepul",
+    "total": "Hammasi",
+    "continue": "Davom etish"
+  },
   "notfound": "404 - Sahifa topilmadi",
 
   "limitedoffer": "Cheklangan <br/>Aksiya",

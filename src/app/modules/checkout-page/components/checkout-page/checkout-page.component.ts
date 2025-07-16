@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { ShopService } from '../../../../core/auth/services/shop.service';
 import { Router } from '@angular/router';
@@ -5,20 +6,21 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HttpHeaders } from '@angular/common/http';
 import { ToastrService } from 'ngx-toastr';
+import { TranslateModule } from '@ngx-translate/core';
 @Component({
   selector: 'app-checkout-page',
-  imports: [FormsModule,CommonModule],
+  imports: [FormsModule,CommonModule,TranslateModule],
 templateUrl: './checkout-page.component.html',
   styleUrl: './checkout-page.component.scss'
 })
 export class CheckoutPageComponent implements OnInit {
 
   orderForm = {
-    phone: '',
-    email: '',
     firstName: '',
     lastName: '',
     address: '',
+    phone: '',
+    comment: '',
   };
 
   cartItems: any[] = [];
@@ -53,16 +55,17 @@ export class CheckoutPageComponent implements OnInit {
       Authorization: `Bearer ${token}`,
     });
 
-    const products = this.cartItems.map(item => ({
-      product_id: item.id,
-      ordered_amount: item.quantity,
-      price: Number(item.sell_cost_uzs),
-      sum_row: Number(item.sell_cost_uzs) * item.quantity,
-          }));
+    const fullComment = `
+     Telefon: ${this.orderForm.phone}
+     Ism: ${this.orderForm.firstName} ${this.orderForm.lastName}
+     Manzil: ${this.orderForm.address}
+     Izoh: ${this.orderForm.comment}
+    `.trim();
+
           const payload = {
             client_id: clientId,
             delivery_address: this.orderForm.address,
-            comment: `${this.orderForm.address}, ${this.orderForm.firstName} ${this.orderForm.lastName}`,
+            comment: fullComment,
             products: this.cartItems.map(item => ({
               product_id: item.id,
               price: +item.sell_cost_uzs,

@@ -1,11 +1,23 @@
-{   "currency": "UZS"
-,
-"working_hours": "Mon - Thu: 08:00 AM to 5:00 PM"
-,
-"email_address": "Email address"
-,
-"update": "Update",
-"go_to_payment": "Proceed to payment",
+{
+  "currency": "UZS",
+  "working_hours": "Mon - Thu: 08:00 AM to 5:00 PM",
+  "email_address": "Email address",
+  "name": "First Name",
+  "surname": "Last Name",
+  "address": "Address",
+  "phone": "Phone Number",
+  "comment": "Comment",
+  "shipping_address": "Shipping Address",
+  "ordersymmary": {
+    "summaryTitle": "Order Summary",
+    "subtotal": "Subtotal",
+    "delivery": "Delivery",
+    "free": "Free",
+    "total": "Total",
+    "continue": "Continue"
+  },
+  "update": "Update",
+  "go_to_payment": "Proceed to payment",
   "call": "Call Us",
   "main": "Home",
   "service": "Services",
@@ -21,6 +33,7 @@
   "contacts": "Contact",
   "order": "Order",
   "notfound": "404 - Page Not Found",
+  "branches": "Branches",
 
   "limitedoffer": "Limited<br/>Offer",
   "everyProduct": "For every product",
@@ -481,63 +494,49 @@
       "title": "Our location",
       "placeholder": "Find us on the map"
     }
-  }
-  ,
-    "footer": {
-      "about": {
-        "description": "We provide safe and reliable services to ensure customer convenience. Every order is a trusted step!",
-        "features": [
-          "Free delivery",
-          "Secure and fast payment system"
-        ]
-      },
-      "links": {
-        "title": "Useful Links",
-        "items": [
-          { "label": "Home", "route": "dashboard" },
-          { "label": "About Company", "route": "about" },
-          { "label": "Services", "route": "services" },
-          { "label": "Products", "route": "products" },
-          { "label": "Product Details", "route": "product-details" },
-          { "label": "Cart", "route": "product-basket" },
-          { "label": "Checkout", "route": "checkout-page" },
-          { "label": "Contact", "route": "contact" }
-        ]
-      },
-      "address": {
-        "title": "Address",
-        "region": "Jizzakh Region",
-        "street": "Sharof Rashidov district, S. Ayni street, house 111",
-        "phone": "+998 55 151 00 11",
-        "email": "elevenwater@mail.ru"
-      },
-      "working_hours": {
-        "title": "Working Hours",
-        "days": [
-          { "day": "Monday–Friday", "hours": "08:00 to 17:00" },
-          { "day": "Saturday", "hours": "10:00 to 16:00" }
-        ],
-        "button": "schedule"
-      },
-      "bottom": {
-        "copyright": "Copyright © {{year}} Eleven Water. All rights reserved.",
-        "nav": [
-          "Terms of Use",
-          "Privacy Policy",
-          "Site Map"
-        ]
-      },
-      "search_popup": {
-        "placeholder": "Search...",
-        "submit": "Search Now!",
-        "title": "Recent Search Keywords",
-        "recent": [
-          "Water Quality",
-          "Mineral",
-          "Bottle",
-          "Safety",
-          "Plan"
-        ]
-      }
+  },
+  "footer": {
+    "about": {
+      "description": "We provide safe and reliable services to ensure customer convenience. Every order is a trusted step!",
+      "features": ["Free delivery", "Secure and fast payment system"]
+    },
+    "links": {
+      "title": "Useful Links",
+      "items": [
+        { "label": "Home", "route": "dashboard" },
+        { "label": "About Company", "route": "about" },
+        { "label": "Services", "route": "services" },
+        { "label": "Products", "route": "products" },
+        { "label": "Product Details", "route": "product-details" },
+        { "label": "Cart", "route": "product-basket" },
+        { "label": "Checkout", "route": "checkout-page" },
+        { "label": "Contact", "route": "contact" }
+      ]
+    },
+    "address": {
+      "title": "Address",
+      "region": "Jizzakh Region",
+      "street": "Sharof Rashidov district, S. Ayni street, house 111",
+      "phone": "+998 55 151 00 11",
+      "email": "elevenwater@mail.ru"
+    },
+    "working_hours": {
+      "title": "Working Hours",
+      "days": [
+        { "day": "Monday–Friday", "hours": "08:00 to 17:00" },
+        { "day": "Saturday", "hours": "10:00 to 16:00" }
+      ],
+      "button": "schedule"
+    },
+    "bottom": {
+      "copyright": "Copyright © {{year}} Eleven Water. All rights reserved.",
+      "nav": ["Terms of Use", "Privacy Policy", "Site Map"]
+    },
+    "search_popup": {
+      "placeholder": "Search...",
+      "submit": "Search Now!",
+      "title": "Recent Search Keywords",
+      "recent": ["Water Quality", "Mineral", "Bottle", "Safety", "Plan"]
     }
   }
+}
